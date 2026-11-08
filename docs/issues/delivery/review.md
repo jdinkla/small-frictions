@@ -42,3 +42,7 @@ The multi-issue registry and RSS/date preservation checks are reusable for futur
 ## Final release metadata
 
 Delivery’s initial staging timestamp was replaced with 13:03:00 UTC on 8 November 2026 at release preparation. Its date label remains 8 November 2026. Waiting’s timestamp and all existing GUIDs remain unchanged.
+
+## Publication outcome
+
+Issue 02 deployed successfully from 7225504 in [Actions run 42483284371](https://github.com/jdinkla/small-frictions/actions/runs/42483284371). [Delivery](https://jdinkla.github.io/small-frictions/issues/delivery/) and the [Delivery Lab](https://jdinkla.github.io/small-frictions/labs/delivery/) are live. All 28 verified publication/feed/sharing/favicon URLs returned 200. The live feed preserves the first issue’s timestamps; phone-browser checks exercised the new cover, fonts, Queue Lab, Delivery hub/check digit and resets. Raw production evidence is in qa/production.json. The final record update contains these outcomes without changing article content or publication identities.

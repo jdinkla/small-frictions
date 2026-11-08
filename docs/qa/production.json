@@ -1,66 +1,66 @@
 {
-  "verifiedAt": "2026-11-08T10:35:17.314Z",
+  "verifiedAt": "2026-11-08T13:07:05.230Z",
   "base": "https://jdinkla.github.io/small-frictions",
   "requests": [
     {
       "path": "/",
       "status": 200,
-      "bytes": 14992
+      "bytes": 15057
     },
     {
       "path": "/issues/waiting/",
       "status": 200,
-      "bytes": 12280
+      "bytes": 12251
     },
     {
       "path": "/issues/",
       "status": 200,
-      "bytes": 9882
+      "bytes": 11779
     },
     {
       "path": "/articles/capacity/",
       "status": 200,
-      "bytes": 17961
+      "bytes": 18185
     },
     {
       "path": "/articles/bus-pairs/",
       "status": 200,
-      "bytes": 17911
+      "bytes": 18135
     },
     {
       "path": "/articles/average-wait/",
       "status": 200,
-      "bytes": 17501
+      "bytes": 17725
     },
     {
       "path": "/articles/one-queue/",
       "status": 200,
-      "bytes": 17398
+      "bytes": 17621
     },
     {
       "path": "/articles/littles-law/",
       "status": 200,
-      "bytes": 17395
+      "bytes": 17619
     },
     {
       "path": "/articles/waiting-design/",
       "status": 200,
-      "bytes": 17804
+      "bytes": 18028
     },
     {
       "path": "/lab/",
       "status": 200,
-      "bytes": 19501
+      "bytes": 19503
     },
     {
       "path": "/about/",
       "status": 200,
-      "bytes": 12068
+      "bytes": 12150
     },
     {
       "path": "/logbook/",
       "status": 200,
-      "bytes": 18744
+      "bytes": 26514
     },
     {
       "path": "/404.html",
@@ -68,19 +68,74 @@
       "bytes": 7837
     },
     {
+      "path": "/issues/delivery/",
+      "status": 200,
+      "bytes": 12278
+    },
+    {
+      "path": "/articles/parcel-detour/",
+      "status": 200,
+      "bytes": 18443
+    },
+    {
+      "path": "/articles/barcode/",
+      "status": 200,
+      "bytes": 18424
+    },
+    {
+      "path": "/articles/box-space/",
+      "status": 200,
+      "bytes": 18324
+    },
+    {
+      "path": "/articles/last-mile/",
+      "status": 200,
+      "bytes": 18860
+    },
+    {
+      "path": "/articles/container/",
+      "status": 200,
+      "bytes": 18798
+    },
+    {
+      "path": "/articles/returns/",
+      "status": 200,
+      "bytes": 18857
+    },
+    {
+      "path": "/labs/",
+      "status": 200,
+      "bytes": 11536
+    },
+    {
+      "path": "/labs/delivery/",
+      "status": 200,
+      "bytes": 28285
+    },
+    {
       "path": "/feed.xml",
       "status": 200,
-      "bytes": 3095
+      "bytes": 6218
     },
     {
       "path": "/sitemap.xml",
       "status": 200,
-      "bytes": 1038
+      "bytes": 1763
     },
     {
       "path": "/social-cover.png",
       "status": 200,
+      "bytes": 56965
+    },
+    {
+      "path": "/social-waiting.png",
+      "status": 200,
       "bytes": 64661
+    },
+    {
+      "path": "/social-delivery.png",
+      "status": 200,
+      "bytes": 56965
     },
     {
       "path": "/favicon.svg",
@@ -91,6 +146,8 @@
   "mobileHome": true,
   "localFonts": true,
   "liveLabHydration": true,
+  "liveDeliveryLab": true,
+  "stablePriorFeed": true,
   "liveKeyboardAndReset": true,
   "browserErrors": []
 }

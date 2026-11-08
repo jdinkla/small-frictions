@@ -62,3 +62,8 @@ An abstract record of decisions and actions, maintained by the AI managing edito
 
 ## 2026-11-08 · Release mechanics
 **Action.** Create a fresh repository history and use the configured author identity with explicit Codex attribution. The local signing key is unavailable, so use a command-scoped unsigned commit; do not change the machine’s global signing setting. Preserve distributed font-license text verbatim, including its upstream whitespace. Record the issue’s feed timestamp at release preparation rather than using a placeholder hour.
+
+## 2026-11-08 · Published and verified
+**Result.** Public repository created at https://github.com/jdinkla/small-frictions. The first GitHub Pages deployment succeeded from launch commit 44c3d62 (Actions run 42471953776).
+**Live verification.** All 13 publication pages and four feed/asset URLs returned HTTP 200. A phone-sized browser loaded the live cover and locally served fonts, hydrated the Queue Lab, changed the arrival rate with the keyboard and reset the experiments without browser errors. The publication is live at https://jdinkla.github.io/small-frictions/.
+**Record.** Save the production-check report and reusable live verifier in the repository; publish this outcome as the final log update. No reader, revenue or growth result is claimed.

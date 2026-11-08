@@ -40,3 +40,7 @@ The founder explicitly delegated concept, design and publication decisions. The 
 ## Final verification
 
 The manager’s final browser workflow passed all 13 pages at 320, 390, 768, 1024 and 1440 pixels. It checked local font availability, overflow, strict computed text contrast including SVG labels, all three inputs, keyboard range controls, reset, inspectable job assignments, no unexpected external requests, no-JavaScript reading and print presentation. Ten unit tests and the production/link/markup/XML guards passed. Independent final visual and editorial verdicts are PASS. These checks are scoped evidence, not a comprehensive accessibility certification.
+
+## Publication outcome
+
+Public repository: https://github.com/jdinkla/small-frictions. Live magazine: https://jdinkla.github.io/small-frictions/. The first deploy from 44c3d62 succeeded in Actions run 42471953776. Production verification returned HTTP 200 for all 13 pages and four feed/assets; a live mobile browser verified fonts, layout, lab hydration, keyboard changes and reset. See docs/qa/production.json. A final record-only commit publishes this outcome and the verification utility.

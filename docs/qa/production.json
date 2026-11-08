@@ -1,0 +1,96 @@
+{
+  "verifiedAt": "2026-11-08T10:35:17.314Z",
+  "base": "https://jdinkla.github.io/small-frictions",
+  "requests": [
+    {
+      "path": "/",
+      "status": 200,
+      "bytes": 14992
+    },
+    {
+      "path": "/issues/waiting/",
+      "status": 200,
+      "bytes": 12280
+    },
+    {
+      "path": "/issues/",
+      "status": 200,
+      "bytes": 9882
+    },
+    {
+      "path": "/articles/capacity/",
+      "status": 200,
+      "bytes": 17961
+    },
+    {
+      "path": "/articles/bus-pairs/",
+      "status": 200,
+      "bytes": 17911
+    },
+    {
+      "path": "/articles/average-wait/",
+      "status": 200,
+      "bytes": 17501
+    },
+    {
+      "path": "/articles/one-queue/",
+      "status": 200,
+      "bytes": 17398
+    },
+    {
+      "path": "/articles/littles-law/",
+      "status": 200,
+      "bytes": 17395
+    },
+    {
+      "path": "/articles/waiting-design/",
+      "status": 200,
+      "bytes": 17804
+    },
+    {
+      "path": "/lab/",
+      "status": 200,
+      "bytes": 19501
+    },
+    {
+      "path": "/about/",
+      "status": 200,
+      "bytes": 12068
+    },
+    {
+      "path": "/logbook/",
+      "status": 200,
+      "bytes": 18744
+    },
+    {
+      "path": "/404.html",
+      "status": 200,
+      "bytes": 7837
+    },
+    {
+      "path": "/feed.xml",
+      "status": 200,
+      "bytes": 3095
+    },
+    {
+      "path": "/sitemap.xml",
+      "status": 200,
+      "bytes": 1038
+    },
+    {
+      "path": "/social-cover.png",
+      "status": 200,
+      "bytes": 64661
+    },
+    {
+      "path": "/favicon.svg",
+      "status": 200,
+      "bytes": 288
+    }
+  ],
+  "mobileHome": true,
+  "localFonts": true,
+  "liveLabHydration": true,
+  "liveKeyboardAndReset": true,
+  "browserErrors": []
+}

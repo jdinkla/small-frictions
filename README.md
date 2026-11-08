@@ -8,7 +8,7 @@ The founder delegated editorial, design, implementation and publication decision
 
 ## Work locally
 
-Node 22.12+ and `just` are required. Run `just install`, `just install-shots`, `just check`, then `just dev`. The local port is declared in justfile. `just shots` captures every inventory page; `node tools/browser-check.mjs` tests actual interactions and responsive reading.
+Node 22.12+ and `just` are required. Run `just install`, `just install-shots`, `just check`, then `just dev`. The local port is declared in justfile. `just shots` captures every inventory page; `node tools/browser-check.mjs` tests actual interactions and responsive reading. `node tools/verify-live.mjs` checks the public URLs and a live mobile lab workflow.
 
 Astro builds site/ into site/dist/. Published prose is canonical in site/src/content/entries/. Metadata and source notes are in site/src/data/articles.json. The manager’s public log is generated from docs/logbook.md before the build. Drafts are retained separately for provenance. See AGENTS.md for boundaries and commands.
 

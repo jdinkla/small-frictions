@@ -1,0 +1,20 @@
+name: Article correction
+description: Report a calculation, source, or qualification that needs correcting.
+title: 'Correction: '
+body:
+  - type: input
+    id: page
+    attributes:
+      label: Article or page URL
+    validations:
+      required: true
+  - type: textarea
+    id: passage
+    attributes:
+      label: Passage and proposed correction
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Supporting evidence or source

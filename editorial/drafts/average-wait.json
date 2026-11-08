@@ -1,0 +1,56 @@
+{
+  "slug": "average-wait",
+  "title": "The average hides your wait",
+  "deck": "Two routes can both average a bus every ten minutes. You can still wait much longer for one of them.",
+  "section": "Change the question",
+  "minutes": 5,
+  "number": "04",
+  "lead": "A bus every ten minutes sounds like a five-minute average wait. That is right for perfectly regular service if you turn up at a random time. Keep the average frequency, scramble the gaps, and the answer changes. The awkward part is that the timetable's average can remain exactly true.",
+  "sections": [
+    {
+      "heading": "Two invented routes",
+      "paragraphs": [
+        "Route A has a bus exactly every ten minutes. Route B alternates a two-minute gap and an eighteen-minute gap, repeating indefinitely. Both send two buses through a stop every twenty minutes. Averaging their gaps gives ten minutes in either case.",
+        "Now make the passenger arrival rule explicit. Choose your arrival time uniformly across a long stretch of the clock, independently of the buses. You do not consult a timetable or a live prediction. Every bus has room, and you board the next one. These are explanatory routes, not observations of any actual service."
+      ]
+    },
+    {
+      "heading": "A gap has a size and a chance of finding you",
+      "paragraphs": [
+        "On Route A, you can arrive anywhere inside a ten-minute gap. The remaining wait ranges from almost ten minutes to almost zero. Its average is five.",
+        "On Route B, the eighteen-minute gaps occupy eighteen out of every twenty minutes. You therefore land in one 90 percent of the time. Within that long gap, the average remaining wait is nine minutes. You land in a two-minute gap only 10 percent of the time, and then the average remaining wait is one minute.",
+        "Weight those experiences by their chances: 0.9 × 9 + 0.1 × 1 = 8.2 minutes. The mean headway is still ten minutes. The mean passenger wait is 64 percent higher than Route A's five minutes. No bus was removed from the example. We changed their spacing. An individual passenger can still get lucky and arrive seconds before a bus; the calculation describes many random arrivals."
+      ]
+    },
+    {
+      "heading": "The clock samples differently",
+      "paragraphs": [
+        "Pick a gap by counting buses and each gap gets one vote. Pick a moment on the clock and longer gaps get more votes, because they occupy more time. That length bias is the core of the inspection paradox. Columbia probability lecturer Karl Sigman's renewal notes develop the distinction between ordinary intervals and intervals encountered by an observer. [1]",
+        "For our repeating pattern, the mean random-arrival wait can also be calculated as the sum of the squared gaps divided by twice the sum of the gaps. With 2 and 18 minutes, that is (2² + 18²) / (2 × 20) = 8.2. The squares arise because a longer gap both catches more arrival times and imposes a longer conditional wait.",
+        "For a renewal model with independent, identically distributed headways H, positive finite mean and finite second moment, the corresponding long-run time-average residual wait is E[H²] / (2E[H]). Sigman's notes derive it from the triangular areas under a remaining-wait graph. The repeating alternating example above uses its direct time-average calculation; it does not require pretending its alternating gaps are independent. [1]"
+      ]
+    },
+    {
+      "heading": "What this tells you, and what it cannot",
+      "paragraphs": [
+        "Berkeley's Ptolemy teaching model offers another comparison: regular buses give half a headway of average waiting, while Poisson bus arrivals give a whole mean headway, for independent Poisson passenger arrivals. Those are two specified mathematical worlds, not two claims about all transport. [2]",
+        "Your own wait may work differently. On an infrequent route, people may deliberately arrive just before departure. A crowd can surge when a connecting train arrives. A full bus may prevent boarding. A prediction app can change when someone leaves home. In those cases the passenger arrival rule or next-bus assumption has changed, so the simple calculation needs revisiting.",
+        "When you see a frequency average, ask what was averaged and who did the sampling. The operator can count every gap equally. A passenger standing on the pavement is more exposed to the long ones. Both averages can be honest while describing different experiences."
+      ]
+    }
+  ],
+  "takeaway": "A random arrival is more likely to land inside a long gap. Average frequency alone does not determine the waiting experience.",
+  "sources": [
+    {
+      "title": "Karl Sigman — Introduction to Renewal Theory, Columbia University (2018)",
+      "url": "https://www.columbia.edu/~ks20/4106-18-Fall/Notes-Renewal-Theory.pdf",
+      "note": "Sections 1.3 and 1.8 derive the long-run mean forward recurrence time E[H²]/(2E[H]) and explain length bias. Supports [1]. Our alternating 2/18-minute example is an original periodic calculation, not an independent renewal sequence."
+    },
+    {
+      "title": "Edward A. Lee and contributors — Ptolemy II: Building Models, Appendix C (1999)",
+      "url": "https://ptolemy.berkeley.edu/publications/papers/99/HMAD/html/models.html",
+      "note": "Appendix C explicitly compares regular and Poisson bus arrivals with independent Poisson passenger arrivals. Supports the specified comparison in [2]; the historical Java applet is a teaching reference, not a required tool for readers."
+    }
+  ],
+  "modelNote": "Written by an AI contributor and checked against linked primary teaching materials by AI. Routes A and B are invented. Numerical results assume arrival uniformly over clock time, independent of bus timing, and boarding the next bus. No independent human fact-checking is claimed."
+}

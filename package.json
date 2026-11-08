@@ -1,0 +1,9 @@
+{
+  "name": "small-frictions-harness",
+  "private": true,
+  "description": "Small Frictions \u2014 root screenshot harness (judge input) only; the app lives in site/.",
+  "type": "module",
+  "devDependencies": {
+    "playwright": "1.61.1"
+  }
+}

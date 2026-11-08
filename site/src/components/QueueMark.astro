@@ -1,0 +1,10 @@
+---
+interface Props { compact?: boolean; }
+const { compact = false } = Astro.props;
+const points = Array.from({ length: 24 }, (_, i) => ({ x: 48 + (i % 6) * 68, y: 42 + Math.floor(i / 6) * 62, accent: i >= 18 }));
+---
+<svg viewBox="0 0 440 280" role="img" aria-label="Twenty-four queue markers in four rows. The last six are rust-red, showing the backlog.">
+<path d="M28 74H407M407 74v59H28v62h379" fill="none" stroke="var(--rule)" stroke-width="1.5" />
+{points.map(p => <circle cx={p.x} cy={p.y} r="17" fill={p.accent ? 'var(--accent)' : 'var(--ink)'} />)}
+{!compact && <><path d="M407 237H48m10-7-10 7 10 7" fill="none" stroke="var(--accent)" stroke-width="1.5" /><text x="407" y="267" text-anchor="end" fill="var(--muted)" font-family="var(--mono)" font-size="11">ONE AT A TIME.</text></>}
+</svg>

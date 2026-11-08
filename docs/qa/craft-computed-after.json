@@ -1,0 +1,1334 @@
+[
+  {
+    "width": 320,
+    "path": "lab/",
+    "contrast": [
+      {
+        "text": "min",
+        "color": "rgb(180, 58, 32)",
+        "background": [
+          232,
+          229,
+          218
+        ],
+        "fontSize": "20px",
+        "fontWeight": "400",
+        "ratio": 4.6684875764072515
+      },
+      {
+        "text": "min",
+        "color": "rgb(180, 58, 32)",
+        "background": [
+          232,
+          229,
+          218
+        ],
+        "fontSize": "20px",
+        "fontWeight": "400",
+        "ratio": 4.6684875764072515
+      },
+      {
+        "text": "min",
+        "color": "rgb(180, 58, 32)",
+        "background": [
+          232,
+          229,
+          218
+        ],
+        "fontSize": "20px",
+        "fontWeight": "400",
+        "ratio": 4.6684875764072515
+      }
+    ],
+    "targets": [
+      {
+        "class": "",
+        "tag": "A",
+        "text": "Spare capacity",
+        "width": 82.140625,
+        "height": 44
+      },
+      {
+        "class": "",
+        "tag": "A",
+        "text": "Bus spacing",
+        "width": 68.1875,
+        "height": 44
+      },
+      {
+        "class": "",
+        "tag": "A",
+        "text": "Shared queues",
+        "width": 83.890625,
+        "height": 44
+      },
+      {
+        "class": "",
+        "tag": "SUMMARY",
+        "text": "What this model assumes",
+        "width": 280,
+        "height": 44
+      },
+      {
+        "class": "",
+        "tag": "SUMMARY",
+        "text": "What this model assumes",
+        "width": 280,
+        "height": 44
+      },
+      {
+        "class": "",
+        "tag": "SUMMARY",
+        "text": "Inspect every job and its wait",
+        "width": 280,
+        "height": 44
+      }
+    ]
+  },
+  {
+    "width": 320,
+    "path": "articles/average-wait/",
+    "contrast": [],
+    "targets": [
+      {
+        "class": "",
+        "tag": "SUMMARY",
+        "text": "In this article",
+        "width": 280,
+        "height": 44
+      },
+      {
+        "class": "",
+        "tag": "A",
+        "text": "Two invented routes",
+        "width": 280,
+        "height": 44
+      },
+      {
+        "class": "",
+        "tag": "A",
+        "text": "A gap has a size and a chance of finding you",
+        "width": 280,
+        "height": 44
+      },
+      {
+        "class": "",
+        "tag": "A",
+        "text": "The clock samples differently",
+        "width": 280,
+        "height": 44
+      },
+      {
+        "class": "",
+        "tag": "A",
+        "text": "What this tells you, and what it cannot",
+        "width": 280,
+        "height": 44
+      },
+      {
+        "class": "",
+        "tag": "A",
+        "text": "Sources & model notes",
+        "width": 280,
+        "height": 44
+      }
+    ]
+  },
+  {
+    "width": 320,
+    "path": "articles/littles-law/",
+    "contrast": [
+      {
+        "text": "18 ÷ 12 = 1.5 h",
+        "color": "rgb(180, 58, 32)",
+        "background": [
+          232,
+          229,
+          218
+        ],
+        "fontSize": "28.8px",
+        "fontWeight": "400",
+        "ratio": 4.6684875764072515
+      }
+    ],
+    "targets": [
+      {
+        "class": "",
+        "tag": "SUMMARY",
+        "text": "In this article",
+        "width": 280,
+        "height": 44
+      },
+      {
+        "class": "",
+        "tag": "A",
+        "text": "Draw a boundary before you count",
+        "width": 280,
+        "height": 44
+      },
+      {
+        "class": "",
+        "tag": "A",
+        "text": "An imaginary repair desk",
+        "width": 280,
+        "height": 44
+      },
+      {
+        "class": "",
+        "tag": "A",
+        "text": "The units catch mistakes",
+        "width": 280,
+        "height": 44
+      },
+      {
+        "class": "",
+        "tag": "A",
+        "text": "A snapshot does not make an average",
+        "width": 280,
+        "height": 44
+      },
+      {
+        "class": "",
+        "tag": "A",
+        "text": "A relation is not a staffing plan",
+        "width": 280,
+        "height": 44
+      },
+      {
+        "class": "",
+        "tag": "A",
+        "text": "Sources & model notes",
+        "width": 280,
+        "height": 44
+      }
+    ]
+  },
+  {
+    "width": 320,
+    "path": "articles/bus-pairs/",
+    "contrast": [
+      {
+        "text": "Wider gap ahead",
+        "color": "rgb(180, 58, 32)",
+        "background": [
+          232,
+          229,
+          218
+        ],
+        "fontSize": "14px",
+        "fontWeight": "500",
+        "ratio": 4.6684875764072515
+      },
+      {
+        "text": "More delay",
+        "color": "rgb(180, 58, 32)",
+        "background": [
+          232,
+          229,
+          218
+        ],
+        "fontSize": "14px",
+        "fontWeight": "500",
+        "ratio": 4.6684875764072515
+      },
+      {
+        "text": "Smaller gap ahead",
+        "color": "rgb(180, 58, 32)",
+        "background": [
+          232,
+          229,
+          218
+        ],
+        "fontSize": "14px",
+        "fontWeight": "500",
+        "ratio": 4.6684875764072515
+      },
+      {
+        "text": "Closes the gap",
+        "color": "rgb(180, 58, 32)",
+        "background": [
+          232,
+          229,
+          218
+        ],
+        "fontSize": "14px",
+        "fontWeight": "500",
+        "ratio": 4.6684875764072515
+      }
+    ],
+    "targets": [
+      {
+        "class": "",
+        "tag": "SUMMARY",
+        "text": "In this article",
+        "width": 280,
+        "height": 44
+      },
+      {
+        "class": "",
+        "tag": "A",
+        "text": "The gap does some of the driving",
+        "width": 280,
+        "height": 44
+      },
+      {
+        "class": "",
+        "tag": "A",
+        "text": "A route made out of numbers",
+        "width": 280,
+        "height": 44
+      },
+      {
+        "class": "",
+        "tag": "A",
+        "text": "Why waiting on a bus can help people waiting for it",
+        "width": 280,
+        "height": 44
+      },
+      {
+        "class": "",
+        "tag": "A",
+        "text": "What a pair can tell you",
+        "width": 280,
+        "height": 44
+      },
+      {
+        "class": "",
+        "tag": "A",
+        "text": "Sources & model notes",
+        "width": 280,
+        "height": 44
+      }
+    ]
+  },
+  {
+    "width": 320,
+    "path": "articles/capacity/",
+    "contrast": [],
+    "targets": [
+      {
+        "class": "",
+        "tag": "SUMMARY",
+        "text": "In this article",
+        "width": 280,
+        "height": 44
+      },
+      {
+        "class": "",
+        "tag": "A",
+        "text": "Averages do not keep appointments",
+        "width": 280,
+        "height": 44
+      },
+      {
+        "class": "",
+        "tag": "A",
+        "text": "A deliberately simple kiosk",
+        "width": 280,
+        "height": 44
+      },
+      {
+        "class": "",
+        "tag": "A",
+        "text": "The last ten percent is expensive",
+        "width": 280,
+        "height": 44
+      },
+      {
+        "class": "",
+        "tag": "A",
+        "text": "What the empty minute buys",
+        "width": 280,
+        "height": 44
+      },
+      {
+        "class": "",
+        "tag": "A",
+        "text": "Sources & model notes",
+        "width": 280,
+        "height": 44
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "path": "lab/",
+    "contrast": [
+      {
+        "text": "min",
+        "color": "rgb(180, 58, 32)",
+        "background": [
+          232,
+          229,
+          218
+        ],
+        "fontSize": "20px",
+        "fontWeight": "400",
+        "ratio": 4.6684875764072515
+      },
+      {
+        "text": "min",
+        "color": "rgb(180, 58, 32)",
+        "background": [
+          232,
+          229,
+          218
+        ],
+        "fontSize": "20px",
+        "fontWeight": "400",
+        "ratio": 4.6684875764072515
+      },
+      {
+        "text": "min",
+        "color": "rgb(180, 58, 32)",
+        "background": [
+          232,
+          229,
+          218
+        ],
+        "fontSize": "20px",
+        "fontWeight": "400",
+        "ratio": 4.6684875764072515
+      }
+    ],
+    "targets": [
+      {
+        "class": "",
+        "tag": "A",
+        "text": "Spare capacity",
+        "width": 82.140625,
+        "height": 44
+      },
+      {
+        "class": "",
+        "tag": "A",
+        "text": "Bus spacing",
+        "width": 68.1875,
+        "height": 44
+      },
+      {
+        "class": "",
+        "tag": "A",
+        "text": "Shared queues",
+        "width": 83.890625,
+        "height": 44
+      },
+      {
+        "class": "",
+        "tag": "SUMMARY",
+        "text": "What this model assumes",
+        "width": 350,
+        "height": 44
+      },
+      {
+        "class": "",
+        "tag": "SUMMARY",
+        "text": "What this model assumes",
+        "width": 350,
+        "height": 44
+      },
+      {
+        "class": "",
+        "tag": "SUMMARY",
+        "text": "Inspect every job and its wait",
+        "width": 350,
+        "height": 44
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "path": "articles/average-wait/",
+    "contrast": [],
+    "targets": [
+      {
+        "class": "",
+        "tag": "SUMMARY",
+        "text": "In this article",
+        "width": 350,
+        "height": 44
+      },
+      {
+        "class": "",
+        "tag": "A",
+        "text": "Two invented routes",
+        "width": 350,
+        "height": 44
+      },
+      {
+        "class": "",
+        "tag": "A",
+        "text": "A gap has a size and a chance of finding you",
+        "width": 350,
+        "height": 44
+      },
+      {
+        "class": "",
+        "tag": "A",
+        "text": "The clock samples differently",
+        "width": 350,
+        "height": 44
+      },
+      {
+        "class": "",
+        "tag": "A",
+        "text": "What this tells you, and what it cannot",
+        "width": 350,
+        "height": 44
+      },
+      {
+        "class": "",
+        "tag": "A",
+        "text": "Sources & model notes",
+        "width": 350,
+        "height": 44
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "path": "articles/littles-law/",
+    "contrast": [
+      {
+        "text": "18 ÷ 12 = 1.5 h",
+        "color": "rgb(180, 58, 32)",
+        "background": [
+          232,
+          229,
+          218
+        ],
+        "fontSize": "28.8px",
+        "fontWeight": "400",
+        "ratio": 4.6684875764072515
+      }
+    ],
+    "targets": [
+      {
+        "class": "",
+        "tag": "SUMMARY",
+        "text": "In this article",
+        "width": 350,
+        "height": 44
+      },
+      {
+        "class": "",
+        "tag": "A",
+        "text": "Draw a boundary before you count",
+        "width": 350,
+        "height": 44
+      },
+      {
+        "class": "",
+        "tag": "A",
+        "text": "An imaginary repair desk",
+        "width": 350,
+        "height": 44
+      },
+      {
+        "class": "",
+        "tag": "A",
+        "text": "The units catch mistakes",
+        "width": 350,
+        "height": 44
+      },
+      {
+        "class": "",
+        "tag": "A",
+        "text": "A snapshot does not make an average",
+        "width": 350,
+        "height": 44
+      },
+      {
+        "class": "",
+        "tag": "A",
+        "text": "A relation is not a staffing plan",
+        "width": 350,
+        "height": 44
+      },
+      {
+        "class": "",
+        "tag": "A",
+        "text": "Sources & model notes",
+        "width": 350,
+        "height": 44
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "path": "articles/bus-pairs/",
+    "contrast": [
+      {
+        "text": "Wider gap ahead",
+        "color": "rgb(180, 58, 32)",
+        "background": [
+          232,
+          229,
+          218
+        ],
+        "fontSize": "14px",
+        "fontWeight": "500",
+        "ratio": 4.6684875764072515
+      },
+      {
+        "text": "More delay",
+        "color": "rgb(180, 58, 32)",
+        "background": [
+          232,
+          229,
+          218
+        ],
+        "fontSize": "14px",
+        "fontWeight": "500",
+        "ratio": 4.6684875764072515
+      },
+      {
+        "text": "Smaller gap ahead",
+        "color": "rgb(180, 58, 32)",
+        "background": [
+          232,
+          229,
+          218
+        ],
+        "fontSize": "14px",
+        "fontWeight": "500",
+        "ratio": 4.6684875764072515
+      },
+      {
+        "text": "Closes the gap",
+        "color": "rgb(180, 58, 32)",
+        "background": [
+          232,
+          229,
+          218
+        ],
+        "fontSize": "14px",
+        "fontWeight": "500",
+        "ratio": 4.6684875764072515
+      }
+    ],
+    "targets": [
+      {
+        "class": "",
+        "tag": "SUMMARY",
+        "text": "In this article",
+        "width": 350,
+        "height": 44
+      },
+      {
+        "class": "",
+        "tag": "A",
+        "text": "The gap does some of the driving",
+        "width": 350,
+        "height": 44
+      },
+      {
+        "class": "",
+        "tag": "A",
+        "text": "A route made out of numbers",
+        "width": 350,
+        "height": 44
+      },
+      {
+        "class": "",
+        "tag": "A",
+        "text": "Why waiting on a bus can help people waiting for it",
+        "width": 350,
+        "height": 44
+      },
+      {
+        "class": "",
+        "tag": "A",
+        "text": "What a pair can tell you",
+        "width": 350,
+        "height": 44
+      },
+      {
+        "class": "",
+        "tag": "A",
+        "text": "Sources & model notes",
+        "width": 350,
+        "height": 44
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "path": "articles/capacity/",
+    "contrast": [],
+    "targets": [
+      {
+        "class": "",
+        "tag": "SUMMARY",
+        "text": "In this article",
+        "width": 350,
+        "height": 44
+      },
+      {
+        "class": "",
+        "tag": "A",
+        "text": "Averages do not keep appointments",
+        "width": 350,
+        "height": 44
+      },
+      {
+        "class": "",
+        "tag": "A",
+        "text": "A deliberately simple kiosk",
+        "width": 350,
+        "height": 44
+      },
+      {
+        "class": "",
+        "tag": "A",
+        "text": "The last ten percent is expensive",
+        "width": 350,
+        "height": 44
+      },
+      {
+        "class": "",
+        "tag": "A",
+        "text": "What the empty minute buys",
+        "width": 350,
+        "height": 44
+      },
+      {
+        "class": "",
+        "tag": "A",
+        "text": "Sources & model notes",
+        "width": 350,
+        "height": 44
+      }
+    ]
+  },
+  {
+    "width": 768,
+    "path": "lab/",
+    "contrast": [
+      {
+        "text": "min",
+        "color": "rgb(180, 58, 32)",
+        "background": [
+          232,
+          229,
+          218
+        ],
+        "fontSize": "20px",
+        "fontWeight": "400",
+        "ratio": 4.6684875764072515
+      },
+      {
+        "text": "min",
+        "color": "rgb(180, 58, 32)",
+        "background": [
+          232,
+          229,
+          218
+        ],
+        "fontSize": "20px",
+        "fontWeight": "400",
+        "ratio": 4.6684875764072515
+      },
+      {
+        "text": "min",
+        "color": "rgb(180, 58, 32)",
+        "background": [
+          232,
+          229,
+          218
+        ],
+        "fontSize": "20px",
+        "fontWeight": "400",
+        "ratio": 4.6684875764072515
+      }
+    ],
+    "targets": [
+      {
+        "class": "",
+        "tag": "A",
+        "text": "Spare capacity",
+        "width": 89.515625,
+        "height": 44
+      },
+      {
+        "class": "",
+        "tag": "A",
+        "text": "Bus spacing",
+        "width": 74.3125,
+        "height": 44
+      },
+      {
+        "class": "",
+        "tag": "A",
+        "text": "Shared queues",
+        "width": 91.421875,
+        "height": 44
+      },
+      {
+        "class": "",
+        "tag": "SUMMARY",
+        "text": "What this model assumes",
+        "width": 712,
+        "height": 44
+      },
+      {
+        "class": "",
+        "tag": "SUMMARY",
+        "text": "What this model assumes",
+        "width": 712,
+        "height": 44
+      },
+      {
+        "class": "",
+        "tag": "SUMMARY",
+        "text": "Inspect every job and its wait",
+        "width": 712,
+        "height": 44
+      }
+    ]
+  },
+  {
+    "width": 768,
+    "path": "articles/average-wait/",
+    "contrast": [
+      {
+        "text": "Mean wait: 8.2 min",
+        "color": "rgb(180, 58, 32)",
+        "background": [
+          232,
+          229,
+          218
+        ],
+        "fontSize": "18px",
+        "fontWeight": "400",
+        "ratio": 4.6684875764072515
+      }
+    ],
+    "targets": [
+      {
+        "class": "",
+        "tag": "A",
+        "text": "Two invented routes",
+        "width": 160,
+        "height": 44
+      },
+      {
+        "class": "",
+        "tag": "A",
+        "text": "A gap has a size and a chance of finding you",
+        "width": 160,
+        "height": 51.4375
+      },
+      {
+        "class": "",
+        "tag": "A",
+        "text": "The clock samples differently",
+        "width": 160,
+        "height": 44
+      },
+      {
+        "class": "",
+        "tag": "A",
+        "text": "What this tells you, and what it cannot",
+        "width": 160,
+        "height": 51.4375
+      },
+      {
+        "class": "",
+        "tag": "A",
+        "text": "Sources & model notes",
+        "width": 160,
+        "height": 44
+      },
+      {
+        "class": "text-link",
+        "tag": "A",
+        "text": "Try the Queue Lab",
+        "width": 160,
+        "height": 44
+      }
+    ]
+  },
+  {
+    "width": 768,
+    "path": "articles/littles-law/",
+    "contrast": [
+      {
+        "text": "1.5",
+        "color": "rgb(180, 58, 32)",
+        "background": [
+          232,
+          229,
+          218
+        ],
+        "fontSize": "49px",
+        "fontWeight": "400",
+        "ratio": 4.6684875764072515
+      }
+    ],
+    "targets": [
+      {
+        "class": "",
+        "tag": "A",
+        "text": "Draw a boundary before you count",
+        "width": 160,
+        "height": 51.4375
+      },
+      {
+        "class": "",
+        "tag": "A",
+        "text": "An imaginary repair desk",
+        "width": 160,
+        "height": 44
+      },
+      {
+        "class": "",
+        "tag": "A",
+        "text": "The units catch mistakes",
+        "width": 160,
+        "height": 44
+      },
+      {
+        "class": "",
+        "tag": "A",
+        "text": "A snapshot does not make an average",
+        "width": 160,
+        "height": 51.4375
+      },
+      {
+        "class": "",
+        "tag": "A",
+        "text": "A relation is not a staffing plan",
+        "width": 160,
+        "height": 51.4375
+      },
+      {
+        "class": "",
+        "tag": "A",
+        "text": "Sources & model notes",
+        "width": 160,
+        "height": 44
+      },
+      {
+        "class": "text-link",
+        "tag": "A",
+        "text": "Try the Queue Lab",
+        "width": 160,
+        "height": 44
+      }
+    ]
+  },
+  {
+    "width": 768,
+    "path": "articles/bus-pairs/",
+    "contrast": [],
+    "targets": [
+      {
+        "class": "",
+        "tag": "A",
+        "text": "The gap does some of the driving",
+        "width": 160,
+        "height": 51.4375
+      },
+      {
+        "class": "",
+        "tag": "A",
+        "text": "A route made out of numbers",
+        "width": 160,
+        "height": 44
+      },
+      {
+        "class": "",
+        "tag": "A",
+        "text": "Why waiting on a bus can help people waiting for it",
+        "width": 160,
+        "height": 51.4375
+      },
+      {
+        "class": "",
+        "tag": "A",
+        "text": "What a pair can tell you",
+        "width": 160,
+        "height": 44
+      },
+      {
+        "class": "",
+        "tag": "A",
+        "text": "Sources & model notes",
+        "width": 160,
+        "height": 44
+      },
+      {
+        "class": "text-link",
+        "tag": "A",
+        "text": "Try the Queue Lab",
+        "width": 160,
+        "height": 44
+      }
+    ]
+  },
+  {
+    "width": 768,
+    "path": "articles/capacity/",
+    "contrast": [],
+    "targets": [
+      {
+        "class": "",
+        "tag": "A",
+        "text": "Averages do not keep appointments",
+        "width": 160,
+        "height": 51.4375
+      },
+      {
+        "class": "",
+        "tag": "A",
+        "text": "A deliberately simple kiosk",
+        "width": 160,
+        "height": 44
+      },
+      {
+        "class": "",
+        "tag": "A",
+        "text": "The last ten percent is expensive",
+        "width": 160,
+        "height": 51.4375
+      },
+      {
+        "class": "",
+        "tag": "A",
+        "text": "What the empty minute buys",
+        "width": 160,
+        "height": 44
+      },
+      {
+        "class": "",
+        "tag": "A",
+        "text": "Sources & model notes",
+        "width": 160,
+        "height": 44
+      },
+      {
+        "class": "text-link",
+        "tag": "A",
+        "text": "Try the Queue Lab",
+        "width": 160,
+        "height": 44
+      }
+    ]
+  },
+  {
+    "width": 1280,
+    "path": "lab/",
+    "contrast": [
+      {
+        "text": "min",
+        "color": "rgb(180, 58, 32)",
+        "background": [
+          232,
+          229,
+          218
+        ],
+        "fontSize": "20px",
+        "fontWeight": "400",
+        "ratio": 4.6684875764072515
+      },
+      {
+        "text": "min",
+        "color": "rgb(180, 58, 32)",
+        "background": [
+          232,
+          229,
+          218
+        ],
+        "fontSize": "20px",
+        "fontWeight": "400",
+        "ratio": 4.6684875764072515
+      },
+      {
+        "text": "min",
+        "color": "rgb(180, 58, 32)",
+        "background": [
+          232,
+          229,
+          218
+        ],
+        "fontSize": "20px",
+        "fontWeight": "400",
+        "ratio": 4.6684875764072515
+      }
+    ],
+    "targets": [
+      {
+        "class": "",
+        "tag": "A",
+        "text": "Spare capacity",
+        "width": 89.515625,
+        "height": 44
+      },
+      {
+        "class": "",
+        "tag": "A",
+        "text": "Bus spacing",
+        "width": 74.3125,
+        "height": 44
+      },
+      {
+        "class": "",
+        "tag": "A",
+        "text": "Shared queues",
+        "width": 91.421875,
+        "height": 44
+      },
+      {
+        "class": "",
+        "tag": "SUMMARY",
+        "text": "What this model assumes",
+        "width": 733.046875,
+        "height": 44
+      },
+      {
+        "class": "",
+        "tag": "SUMMARY",
+        "text": "What this model assumes",
+        "width": 733.046875,
+        "height": 44
+      },
+      {
+        "class": "",
+        "tag": "SUMMARY",
+        "text": "Inspect every job and its wait",
+        "width": 733.046875,
+        "height": 44
+      }
+    ]
+  },
+  {
+    "width": 1280,
+    "path": "articles/average-wait/",
+    "contrast": [
+      {
+        "text": "Mean wait: 8.2 min",
+        "color": "rgb(180, 58, 32)",
+        "background": [
+          232,
+          229,
+          218
+        ],
+        "fontSize": "18px",
+        "fontWeight": "400",
+        "ratio": 4.6684875764072515
+      }
+    ],
+    "targets": [
+      {
+        "class": "",
+        "tag": "A",
+        "text": "Two invented routes",
+        "width": 190,
+        "height": 44
+      },
+      {
+        "class": "",
+        "tag": "A",
+        "text": "A gap has a size and a chance of finding you",
+        "width": 190,
+        "height": 51.4375
+      },
+      {
+        "class": "",
+        "tag": "A",
+        "text": "The clock samples differently",
+        "width": 190,
+        "height": 44
+      },
+      {
+        "class": "",
+        "tag": "A",
+        "text": "What this tells you, and what it cannot",
+        "width": 190,
+        "height": 51.4375
+      },
+      {
+        "class": "",
+        "tag": "A",
+        "text": "Sources & model notes",
+        "width": 190,
+        "height": 44
+      },
+      {
+        "class": "text-link",
+        "tag": "A",
+        "text": "Try the Queue Lab",
+        "width": 190,
+        "height": 44
+      }
+    ]
+  },
+  {
+    "width": 1280,
+    "path": "articles/littles-law/",
+    "contrast": [
+      {
+        "text": "1.5",
+        "color": "rgb(180, 58, 32)",
+        "background": [
+          232,
+          229,
+          218
+        ],
+        "fontSize": "49px",
+        "fontWeight": "400",
+        "ratio": 4.6684875764072515
+      }
+    ],
+    "targets": [
+      {
+        "class": "",
+        "tag": "A",
+        "text": "Draw a boundary before you count",
+        "width": 190,
+        "height": 44
+      },
+      {
+        "class": "",
+        "tag": "A",
+        "text": "An imaginary repair desk",
+        "width": 190,
+        "height": 44
+      },
+      {
+        "class": "",
+        "tag": "A",
+        "text": "The units catch mistakes",
+        "width": 190,
+        "height": 44
+      },
+      {
+        "class": "",
+        "tag": "A",
+        "text": "A snapshot does not make an average",
+        "width": 190,
+        "height": 51.4375
+      },
+      {
+        "class": "",
+        "tag": "A",
+        "text": "A relation is not a staffing plan",
+        "width": 190,
+        "height": 44
+      },
+      {
+        "class": "",
+        "tag": "A",
+        "text": "Sources & model notes",
+        "width": 190,
+        "height": 44
+      },
+      {
+        "class": "text-link",
+        "tag": "A",
+        "text": "Try the Queue Lab",
+        "width": 190,
+        "height": 44
+      }
+    ]
+  },
+  {
+    "width": 1280,
+    "path": "articles/bus-pairs/",
+    "contrast": [],
+    "targets": [
+      {
+        "class": "",
+        "tag": "A",
+        "text": "The gap does some of the driving",
+        "width": 190,
+        "height": 44
+      },
+      {
+        "class": "",
+        "tag": "A",
+        "text": "A route made out of numbers",
+        "width": 190,
+        "height": 44
+      },
+      {
+        "class": "",
+        "tag": "A",
+        "text": "Why waiting on a bus can help people waiting for it",
+        "width": 190,
+        "height": 51.4375
+      },
+      {
+        "class": "",
+        "tag": "A",
+        "text": "What a pair can tell you",
+        "width": 190,
+        "height": 44
+      },
+      {
+        "class": "",
+        "tag": "A",
+        "text": "Sources & model notes",
+        "width": 190,
+        "height": 44
+      },
+      {
+        "class": "text-link",
+        "tag": "A",
+        "text": "Try the Queue Lab",
+        "width": 190,
+        "height": 44
+      }
+    ]
+  },
+  {
+    "width": 1280,
+    "path": "articles/capacity/",
+    "contrast": [],
+    "targets": [
+      {
+        "class": "",
+        "tag": "A",
+        "text": "Averages do not keep appointments",
+        "width": 190,
+        "height": 51.4375
+      },
+      {
+        "class": "",
+        "tag": "A",
+        "text": "A deliberately simple kiosk",
+        "width": 190,
+        "height": 44
+      },
+      {
+        "class": "",
+        "tag": "A",
+        "text": "The last ten percent is expensive",
+        "width": 190,
+        "height": 44
+      },
+      {
+        "class": "",
+        "tag": "A",
+        "text": "What the empty minute buys",
+        "width": 190,
+        "height": 44
+      },
+      {
+        "class": "",
+        "tag": "A",
+        "text": "Sources & model notes",
+        "width": 190,
+        "height": 44
+      },
+      {
+        "class": "text-link",
+        "tag": "A",
+        "text": "Try the Queue Lab",
+        "width": 190,
+        "height": 44
+      }
+    ]
+  }
+]

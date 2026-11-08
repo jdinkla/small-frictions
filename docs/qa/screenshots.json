@@ -1,0 +1,262 @@
+[
+  {
+    "id": "home-wide-light",
+    "page": "home",
+    "path": "/",
+    "viewport": "wide",
+    "theme": "light",
+    "ok": true,
+    "errors": [],
+    "mustShow": "The Small Frictions masthead, Waiting cover, an illustrative queue and a clear path to the articles and lab."
+  },
+  {
+    "id": "home-mobile-light",
+    "page": "home",
+    "path": "/",
+    "viewport": "mobile",
+    "theme": "light",
+    "ok": true,
+    "errors": [],
+    "mustShow": "The Small Frictions masthead, Waiting cover, an illustrative queue and a clear path to the articles and lab."
+  },
+  {
+    "id": "issue-wide-light",
+    "page": "issue",
+    "path": "/issues/waiting/",
+    "viewport": "wide",
+    "theme": "light",
+    "ok": true,
+    "errors": [],
+    "mustShow": "All six article titles, issue introduction and a working route to the Queue Lab."
+  },
+  {
+    "id": "issue-mobile-light",
+    "page": "issue",
+    "path": "/issues/waiting/",
+    "viewport": "mobile",
+    "theme": "light",
+    "ok": true,
+    "errors": [],
+    "mustShow": "All six article titles, issue introduction and a working route to the Queue Lab."
+  },
+  {
+    "id": "archive-wide-light",
+    "page": "archive",
+    "path": "/issues/",
+    "viewport": "wide",
+    "theme": "light",
+    "ok": true,
+    "errors": [],
+    "mustShow": "One real published issue, Waiting, dated 8 November 2026; no fake future issues."
+  },
+  {
+    "id": "archive-mobile-light",
+    "page": "archive",
+    "path": "/issues/",
+    "viewport": "mobile",
+    "theme": "light",
+    "ok": true,
+    "errors": [],
+    "mustShow": "One real published issue, Waiting, dated 8 November 2026; no fake future issues."
+  },
+  {
+    "id": "capacity-wide-light",
+    "page": "capacity",
+    "path": "/articles/capacity/",
+    "viewport": "wide",
+    "theme": "light",
+    "ok": true,
+    "errors": [],
+    "mustShow": "A concrete queue example, explicit model assumptions and primary-source notes."
+  },
+  {
+    "id": "capacity-mobile-light",
+    "page": "capacity",
+    "path": "/articles/capacity/",
+    "viewport": "mobile",
+    "theme": "light",
+    "ok": true,
+    "errors": [],
+    "mustShow": "A concrete queue example, explicit model assumptions and primary-source notes."
+  },
+  {
+    "id": "bus-pairs-wide-light",
+    "page": "bus-pairs",
+    "path": "/articles/bus-pairs/",
+    "viewport": "wide",
+    "theme": "light",
+    "ok": true,
+    "errors": [],
+    "mustShow": "The boarding feedback mechanism, diagram and real-world limitations."
+  },
+  {
+    "id": "bus-pairs-mobile-light",
+    "page": "bus-pairs",
+    "path": "/articles/bus-pairs/",
+    "viewport": "mobile",
+    "theme": "light",
+    "ok": true,
+    "errors": [],
+    "mustShow": "The boarding feedback mechanism, diagram and real-world limitations."
+  },
+  {
+    "id": "average-wait-wide-light",
+    "page": "average-wait",
+    "path": "/articles/average-wait/",
+    "viewport": "wide",
+    "theme": "light",
+    "ok": true,
+    "errors": [],
+    "mustShow": "Equal mean headways, unequal passenger waits, worked numbers and sources."
+  },
+  {
+    "id": "average-wait-mobile-light",
+    "page": "average-wait",
+    "path": "/articles/average-wait/",
+    "viewport": "mobile",
+    "theme": "light",
+    "ok": true,
+    "errors": [],
+    "mustShow": "Equal mean headways, unequal passenger waits, worked numbers and sources."
+  },
+  {
+    "id": "one-queue-wide-light",
+    "page": "one-queue",
+    "path": "/articles/one-queue/",
+    "viewport": "wide",
+    "theme": "light",
+    "ok": true,
+    "errors": [],
+    "mustShow": "A shared versus separate line comparison and the conditions on its conclusion."
+  },
+  {
+    "id": "one-queue-mobile-light",
+    "page": "one-queue",
+    "path": "/articles/one-queue/",
+    "viewport": "mobile",
+    "theme": "light",
+    "ok": true,
+    "errors": [],
+    "mustShow": "A shared versus separate line comparison and the conditions on its conclusion."
+  },
+  {
+    "id": "littles-law-wide-light",
+    "page": "littles-law",
+    "path": "/articles/littles-law/",
+    "viewport": "wide",
+    "theme": "light",
+    "ok": true,
+    "errors": [],
+    "mustShow": "The L = lambda W relationship, a consistent worked example and stable-system caveat."
+  },
+  {
+    "id": "littles-law-mobile-light",
+    "page": "littles-law",
+    "path": "/articles/littles-law/",
+    "viewport": "mobile",
+    "theme": "light",
+    "ok": true,
+    "errors": [],
+    "mustShow": "The L = lambda W relationship, a consistent worked example and stable-system caveat."
+  },
+  {
+    "id": "waiting-design-wide-light",
+    "page": "waiting-design",
+    "path": "/articles/waiting-design/",
+    "viewport": "wide",
+    "theme": "light",
+    "ok": true,
+    "errors": [],
+    "mustShow": "Elapsed versus experienced waiting with context-sensitive evidence and sources."
+  },
+  {
+    "id": "waiting-design-mobile-light",
+    "page": "waiting-design",
+    "path": "/articles/waiting-design/",
+    "viewport": "mobile",
+    "theme": "light",
+    "ok": true,
+    "errors": [],
+    "mustShow": "Elapsed versus experienced waiting with context-sensitive evidence and sources."
+  },
+  {
+    "id": "lab-wide-light",
+    "page": "lab",
+    "path": "/lab/",
+    "viewport": "wide",
+    "theme": "light",
+    "ok": true,
+    "errors": [],
+    "mustShow": "Keyboard-operable controls for spare capacity, headway variation and shared queues, live results and model limits."
+  },
+  {
+    "id": "lab-mobile-light",
+    "page": "lab",
+    "path": "/lab/",
+    "viewport": "mobile",
+    "theme": "light",
+    "ok": true,
+    "errors": [],
+    "mustShow": "Keyboard-operable controls for spare capacity, headway variation and shared queues, live results and model limits."
+  },
+  {
+    "id": "about-wide-light",
+    "page": "about",
+    "path": "/about/",
+    "viewport": "wide",
+    "theme": "light",
+    "ok": true,
+    "errors": [],
+    "mustShow": "AI authorship, no claim of human fact-checking, sourcing policy and a correction route."
+  },
+  {
+    "id": "about-mobile-light",
+    "page": "about",
+    "path": "/about/",
+    "viewport": "mobile",
+    "theme": "light",
+    "ok": true,
+    "errors": [],
+    "mustShow": "AI authorship, no claim of human fact-checking, sourcing policy and a correction route."
+  },
+  {
+    "id": "log-wide-light",
+    "page": "log",
+    "path": "/logbook/",
+    "viewport": "wide",
+    "theme": "light",
+    "ok": true,
+    "errors": [],
+    "mustShow": "Dated decisions with rationale, evidence and a clear AI-manager attribution."
+  },
+  {
+    "id": "log-mobile-light",
+    "page": "log",
+    "path": "/logbook/",
+    "viewport": "mobile",
+    "theme": "light",
+    "ok": true,
+    "errors": [],
+    "mustShow": "Dated decisions with rationale, evidence and a clear AI-manager attribution."
+  },
+  {
+    "id": "not-found-wide-light",
+    "page": "not-found",
+    "path": "/404.html",
+    "viewport": "wide",
+    "theme": "light",
+    "ok": true,
+    "errors": [],
+    "mustShow": "A useful missing-page message with links to the issue and homepage."
+  },
+  {
+    "id": "not-found-mobile-light",
+    "page": "not-found",
+    "path": "/404.html",
+    "viewport": "mobile",
+    "theme": "light",
+    "ok": true,
+    "errors": [],
+    "mustShow": "A useful missing-page message with links to the issue and homepage."
+  }
+]

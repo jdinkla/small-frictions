@@ -1,0 +1,9 @@
+node_modules/
+site/dist/
+site/.astro/
+shots/out/
+.DS_Store
+.impeccable/config.local.json
+
+shots/workflows/
+.impeccable/questions/

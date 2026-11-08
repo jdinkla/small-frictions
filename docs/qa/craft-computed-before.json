@@ -1,0 +1,842 @@
+[
+  {
+    "width": 1280,
+    "path": "/",
+    "rows": [
+      {
+        "selector": "H1",
+        "text": "Life happensin the waiting.",
+        "color": "rgb(39, 43, 39)",
+        "background": "rgba(0, 0, 0, 0)",
+        "fontSize": "80.64px",
+        "fontWeight": "400",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "height": 239.484375,
+        "width": 469.234375
+      },
+      {
+        "selector": "button",
+        "text": "Open the waiting issue ",
+        "color": "rgb(243, 240, 231)",
+        "background": "rgb(184, 60, 33)",
+        "fontSize": "14.08px",
+        "fontWeight": "600",
+        "paddingTop": "12px",
+        "paddingBottom": "12px",
+        "height": 48,
+        "width": 221.84375
+      },
+      {
+        "selector": "editorial-strip",
+        "text": "Six explanations. Three experiments. A different way to see the e",
+        "color": "rgb(92, 97, 89)",
+        "background": "rgba(0, 0, 0, 0)",
+        "fontSize": "12.16px",
+        "fontWeight": "400",
+        "paddingTop": "17px",
+        "paddingBottom": "17px",
+        "height": 54.234375,
+        "width": 1224
+      },
+      {
+        "selector": "button",
+        "text": "Enter the Queue Lab ",
+        "color": "rgb(243, 240, 231)",
+        "background": "rgb(184, 60, 33)",
+        "fontSize": "14.08px",
+        "fontWeight": "600",
+        "paddingTop": "12px",
+        "paddingBottom": "12px",
+        "height": 48,
+        "width": 207.234375
+      },
+      {
+        "selector": "article-index",
+        "text": "01One queue, fewer wrong choicesA long shared line can move bette",
+        "color": "rgb(39, 43, 39)",
+        "background": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "height": 535.46875,
+        "width": 1224
+      },
+      {
+        "selector": "index-link",
+        "text": "01One queue, fewer wrong choicesA long shared line can move bette",
+        "color": "rgb(39, 43, 39)",
+        "background": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "paddingTop": "27px",
+        "paddingBottom": "30px",
+        "height": 177.15625,
+        "width": 574
+      },
+      {
+        "selector": "index-link",
+        "text": "02Why buses arrive in pairsA small delay can recruit the whole ro",
+        "color": "rgb(39, 43, 39)",
+        "background": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "paddingTop": "27px",
+        "paddingBottom": "30px",
+        "height": 177.15625,
+        "width": 573
+      },
+      {
+        "selector": "index-link",
+        "text": "03The case for an empty minuteA service can have enough capacity ",
+        "color": "rgb(39, 43, 39)",
+        "background": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "paddingTop": "27px",
+        "paddingBottom": "30px",
+        "height": 177.15625,
+        "width": 574
+      },
+      {
+        "selector": "index-link",
+        "text": "04The average hides your waitTwo routes can both average a bus ev",
+        "color": "rgb(39, 43, 39)",
+        "background": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "paddingTop": "27px",
+        "paddingBottom": "30px",
+        "height": 177.15625,
+        "width": 573
+      },
+      {
+        "selector": "index-link",
+        "text": "05Count the people, find the waitLittle’s law links the crowd in ",
+        "color": "rgb(39, 43, 39)",
+        "background": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "paddingTop": "27px",
+        "paddingBottom": "30px",
+        "height": 177.15625,
+        "width": 574
+      },
+      {
+        "selector": "index-link",
+        "text": "06A clock is only half the waitUncertainty, explanation and the r",
+        "color": "rgb(39, 43, 39)",
+        "background": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "paddingTop": "27px",
+        "paddingBottom": "30px",
+        "height": 177.15625,
+        "width": 573
+      },
+      {
+        "selector": "footer-base",
+        "text": "An independent publishing experiment · 2026No accounts. No tracki",
+        "color": "rgb(214, 214, 202)",
+        "background": "rgba(0, 0, 0, 0)",
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "paddingTop": "18px",
+        "paddingBottom": "18px",
+        "height": 55,
+        "width": 1224
+      },
+      {
+        "selector": ".button:hover",
+        "color": "rgb(243, 240, 231)",
+        "background": "rgb(39, 43, 39)",
+        "fontSize": "14.08px"
+      },
+      {
+        "selector": ".button:hover",
+        "color": "rgb(243, 240, 231)",
+        "background": "rgb(39, 43, 39)",
+        "fontSize": "14.08px"
+      }
+    ]
+  },
+  {
+    "width": 1280,
+    "path": "/about/",
+    "rows": [
+      {
+        "selector": "H1",
+        "text": "A little more curious. A little less obvious.",
+        "color": "rgb(39, 43, 39)",
+        "background": "rgba(0, 0, 0, 0)",
+        "fontSize": "67.84px",
+        "fontWeight": "400",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "height": 141.09375,
+        "width": 790
+      },
+      {
+        "selector": "footer-base",
+        "text": "An independent publishing experiment · 2026No accounts. No tracki",
+        "color": "rgb(214, 214, 202)",
+        "background": "rgba(0, 0, 0, 0)",
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "paddingTop": "18px",
+        "paddingBottom": "18px",
+        "height": 55,
+        "width": 1224
+      }
+    ]
+  },
+  {
+    "width": 1280,
+    "path": "/404.html",
+    "rows": [
+      {
+        "selector": "H1",
+        "text": "This line leadsnowhere.",
+        "color": "rgb(39, 43, 39)",
+        "background": "rgba(0, 0, 0, 0)",
+        "fontSize": "88px",
+        "fontWeight": "400",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "height": 184.78125,
+        "width": 700
+      },
+      {
+        "selector": "button",
+        "text": "Read the waiting issue ",
+        "color": "rgb(243, 240, 231)",
+        "background": "rgb(184, 60, 33)",
+        "fontSize": "14.08px",
+        "fontWeight": "600",
+        "paddingTop": "12px",
+        "paddingBottom": "12px",
+        "height": 48,
+        "width": 220.390625
+      },
+      {
+        "selector": "footer-base",
+        "text": "An independent publishing experiment · 2026No accounts. No tracki",
+        "color": "rgb(214, 214, 202)",
+        "background": "rgba(0, 0, 0, 0)",
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "paddingTop": "18px",
+        "paddingBottom": "18px",
+        "height": 55,
+        "width": 1224
+      },
+      {
+        "selector": ".button:hover",
+        "color": "rgb(243, 240, 231)",
+        "background": "rgb(39, 43, 39)",
+        "fontSize": "14.08px"
+      }
+    ]
+  },
+  {
+    "width": 1280,
+    "path": "/lab/",
+    "rows": [
+      {
+        "selector": "H1",
+        "text": "Make the queueyour own.",
+        "color": "rgb(39, 43, 39)",
+        "background": "rgba(0, 0, 0, 0)",
+        "fontSize": "67.84px",
+        "fontWeight": "400",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "height": 141.09375,
+        "width": 780
+      },
+      {
+        "selector": "experiment",
+        "text": "Leave a little room.One server can complete 60 jobs an hour on av",
+        "color": "rgb(39, 43, 39)",
+        "background": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "paddingTop": "45px",
+        "paddingBottom": "42px",
+        "height": 508.5,
+        "width": 1224
+      },
+      {
+        "selector": "result-number",
+        "text": "4min",
+        "color": "rgb(184, 60, 33)",
+        "background": "rgba(0, 0, 0, 0)",
+        "fontSize": "68.8px",
+        "fontWeight": "400",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "height": 72.234375,
+        "width": 531
+      },
+      {
+        "selector": "SMALL",
+        "text": "min",
+        "color": "rgb(184, 60, 33)",
+        "background": "rgba(0, 0, 0, 0)",
+        "fontSize": "20px",
+        "fontWeight": "400",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "height": 28,
+        "width": 46.546875
+      },
+      {
+        "selector": "experiment",
+        "text": "Same buses. Different gaps.Two buses pass every 20 minutes. Make ",
+        "color": "rgb(39, 43, 39)",
+        "background": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "paddingTop": "45px",
+        "paddingBottom": "42px",
+        "height": 506.84375,
+        "width": 1224
+      },
+      {
+        "selector": "result-number",
+        "text": "8.2min",
+        "color": "rgb(184, 60, 33)",
+        "background": "rgba(0, 0, 0, 0)",
+        "fontSize": "68.8px",
+        "fontWeight": "400",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "height": 72.234375,
+        "width": 531
+      },
+      {
+        "selector": "SMALL",
+        "text": "min",
+        "color": "rgb(184, 60, 33)",
+        "background": "rgba(0, 0, 0, 0)",
+        "fontSize": "20px",
+        "fontWeight": "400",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "height": 28,
+        "width": 46.546875
+      },
+      {
+        "selector": "experiment",
+        "text": "Connect the next free counter.Four jobs arrive at once. Two begin",
+        "color": "rgb(39, 43, 39)",
+        "background": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "paddingTop": "45px",
+        "paddingBottom": "42px",
+        "height": 553.828125,
+        "width": 1224
+      },
+      {
+        "selector": "result-number",
+        "text": "1.5min",
+        "color": "rgb(184, 60, 33)",
+        "background": "rgba(0, 0, 0, 0)",
+        "fontSize": "68.8px",
+        "fontWeight": "400",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "height": 72.234375,
+        "width": 531
+      },
+      {
+        "selector": "SMALL",
+        "text": "min",
+        "color": "rgb(184, 60, 33)",
+        "background": "rgba(0, 0, 0, 0)",
+        "fontSize": "20px",
+        "fontWeight": "400",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "height": 28,
+        "width": 46.546875
+      },
+      {
+        "selector": "footer-base",
+        "text": "An independent publishing experiment · 2026No accounts. No tracki",
+        "color": "rgb(214, 214, 202)",
+        "background": "rgba(0, 0, 0, 0)",
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "paddingTop": "18px",
+        "paddingBottom": "18px",
+        "height": 55,
+        "width": 1224
+      }
+    ]
+  },
+  {
+    "width": 1280,
+    "path": "/articles/capacity/",
+    "rows": [
+      {
+        "selector": "H1",
+        "text": "The case for an empty minute",
+        "color": "rgb(39, 43, 39)",
+        "background": "rgba(0, 0, 0, 0)",
+        "fontSize": "67.84px",
+        "fontWeight": "400",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "height": 70.546875,
+        "width": 900
+      },
+      {
+        "selector": "article-layout",
+        "text": "In this articleAverages do not keep appointmentsA deliberately si",
+        "color": "rgb(39, 43, 39)",
+        "background": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "paddingTop": "35px",
+        "paddingBottom": "64px",
+        "height": 3709.09375,
+        "width": 1224
+      },
+      {
+        "selector": "footer-base",
+        "text": "An independent publishing experiment · 2026No accounts. No tracki",
+        "color": "rgb(214, 214, 202)",
+        "background": "rgba(0, 0, 0, 0)",
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "paddingTop": "18px",
+        "paddingBottom": "18px",
+        "height": 55,
+        "width": 1224
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "path": "/",
+    "rows": [
+      {
+        "selector": "H1",
+        "text": "Life happensin the waiting.",
+        "color": "rgb(39, 43, 39)",
+        "background": "rgba(0, 0, 0, 0)",
+        "fontSize": "54.4px",
+        "fontWeight": "400",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "height": 107.71875,
+        "width": 345.328125
+      },
+      {
+        "selector": "button",
+        "text": "Open the waiting issue ",
+        "color": "rgb(243, 240, 231)",
+        "background": "rgb(184, 60, 33)",
+        "fontSize": "14.08px",
+        "fontWeight": "600",
+        "paddingTop": "12px",
+        "paddingBottom": "12px",
+        "height": 48,
+        "width": 221.84375
+      },
+      {
+        "selector": "editorial-strip",
+        "text": "Six explanations. Three experiments. A different way to see the e",
+        "color": "rgb(92, 97, 89)",
+        "background": "rgba(0, 0, 0, 0)",
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "paddingTop": "17px",
+        "paddingBottom": "17px",
+        "height": 96,
+        "width": 350
+      },
+      {
+        "selector": "button",
+        "text": "Enter the Queue Lab ",
+        "color": "rgb(243, 240, 231)",
+        "background": "rgb(184, 60, 33)",
+        "fontSize": "14.08px",
+        "fontWeight": "600",
+        "paddingTop": "12px",
+        "paddingBottom": "12px",
+        "height": 48,
+        "width": 207.234375
+      },
+      {
+        "selector": "article-index",
+        "text": "01One queue, fewer wrong choicesA long shared line can move bette",
+        "color": "rgb(39, 43, 39)",
+        "background": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "height": 1331.125,
+        "width": 350
+      },
+      {
+        "selector": "index-link",
+        "text": "01One queue, fewer wrong choicesA long shared line can move bette",
+        "color": "rgb(39, 43, 39)",
+        "background": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "paddingTop": "24px",
+        "paddingBottom": "24px",
+        "height": 220.6875,
+        "width": 350
+      },
+      {
+        "selector": "index-link",
+        "text": "02Why buses arrive in pairsA small delay can recruit the whole ro",
+        "color": "rgb(39, 43, 39)",
+        "background": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "paddingTop": "24px",
+        "paddingBottom": "24px",
+        "height": 220.6875,
+        "width": 350
+      },
+      {
+        "selector": "index-link",
+        "text": "03The case for an empty minuteA service can have enough capacity ",
+        "color": "rgb(39, 43, 39)",
+        "background": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "paddingTop": "24px",
+        "paddingBottom": "24px",
+        "height": 220.6875,
+        "width": 350
+      },
+      {
+        "selector": "index-link",
+        "text": "04The average hides your waitTwo routes can both average a bus ev",
+        "color": "rgb(39, 43, 39)",
+        "background": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "paddingTop": "24px",
+        "paddingBottom": "24px",
+        "height": 220.6875,
+        "width": 350
+      },
+      {
+        "selector": "index-link",
+        "text": "05Count the people, find the waitLittle’s law links the crowd in ",
+        "color": "rgb(39, 43, 39)",
+        "background": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "paddingTop": "24px",
+        "paddingBottom": "24px",
+        "height": 220.6875,
+        "width": 350
+      },
+      {
+        "selector": "index-link",
+        "text": "06A clock is only half the waitUncertainty, explanation and the r",
+        "color": "rgb(39, 43, 39)",
+        "background": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "paddingTop": "24px",
+        "paddingBottom": "24px",
+        "height": 220.6875,
+        "width": 350
+      },
+      {
+        "selector": "footer-base",
+        "text": "An independent publishing experiment · 2026No accounts. No tracki",
+        "color": "rgb(214, 214, 202)",
+        "background": "rgba(0, 0, 0, 0)",
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "paddingTop": "18px",
+        "paddingBottom": "18px",
+        "height": 80,
+        "width": 350
+      },
+      {
+        "selector": ".button:hover",
+        "color": "rgb(243, 240, 231)",
+        "background": "rgb(39, 43, 39)",
+        "fontSize": "14.08px"
+      },
+      {
+        "selector": ".button:hover",
+        "color": "rgb(243, 240, 231)",
+        "background": "rgb(39, 43, 39)",
+        "fontSize": "14.08px"
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "path": "/about/",
+    "rows": [
+      {
+        "selector": "H1",
+        "text": "A little more curious. A little less obvious.",
+        "color": "rgb(39, 43, 39)",
+        "background": "rgba(0, 0, 0, 0)",
+        "fontSize": "45.6px",
+        "fontWeight": "400",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "height": 142.21875,
+        "width": 350
+      },
+      {
+        "selector": "footer-base",
+        "text": "An independent publishing experiment · 2026No accounts. No tracki",
+        "color": "rgb(214, 214, 202)",
+        "background": "rgba(0, 0, 0, 0)",
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "paddingTop": "18px",
+        "paddingBottom": "18px",
+        "height": 80,
+        "width": 350
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "path": "/404.html",
+    "rows": [
+      {
+        "selector": "H1",
+        "text": "This line leadsnowhere.",
+        "color": "rgb(39, 43, 39)",
+        "background": "rgba(0, 0, 0, 0)",
+        "fontSize": "48px",
+        "fontWeight": "400",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "height": 100.78125,
+        "width": 350
+      },
+      {
+        "selector": "button",
+        "text": "Read the waiting issue ",
+        "color": "rgb(243, 240, 231)",
+        "background": "rgb(184, 60, 33)",
+        "fontSize": "14.08px",
+        "fontWeight": "600",
+        "paddingTop": "12px",
+        "paddingBottom": "12px",
+        "height": 48,
+        "width": 220.390625
+      },
+      {
+        "selector": "footer-base",
+        "text": "An independent publishing experiment · 2026No accounts. No tracki",
+        "color": "rgb(214, 214, 202)",
+        "background": "rgba(0, 0, 0, 0)",
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "paddingTop": "18px",
+        "paddingBottom": "18px",
+        "height": 80,
+        "width": 350
+      },
+      {
+        "selector": ".button:hover",
+        "color": "rgb(243, 240, 231)",
+        "background": "rgb(39, 43, 39)",
+        "fontSize": "14.08px"
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "path": "/lab/",
+    "rows": [
+      {
+        "selector": "H1",
+        "text": "Make the queueyour own.",
+        "color": "rgb(39, 43, 39)",
+        "background": "rgba(0, 0, 0, 0)",
+        "fontSize": "45.6px",
+        "fontWeight": "400",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "height": 94.8125,
+        "width": 350
+      },
+      {
+        "selector": "experiment",
+        "text": "Leave a little room.One server can complete 60 jobs an hour on av",
+        "color": "rgb(39, 43, 39)",
+        "background": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "paddingTop": "32px",
+        "paddingBottom": "32px",
+        "height": 742.015625,
+        "width": 350
+      },
+      {
+        "selector": "result-number",
+        "text": "4min",
+        "color": "rgb(184, 60, 33)",
+        "background": "rgba(0, 0, 0, 0)",
+        "fontSize": "68.8px",
+        "fontWeight": "400",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "height": 72.234375,
+        "width": 306
+      },
+      {
+        "selector": "SMALL",
+        "text": "min",
+        "color": "rgb(184, 60, 33)",
+        "background": "rgba(0, 0, 0, 0)",
+        "fontSize": "20px",
+        "fontWeight": "400",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "height": 28,
+        "width": 46.546875
+      },
+      {
+        "selector": "experiment",
+        "text": "Same buses. Different gaps.Two buses pass every 20 minutes. Make ",
+        "color": "rgb(39, 43, 39)",
+        "background": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "paddingTop": "32px",
+        "paddingBottom": "32px",
+        "height": 824.71875,
+        "width": 350
+      },
+      {
+        "selector": "result-number",
+        "text": "8.2min",
+        "color": "rgb(184, 60, 33)",
+        "background": "rgba(0, 0, 0, 0)",
+        "fontSize": "68.8px",
+        "fontWeight": "400",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "height": 72.234375,
+        "width": 306
+      },
+      {
+        "selector": "SMALL",
+        "text": "min",
+        "color": "rgb(184, 60, 33)",
+        "background": "rgba(0, 0, 0, 0)",
+        "fontSize": "20px",
+        "fontWeight": "400",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "height": 28,
+        "width": 46.546875
+      },
+      {
+        "selector": "experiment",
+        "text": "Connect the next free counter.Four jobs arrive at once. Two begin",
+        "color": "rgb(39, 43, 39)",
+        "background": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "paddingTop": "32px",
+        "paddingBottom": "32px",
+        "height": 849.1875,
+        "width": 350
+      },
+      {
+        "selector": "result-number",
+        "text": "1.5min",
+        "color": "rgb(184, 60, 33)",
+        "background": "rgba(0, 0, 0, 0)",
+        "fontSize": "68.8px",
+        "fontWeight": "400",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "height": 72.234375,
+        "width": 306
+      },
+      {
+        "selector": "SMALL",
+        "text": "min",
+        "color": "rgb(184, 60, 33)",
+        "background": "rgba(0, 0, 0, 0)",
+        "fontSize": "20px",
+        "fontWeight": "400",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "height": 28,
+        "width": 46.546875
+      },
+      {
+        "selector": "footer-base",
+        "text": "An independent publishing experiment · 2026No accounts. No tracki",
+        "color": "rgb(214, 214, 202)",
+        "background": "rgba(0, 0, 0, 0)",
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "paddingTop": "18px",
+        "paddingBottom": "18px",
+        "height": 80,
+        "width": 350
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "path": "/articles/capacity/",
+    "rows": [
+      {
+        "selector": "H1",
+        "text": "The case for an empty minute",
+        "color": "rgb(39, 43, 39)",
+        "background": "rgba(0, 0, 0, 0)",
+        "fontSize": "45.6px",
+        "fontWeight": "400",
+        "paddingTop": "0px",
+        "paddingBottom": "0px",
+        "height": 94.8125,
+        "width": 350
+      },
+      {
+        "selector": "article-layout",
+        "text": "In this articleAverages do not keep appointmentsA deliberately si",
+        "color": "rgb(39, 43, 39)",
+        "background": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "paddingTop": "23px",
+        "paddingBottom": "40px",
+        "height": 5207.171875,
+        "width": 350
+      },
+      {
+        "selector": "footer-base",
+        "text": "An independent publishing experiment · 2026No accounts. No tracki",
+        "color": "rgb(214, 214, 202)",
+        "background": "rgba(0, 0, 0, 0)",
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "paddingTop": "18px",
+        "paddingBottom": "18px",
+        "height": 80,
+        "width": 350
+      }
+    ]
+  }
+]

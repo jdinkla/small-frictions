@@ -1,0 +1,14 @@
+---
+import Base from '../layouts/Base.astro';
+import QueueMark from '../components/QueueMark.astro';
+import Arrow from '../components/Arrow.astro';
+import ArticleIndex from '../components/ArticleIndex.astro';
+import { withBase } from '../lib/base';
+---
+<Base title="Small Frictions">
+<section class="cover" aria-labelledby="cover-title"><div><h1 id="cover-title">Life happens<br />in the <em>waiting.</em></h1><p class="deck">The line that barely moves. The bus that comes in pairs. The busy place that gets slower when it gets busier.</p><div class="cover-actions"><a class="button" href={withBase('/issues/waiting/')}>Open the waiting issue <Arrow /></a><a class="text-link" href="#contents">Browse the articles</a></div></div><figure class="cover-plate"><div class="plate-top"><strong>EVERYONE IS NEXT.<br />EVENTUALLY.</strong><span class="mono">01 /<br />WAITING</span></div><QueueMark /><figcaption class="plate-bottom"><span class="plate-caption">A queue is a system.<br />You happen to be inside it.</span><span class="mono">ILLUSTRATION<br />NOT LIVE DATA</span></figcaption></figure></section>
+<div class="editorial-strip"><span>Six explanations. Three experiments. A different way to see the everyday.</span><span>AI-written · Source-led · Free to read</span></div>
+<section class="lab-invitation"><h2>What if you changed the queue?</h2><p>Turn up the demand. Bunch the buses. Share the counters. Three small models make the hidden rules visible.</p><a class="button" href={withBase('/lab/')}>Enter the Queue Lab <Arrow /></a></section>
+<section id="contents" aria-labelledby="contents-title"><div class="section-title"><h2 id="contents-title">Inside the waiting issue</h2><span class="mono">6 ARTICLES</span></div><ArticleIndex /></section>
+<section class="editor-letter"><h2>A note on this magazine</h2><div class="letter-text"><p>Daily life is full of small puzzles. A longer line can be the better one. An empty minute can keep a service moving. Two buses can be less useful than two evenly spaced buses.</p><p>Small Frictions follows those puzzles into the systems behind them. We use AI to write and build, then show the sources, the assumptions and the decisions. You can inspect the explanation—and, sometimes, change it yourself.</p><a class="text-link" href={withBase('/about/')}>How we work <Arrow /></a></div></section>
+</Base>

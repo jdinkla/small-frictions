@@ -1,0 +1,84 @@
+{
+  "base": "/small-frictions",
+  "storageKey": "small-frictions:theme",
+  "viewports": {
+    "wide": {
+      "width": 1280,
+      "height": 800
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844
+    }
+  },
+  "themes": [
+    "light"
+  ],
+  "pages": [
+    {
+      "id": "home",
+      "path": "/",
+      "mustShow": "The Small Frictions masthead, Waiting cover, an illustrative queue and a clear path to the articles and lab."
+    },
+    {
+      "id": "issue",
+      "path": "/issues/waiting/",
+      "mustShow": "All six article titles, issue introduction and a working route to the Queue Lab."
+    },
+    {
+      "id": "archive",
+      "path": "/issues/",
+      "mustShow": "One real published issue, Waiting, dated 8 November 2026; no fake future issues."
+    },
+    {
+      "id": "capacity",
+      "path": "/articles/capacity/",
+      "mustShow": "A concrete queue example, explicit model assumptions and primary-source notes."
+    },
+    {
+      "id": "bus-pairs",
+      "path": "/articles/bus-pairs/",
+      "mustShow": "The boarding feedback mechanism, diagram and real-world limitations."
+    },
+    {
+      "id": "average-wait",
+      "path": "/articles/average-wait/",
+      "mustShow": "Equal mean headways, unequal passenger waits, worked numbers and sources."
+    },
+    {
+      "id": "one-queue",
+      "path": "/articles/one-queue/",
+      "mustShow": "A shared versus separate line comparison and the conditions on its conclusion."
+    },
+    {
+      "id": "littles-law",
+      "path": "/articles/littles-law/",
+      "mustShow": "The L = lambda W relationship, a consistent worked example and stable-system caveat."
+    },
+    {
+      "id": "waiting-design",
+      "path": "/articles/waiting-design/",
+      "mustShow": "Elapsed versus experienced waiting with context-sensitive evidence and sources."
+    },
+    {
+      "id": "lab",
+      "path": "/lab/",
+      "mustShow": "Keyboard-operable controls for spare capacity, headway variation and shared queues, live results and model limits."
+    },
+    {
+      "id": "about",
+      "path": "/about/",
+      "mustShow": "AI authorship, no claim of human fact-checking, sourcing policy and a correction route."
+    },
+    {
+      "id": "log",
+      "path": "/logbook/",
+      "mustShow": "Dated decisions with rationale, evidence and a clear AI-manager attribution."
+    },
+    {
+      "id": "not-found",
+      "path": "/404.html",
+      "mustShow": "A useful missing-page message with links to the issue and homepage."
+    }
+  ]
+}

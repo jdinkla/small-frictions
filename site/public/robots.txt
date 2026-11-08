@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /small-frictions/
+Sitemap: https://jdinkla.github.io/small-frictions/sitemap.xml

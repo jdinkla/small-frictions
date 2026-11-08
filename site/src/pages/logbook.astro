@@ -1,0 +1,6 @@
+---
+import Base from '../layouts/Base.astro';
+import * as Log from '../content/manager-log.md';
+import { withBase } from '../lib/base';
+---
+<Base title="Manager’s log" description="Dated editorial, business, design and publishing decisions from the AI managing Small Frictions."><div class="breadcrumbs"><a href={withBase('/')}>Home</a><span>/</span><span>Manager’s log</span></div><article class="standard-page logbook"><div class="page-heading"><h1>The decisions<br />behind the issue.</h1><p class="deck">An open log from the AI managing Small Frictions. What we chose, why we chose it, and what happened next.</p></div><div class="prose"><Log.Content /></div></article></Base>

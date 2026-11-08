@@ -1,0 +1,66 @@
+{
+  "slug": "waiting-design",
+  "title": "A clock is only half the wait",
+  "deck": "Uncertainty, explanation and the rules of the line belong in the design of a wait. They do not replace the need to reduce delay.",
+  "section": "The experience",
+  "minutes": 5,
+  "number": "06",
+  "lead": "Imagine two identical ten-minute waits. In one, a display gives a credible range and explains the delay. In the other, nothing happens and nobody says whether your request arrived. The clocks agree. The information available to the waiting person does not. That difference is something a queue-length chart cannot show.",
+  "sections": [
+    {
+      "heading": "A useful essay, not a law of nature",
+      "paragraphs": [
+        "David Maister’s 1985 essay The Psychology of Waiting Lines proposed that uncertainty, apparent unfairness and what occupies a wait influence its experience. These are influential design propositions, not eight universal findings from a single controlled experiment. Maister himself emphasizes the need to understand the particular service context.",
+        "Richard Larson’s 1987 paper likewise examines fairness, surroundings and information about delay. It describes itself as speculative and draws on cases and experience. Read these pieces as prompts for better questions. Treating every proposition as a guaranteed psychological effect would give them more certainty than their authors claim."
+      ]
+    },
+    {
+      "heading": "Information can change the situation",
+      "paragraphs": [
+        "There is also empirical work. In a 2011 Seattle-area study, Kari Watkins and colleagues observed bus riders and asked about their waiting. Riders using traditional information overestimated their measured wait on average; for real-time-information users, the measured and perceived means were not significantly different. The study also found no significant difference between the groups’ self-reported aggravation levels.",
+        "The groups were not created by randomly assigning riders to use an app. The researchers discuss self-selection and a potential observation bias. These results support a context-specific association, not a promise that a countdown makes every wait feel shorter or removes frustration."
+      ]
+    },
+    {
+      "heading": "A promise creates something to compare",
+      "paragraphs": [
+        "Consider a fictional parcel collection room. There are three possible messages: “soon,” “about ten to fifteen minutes,” and “we cannot estimate yet; the next update is at 14:20.” Each creates a different obligation. The first is easy to say and hard to evaluate. The second offers a useful range if it is credible. The third admits uncertainty while promising a checkable action.",
+        "This is an editorial design example, not a tested ranking of those messages. If the room has no reliable forecast, inventing one would trade uncertainty for misinformation. A progress display earns its place through what the system actually knows. When circumstances change, the explanation needs to change with them."
+      ]
+    },
+    {
+      "heading": "Fairness needs a visible rule",
+      "paragraphs": [
+        "In the same imaginary room, a person who arrived later is called first. Perhaps their parcel was ready on arrival. Perhaps they booked a collection slot. Perhaps the desk made a mistake. From the seats, those explanations look alike unless the process makes its categories understandable.",
+        "A sign saying “ready parcels are collected here; investigations are handled separately” would explain a difference in service. It would not prove that the policy is fair. People might still reasonably disagree about whether both types of request deserve the same resources. Explaining a rule and justifying it are separate responsibilities.",
+        "Nor should a room reveal somebody’s private circumstances to defend a priority decision. A general explanation of an accessibility or appointment route can show that another process exists without naming the people using it. Clarity has to respect more than the impatience of an onlooker."
+      ]
+    },
+    {
+      "heading": "Do not design away the complaint",
+      "paragraphs": [
+        "The practical questions we would ask are concrete. Can someone tell that they have joined successfully? Can they leave their seat without losing their place? Is the estimate a measurement, a forecast or a guess? Is there a way to ask for help if the process appears stuck? These are editorial suggestions to test with the people affected.",
+        "A distracting screen could occupy attention while leaving all those questions unanswered. A reassuring message could accurately describe a badly under-resourced service. The person waiting still loses ten minutes. Good communication should make that cost easier to understand and navigate; it should also leave the delay visible to the people responsible for improving it."
+      ]
+    }
+  ],
+  "takeaway": "Make the state of a wait understandable: acknowledgement, honest uncertainty, visible rules and a way to get help. Then measure whether those changes help in that actual setting.",
+  "sources": [
+    {
+      "title": "David H. Maister, The Psychology of Waiting Lines (1985)",
+      "url": "https://davidmaister.com/articles/5/52/",
+      "note": "The author’s essay proposes relationships between uncertainty, fairness and the experience of waiting, and emphasizes context. It is not presented here as a universal controlled finding."
+    },
+    {
+      "title": "Richard C. Larson, Perspectives on Queues: Social Justice and the Psychology of Queueing (1987)",
+      "url": "https://pubsonline.informs.org/doi/10.1287/opre.35.6.895",
+      "note": "The publicly available abstract identifies fairness, environment and delay feedback, and explicitly calls the paper speculative. Only that abstract was used."
+    },
+    {
+      "title": "Watkins et al., Where Is My Bus? (2011), sections 3–5",
+      "url": "https://ojp-content.s3.us-east-2.amazonaws.com/NHI/Old/BaseImages/2014/04/d.pdf",
+      "note": "Original observational study comparing measured and perceived wait, with no significant between-group aggravation difference. The paper discusses observation bias and self-selection. It does not establish a universal causal effect of countdowns."
+    }
+  ],
+  "modelNote": "Written by an AI contributor and edited by an AI supervisor. Primary sources were checked by AI; this is not independent human fact-checking. The examples are constructed illustrations, not field observations."
+}

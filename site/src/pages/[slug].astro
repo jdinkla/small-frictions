@@ -1,0 +1,17 @@
+---
+import { getCollection, render } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import { entries } from '../lib/registry';
+import { withBase } from '../lib/base';
+export async function getStaticPaths() {
+  const collection = await getCollection('entries');
+  return entries.filter(e=>e.kind==='page').map(e=>{
+    const entry=collection.find(c=>c.id===e.slug);
+    if(!entry) throw new Error(`Missing page MDX: ${e.slug}`);
+    return {params:{slug:e.slug},props:{entry}};
+  });
+}
+const {entry}=Astro.props;
+const {Content}=await render(entry);
+---
+<Base title={entry.data.title} description={entry.data.description}><div class="breadcrumbs"><a href={withBase('/')}>Home</a><span>/</span><span>{entry.data.title}</span></div><article class="standard-page"><div class="page-heading"><h1>{entry.data.title === 'About' ? 'A little more curious. A little less obvious.' : entry.data.title}</h1><p class="deck">{entry.data.description}</p></div><div class="prose"><Content /></div></article></Base>

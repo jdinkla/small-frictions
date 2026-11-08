@@ -1,0 +1,44 @@
+---
+title: "Count the people, find the wait"
+description: "Little’s law links the crowd in a system to the rate people pass through it. First, decide where the system starts and ends."
+---
+
+import ArticleDiagram from '../../components/ArticleDiagram.astro';
+
+<p className="lead">A room can be crowded because people arrive quickly, because they stay a long time, or both. Little’s law connects those three things. It is a powerful piece of accounting, but it will not tell you why a queue formed simply because you entered three numbers into a calculator.</p>
+
+<ArticleDiagram kind="littles-law" />
+
+## Draw a boundary before you count
+
+In the usual long-run form, L = λW. L is the average number of items inside the system; λ, pronounced lambda, is the average effective arrival rate; W is their average time inside. John D. C. Little’s 1961 paper proved the relation under stated stationary-process conditions with finite averages. Later treatments extend its reach. [1](#source-1)
+
+The same doorway must define all three quantities. If you count people waiting and being served, measure their time from joining to finishing. If you count only people waiting, measure time only until service begins. Mixing the first count with the second clock produces a tidy-looking answer to a different question.
+
+## An imaginary repair desk
+
+Suppose an invented repair desk has been operating with a stable pattern for a long time. It accepts an average of twelve devices per hour, and the average number inside its boundary is eighteen. That boundary runs from acceptance to collection. Little’s law gives W = 18 ÷ 12 = 1.5 hours: ninety minutes on average.
+
+Those ninety minutes include everything between the chosen entry and exit: waiting for attention, repair work, testing, and waiting for collection. Calling that number “the queue” would conceal the boundary we chose. It is the average time through the whole defined process.
+
+Now imagine a second measurement made consistently at the same desk. On average, six accepted devices are waiting for repair to begin. If every accepted device reaches that stage and the same twelve-per-hour flow passes through it, the corresponding mean pre-repair wait is half an hour. The remaining hour belongs to other stages inside the larger boundary.
+
+## The units catch mistakes
+
+Write the units beside the numbers: eighteen devices divided by twelve devices per hour leaves hours. If an arrival rate is recorded per minute while the time is entered in hours, the units do not cancel correctly. A conversion is required before the multiplication, not an explanation after the result.
+
+It is also possible to count devices and time customers, but then the apparent similarity of the words hides a different mismatch. One customer may bring three devices. Choose the thing that crosses the boundary and follow that same thing all the way through.
+
+## A snapshot does not make an average
+
+At 10:00 there might be eighteen devices on the shelf. That observation alone is not the average number inside over the period. A rush at opening followed by an empty afternoon can produce a very different time average. To estimate L from observations, the sampling must represent the time you claim to describe.
+
+Likewise, measuring only devices collected before lunch can leave out the slowest unfinished repairs. A finite observation window needs attention to items already present at its start and still present at its end. In his anniversary paper, Little treats finite intervals explicitly; an empty start and empty finish give a particularly clean accounting case. [2](#source-2)
+
+## A relation is not a staffing plan
+
+Return to the imaginary desk. If its average inventory fell from eighteen to twelve while its throughput remained twelve per hour, the corresponding mean time would fall from ninety minutes to sixty. That is a conditional statement. It says what the averages must do together; it does not identify an intervention that will make the change happen.
+
+Refusing devices could shrink the shelf while disappointing customers. Faster collection could shrink it while repair work stays exactly as slow. Removing avoidable delay could improve both. The same headline count can accompany very different experiences.
+
+The useful first question is therefore small and precise: which boundary did we measure? The next is harder: what happens inside it? Little’s law can check the arithmetic between those questions. Explaining the answer still requires examining the work.

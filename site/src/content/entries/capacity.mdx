@@ -1,0 +1,38 @@
+---
+title: "The case for an empty minute"
+description: "A service can have enough capacity on average and still make people wait. Spare time is part of how it recovers."
+---
+
+import ArticleDiagram from '../../components/ArticleDiagram.astro';
+
+<p className="lead">Imagine a print kiosk with one attendant. A job takes two minutes on average, so the kiosk can finish thirty jobs an hour when kept busy. Twenty-seven customers arrive an hour on average. The arithmetic seems comfortable: three jobs' worth of capacity left over. Why might the queue still be long?</p>
+
+<ArticleDiagram kind="capacity" />
+
+## Averages do not keep appointments
+
+This kiosk is an invented example. Its purpose is to separate an hourly total from the order in which work arrives. Twenty-seven evenly spaced jobs with identical service times would be one situation. A cluster of customers followed by a quiet spell is another. Both can have the same hourly average.
+
+A queue carries yesterday's unfinished work into the next moment. Once several jobs arrive together, the attendant cannot use an earlier quiet minute to serve them. The service needs future gaps to catch up. That makes unused capacity more than a disappointing number on an efficiency chart: it is room for recovery.
+
+## A deliberately simple kiosk
+
+Queueing theory has a model called M/M/1. For this model, arrivals follow a Poisson process; service times are independent and exponentially distributed; and one server works at a constant average rate. Assume a first-come, first-served queue, unlimited waiting space, no abandoning the line and independence between arrivals and service. These are mathematical assumptions, not observations about print shops. MathWorks' documented simulation makes these ingredients explicit. [1](#source-1)
+
+Write the arrival rate as λ and the service rate as μ, using the same time unit. Utilization is ρ = λ/μ. In the stable, long-run model, λ must be below μ. MIT's queue notes give the mean time in the whole system as W = 1/(μ − λ). This includes service. Mean time waiting before service is Wq = W − 1/μ. Mixing up those two quantities adds a service time to the reported queue. [2](#source-2)
+
+## The last ten percent is expensive
+
+Keep our invented service rate at thirty jobs an hour. At twenty-four arrivals an hour, utilization is 80 percent. The formula gives ten minutes in the system: eight waiting and two being served, on average. At twenty-seven arrivals, utilization rises to 90 percent. Now the result is twenty minutes in the system: eighteen waiting and two being served.
+
+Move to twenty-eight and a half arrivals an hour, or 95 percent utilization. The mean becomes forty minutes in the system, including thirty-eight in the queue. These are calculations for this model, not measurements. Nor do they say every customer waits that long. Some encounter an empty kiosk; others inherit a busy period.
+
+The average service time never changed. The number of customers arriving rose by three, then one and a half per hour. Yet the mean queue wait rose sharply. The shrinking difference between capacity and demand is in the denominator, which is why the curve bends upward.
+
+## What the empty minute buys
+
+If the kiosk serves no one during a quiet minute, that minute has no visible output. But in a variable stream of work, the ability to become idle tells us something: the system has cleared its backlog. Designing away every quiet moment can also design away that recovery.
+
+This does not identify a universally correct utilization target. Real queues can have appointments, batches, multiple servers, priorities, changing demand and more predictable service times. The M/M/1 formula cannot be transferred to them without checking the assumptions. A deliberately regular arrival stream might behave very differently at the same average load.
+
+It does suggest a better first conversation about a slow service. Ask how unevenly the work arrives, how service times vary, and what happens after a surge. Asking only whether the daily workload fits into the daily capacity leaves out the order in which the day happens. An empty minute can be evidence that the system is ready for the next surprise.

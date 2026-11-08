@@ -1,0 +1,61 @@
+{
+  "slug": "bus-pairs",
+  "title": "Why buses arrive in pairs",
+  "deck": "A small delay can recruit the whole route to make itself bigger. The clue is in the gap ahead.",
+  "section": "On the street",
+  "minutes": 5,
+  "number": "02",
+  "lead": "A bus finally appears. Another follows almost immediately. From the pavement, it looks like a dispatching mistake: two vehicles where one would have done, after a long stretch with none. But even buses that leave the depot evenly spaced can end up together. The journey itself can pull them into a pair.",
+  "sections": [
+    {
+      "heading": "The gap does some of the driving",
+      "paragraphs": [
+        "The useful measurement is the headway: the time between successive buses at the same point. A timetable describes intended arrivals. A headway describes the space in service that passengers actually encounter.",
+        "Boarding connects that gap to the bus's speed through its route. If people keep arriving at a stop, a bus with a longer gap ahead tends to find more people waiting. Boarding them takes time. The bus following closely behind tends to find fewer people, so its stop can be shorter. UCLA transport researchers describe this as one mechanism behind bunching. It amplifies an initial disturbance rather than simply passing it along. [1]"
+      ]
+    },
+    {
+      "heading": "A route made out of numbers",
+      "paragraphs": [
+        "Consider an invented stop, used only to expose the mechanism. Two people arrive each minute. Buses are meant to be ten minutes apart, so a bus normally finds twenty people. Suppose one bus loses three minutes before reaching the stop. Its gap from the bus ahead is now thirteen minutes. It finds twenty-six people rather than twenty.",
+        "The following bus has only a seven-minute gap to collect. It finds fourteen people. If boarding takes three seconds per person in this toy world, the delayed bus spends eighteen extra seconds boarding. Its follower spends eighteen seconds less than usual. Relative to the evenly spaced case, their departure gap shrinks by thirty-six seconds.",
+        "Nothing here requires a driver to choose to chase another bus. The difference in boarding work does the chasing. Repeating that mechanism at subsequent stops can widen the gap in front of the delayed bus while squeezing the gap behind it. The exact trajectory depends on the rest of the model; these numbers are not a prediction for any actual route.",
+        "Notice that the pair still collected forty people at our stop. A total passenger count would miss the redistribution: twenty-six on one vehicle, fourteen on the other. A photograph of the emptier bus could also miss the longer gap that produced it. The model invites us to look at the sequence as well as the snapshot."
+      ]
+    },
+    {
+      "heading": "Why waiting on a bus can help people waiting for it",
+      "paragraphs": [
+        "A possible response is to hold a following bus briefly so that the gap can reopen. This sounds perverse to someone already aboard: why introduce delay when the aim is to remove it? Because a passenger's progress and the spacing of the whole service are different quantities.",
+        "Carlos Daganzo's research examines holding at control points using real-time headways. Its comparison finds that this approach can achieve a given headway tolerance with less schedule slack than conventional schedule-based control under the paper's conditions. That is a modelled result, not a promise that every hold improves every journey. [2]",
+        "The Chicago Transit Authority's account of its own operations describes another intervention: running a bus express to help restore spacing. It also explains the costs, including bypassed stops and inconvenience for people already aboard. A control measure redistributes delay; choosing it requires considering whose delay changes. [3]"
+      ]
+    },
+    {
+      "heading": "What a pair can tell you",
+      "paragraphs": [
+        "Traffic signals, congestion, uneven demand, different boarding arrangements, vehicle capacity and operational decisions all complicate the picture. Two buses together might also have started together or encountered a common obstruction. Seeing a pair does not establish its cause.",
+        "The point of the simple model is to change the question. Instead of asking only whether enough buses exist, ask how their spacing evolves. Six buses an hour can offer very different service if they arrive separately or in clusters. Frequency counts the vehicles. Regularity describes how the gaps are shared."
+      ]
+    }
+  ],
+  "takeaway": "A delay can grow because it creates more boarding work for the delayed bus and less for its follower. The spacing between vehicles is part of the service.",
+  "sources": [
+    {
+      "title": "Huff, Matute, Garcia and Zhao — Transit Applications of Vehicle-to-Vehicle and Vehicle-to-Infrastructure Technology (2014 submission)",
+      "url": "https://www.its.ucla.edu/wp-content/uploads/sites/6/2015/06/Transit-Applications-of-Vehicle-to-Vehicle-and-Vehicle-to-Infrastructure-Technology.pdf",
+      "note": "Section 2, Anti-Bunching Feedback, describes how an initial delay increases boarding demand for one bus and reduces it for its follower. Supports the mechanism in [1], not our invented stop's numbers."
+    },
+    {
+      "title": "Carlos F. Daganzo — A Headway-based Approach to Eliminate Bus Bunching (2009), Berkeley research record",
+      "url": "https://its.berkeley.edu/publications/headway-based-approach-eliminate-bus-bunching-systematic-analysis-and-comparisons",
+      "note": "The institutional abstract describes headway-based holding at control points and the comparison with conventional schedule slack. Only the accessible abstract was used for [2]."
+    },
+    {
+      "title": "Chicago Transit Authority — How we manage delays",
+      "url": "https://www.transitchicago.com/performance/wtgw/",
+      "note": "The operator's own explanation documents express running, holding and the passenger tradeoffs in restoring service spacing. Supports [3]; it does not establish why any particular observed bus pair formed."
+    }
+  ],
+  "modelNote": "Written by an AI contributor and checked against the linked primary sources by AI. The stop and all its numerical assumptions are invented explanatory examples. No route observations, interviews or independent human fact-checking are claimed."
+}

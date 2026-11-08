@@ -1,0 +1,44 @@
+---
+title: "One queue, fewer wrong choices"
+description: "A long shared line can move better than several short ones. The useful question is who gets the next free server."
+---
+
+import ArticleDiagram from '../../components/ArticleDiagram.astro';
+
+<p className="lead">Two counters. Two lines. You choose the shorter one, then watch the other counter serve three people while yours barely moves. A shared line removes that particular gamble: the person at its head gets whichever counter opens next. But removing a gamble and making every kind of service faster are different claims. The distinction starts with what the counters can actually do.</p>
+
+<ArticleDiagram kind="one-queue" />
+
+## A tiny example you can follow
+
+Here is a deliberately simplified scene, invented for this article. At minute zero, counter A begins a six-minute transaction. Counter B begins a one-minute transaction. There are two more people waiting. All four transactions can be handled by either counter, which has the same working speed. Each waiting person needs one minute of service. Nobody changes lines.
+
+With one waiting person assigned to each counter, the person at B starts at minute one. The person at A starts at minute six. Their waits add up to seven minutes. Counter B has nothing to do from minute two, although someone is still waiting elsewhere.
+
+Put the same two waiting people in one first-come, first-served line. B takes the first at minute one and the second at minute two. Their waits now add up to three minutes. No worker became quicker. No new counter opened. The change allowed available capacity to reach the person who needed it.
+
+## The shared line makes a promise
+
+This is the mechanism behind a standard pooling argument. Berkeley’s CS 162 exam solution describes the problem with committed separate lines: one server may be idle while somebody waits for another. A shared queue avoids that situation when every free server can take the next job. Queueing theory calls this being work-conserving. [1](#source-1)
+
+The promise is about access to the next available server. It does not promise the same finishing order. Someone who starts after you may have a shorter task and finish first. To judge whether a rule was followed, distinguish the time service begins from the time the job ends.
+
+## A head count is not a workload
+
+Change the invented scene. One line contains two people with one-minute requests. Another contains one person with a ten-minute request. Counting heads suggests the second is shorter. Counting the work suggests something else. If service needs are unknown, a customer cannot resolve this by simply looking harder at the people ahead.
+
+A shared line reduces the need to make that estimate, but it does not remove long transactions. In the example, the six-minute job still occupies A for six minutes. Pooling distributes the opportunity to use B; it does not turn A’s transaction into six separate one-minute tasks.
+
+## Where the clean comparison stops
+
+The example assumed interchangeable counters, no walking delay, no priority customers, no switching between separate lines, and fixed transaction durations. These are choices in a model. A real service may violate several at once. A desk for one specialist cannot necessarily handle the next person’s request. A distant counter takes time to reach.
+
+There is also no guarantee that workers behave identically under a different arrangement. In behavioral experiments, Masha Shunko, Julie Niederhoff and Yaroslav Rosokha found slower service under a shared queue in their tested setting. Their result is a reason to inspect human behavior, not a universal verdict against shared lines. [2](#source-2)
+
+Imagine that the pooled layout adds two minutes of walking to every one-minute transaction. The gain in our tiny example can disappear. That is an original what-if, not a measured estimate. It shows why the path between a queue and a desk belongs inside the comparison.
+
+## Ask what the line is optimizing
+
+A single line can make arrival order easier to observe. Separate lines can preserve a relationship with a particular worker or divide incompatible services. A priority route may serve a justified need while confusing everyone who cannot see its rules. These are design decisions as well as arithmetic.
+
+The next time a room appears to have plenty of open capacity and plenty of waiting, look for the connection between them. Can any available counter take the next person? Or has each person been attached to a particular counter? The number of people in front of you is only one part of the system.

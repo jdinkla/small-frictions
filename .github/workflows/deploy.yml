@@ -1,0 +1,64 @@
+name: Deploy to GitHub Pages
+
+# Static Astro build (site/) published to GitHub Pages at the project subpath
+# https://jdinkla.github.io/small-frictions/. Internal links are made base-aware
+# at build time — `BASE` is set in astro.config.mjs, component links go through
+# src/lib/base.ts, and prose links through integrations/rehype-base-path.ts.
+# NOTE: enable Pages with source "GitHub Actions" in the repo settings, or this
+# workflow can't publish.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow one concurrent deployment; don't cancel an in-progress production deploy.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Check internal links are base-aware
+        run: bash site/scripts/check-base-aware-links.sh
+      - name: Unit tests
+        run: cd site && npm ci && npx vitest run
+      - name: Build Astro site
+        uses: withastro/action@v3
+        with:
+          path: site
+          node-version: 22
+      # Mirrors `just markupguard` — the build is happy with escaped raw HTML,
+      # so a bad MDX transform would otherwise ship pages rendering as source.
+      - name: Check for escaped markup in the built site
+        run: |
+          bad=$(grep -rEon '&lt;(p|div|span|a|table|thead|tbody|tfoot|tr|td|th|figure|aside)[ >]' site/dist --include='*.html' || true)
+          if [ -n "$bad" ]; then
+            echo "Escaped block markup in the built site — a raw-HTML block is rendering as text:"
+            echo "$bad" | head -20
+            exit 1
+          fi
+          echo "markupguard: no escaped markup in the built site"
+
+      - name: Check deployed links, assets, fragments and metadata
+        run: python3 tools/check-built.py
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

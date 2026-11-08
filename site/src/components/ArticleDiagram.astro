@@ -1,0 +1,72 @@
+---
+interface Props { kind: string; }
+const { kind } = Astro.props;
+const captions: Record<string,string> = {
+  'capacity': 'Invented kiosk, 30 jobs/hour service capacity. At 80%, 90% and 95% utilization, the M/M/1 mean queue waits are 8, 18 and 38 minutes. The average service time remains two minutes.',
+  'bus-pairs': 'Illustrative feedback loop, not a route measurement. A wider gap gives the delayed bus more boarding work. A smaller gap gives its follower less, which can shrink their separation again.',
+  'average-wait': 'Invented repeating routes. Both average a bus every 10 minutes; uniform independent passenger arrivals yield 5-minute waits with 10/10 gaps and 8.2-minute waits with 2/18 gaps.',
+  'one-queue': 'Original four-person example. Two jobs begin immediately and take six minutes and one minute. The two remaining one-minute jobs wait 6 + 1 = 7 minutes in separate lines, or 1 + 2 = 3 minutes in a shared line.',
+  'littles-law': 'Invented repair desk, stable averages. 18 devices inside ÷ 12 devices/hour = 1.5 hours, or 90 minutes, from acceptance to collection. This is total time inside the chosen boundary.',
+  'waiting-design': 'Constructed information comparison. These are two possible messages during a ten-minute delay, not measured psychological effects. A credible explanation changes what the waiting person knows.'
+};
+const cap= captions[kind];
+const curve=Array.from({length:31},(_,i)=>{const r=.8+i*.005;return `${i===0?'M':'L'}${(160+(r-.8)*2000).toFixed(2)} ${(210-(2*r/(1-r))*4.6).toFixed(2)}`}).join(' ');
+---
+<figure class="article-figure">
+<div class="diagram-mobile">
+{kind === 'capacity' && <><strong>A little busier. A lot more waiting.</strong><table><caption>Invented kiosk · 30 jobs/hour capacity</caption><thead><tr><th scope="col">Utilization</th><th scope="col">Mean queue wait</th></tr></thead><tbody><tr><td>80%</td><td>8 min</td></tr><tr><td>90%</td><td>18 min</td></tr><tr><td>95%</td><td>38 min</td></tr></tbody></table></>}
+{kind === 'bus-pairs' && <><strong>A delay can feed itself.</strong><div class="diagram-row"><span>Delayed bus<br /><b>Wider gap ahead</b></span><span>More boarding<br /><b>More delay</b></span></div><div class="diagram-row"><span>Following bus<br /><b>Smaller gap ahead</b></span><span>Less boarding<br /><b>Closes the gap</b></span></div></>}
+{kind === 'average-wait' && <><strong>Same frequency. Different wait.</strong><table><caption>Repeating gaps · random passenger arrival</caption><thead><tr><th scope="col">Bus gaps</th><th scope="col">Mean wait</th></tr></thead><tbody><tr><td>10 / 10 min</td><td>5 min</td></tr><tr><td>2 / 18 min</td><td>8.2 min</td></tr></tbody></table><p>Both average a bus every 10 minutes.</p></>}
+{kind === 'one-queue' && <><strong>Same work. A different connection.</strong><table><caption>Total wait for the two initially waiting</caption><tbody><tr><th scope="row">Separate lines</th><td>6 + 1 = <b>7 min</b></td></tr><tr><th scope="row">Shared line</th><td>1 + 2 = <b>3 min</b></td></tr></tbody></table></>}
+{kind === 'littles-law' && <><strong>Choose the boundary.</strong><p class="diagram-equation">18 ÷ 12 = 1.5 h</p><table><tbody><tr><th scope="row">Inside on average</th><td>18 devices</td></tr><tr><th scope="row">Flow through</th><td>12 devices/hour</td></tr><tr><th scope="row">Time inside</th><td>90 minutes</td></tr></tbody></table></>}
+{kind === 'waiting-design' && <><strong>Same delay. Different information.</strong><p class="diagram-message">“Soon.”</p><p>No checkable commitment.</p><p class="diagram-message">“Next update at 14:20.”</p><p>A specific promise, if the service can keep it.</p></>}
+</div>
+<svg class="diagram" viewBox="0 0 600 260" role="img" aria-label={cap}>
+{kind === 'capacity' && <>
+  <path d="M55 30v180h505" fill="none" stroke="var(--muted)" />
+  <path d={curve} stroke="var(--accent)" stroke-width="3" fill="none"/>
+  {[{x:160,y:173.2,v:'80%',w:'8 min'},{x:360,y:127.2,v:'90%',w:'18 min'},{x:460,y:35.2,v:'95%',w:'38 min'}].map(p=><><path d={`M${p.x} ${p.y}V210`} stroke="var(--rule)" stroke-dasharray="4 4"/><circle cx={p.x} cy={p.y} r="8" fill="var(--accent)"/><text x={p.x+15} y={p.y-12} font-size="22">{p.w}</text><text x={p.x} y="239" text-anchor="middle" font-size="20">{p.v}</text></>)}
+  <text x="72" y="43" class="diagram-note">MEAN QUEUE WAIT</text><text x="550" y="239" text-anchor="end" class="diagram-note">LOAD</text>
+</>}
+{kind === 'bus-pairs' && <>
+  <text x="25" y="34" font-size="22">The delay recruits more delay.</text>
+  <path d="M45 105h510M45 187h510" stroke="var(--rule)" stroke-width="2"/>
+  <circle cx="100" cy="105" r="17" fill="var(--ink)"/><circle cx="310" cy="105" r="17" fill="var(--accent)"/><circle cx="480" cy="105" r="17" fill="var(--ink)"/>
+  <text x="205" y="78" text-anchor="middle" font-size="18">longer gap</text><text x="400" y="78" text-anchor="middle" font-size="18">shorter gap</text>
+  <circle cx="100" cy="187" r="17" fill="var(--ink)"/><circle cx="370" cy="187" r="17" fill="var(--accent)"/><circle cx="440" cy="187" r="17" fill="var(--ink)"/>
+  <path d="M310 128l55 35m-5-13 5 13-14-3M480 128l-37 35m0-14 0 14 14-4" stroke="var(--accent)" stroke-width="2" fill="none"/>
+  <text x="70" y="236" font-size="18">More people to board.</text><text x="360" y="236" font-size="18">Less boarding work.</text>
+</>}
+{kind === 'average-wait' && <>
+  <text x="25" y="36" font-size="22">Same frequency. Different passenger wait.</text>
+  <text x="25" y="91" font-size="18">Regular</text><text x="25" y="177" font-size="18">Uneven</text>
+  <path d="M155 85H540M155 171H540" stroke="var(--rule)" stroke-width="2"/>
+  {[155,345,535].map(x=><circle cx={x} cy="85" r="10" fill="var(--ink)"/>)}
+  {[155,193,535].map(x=><circle cx={x} cy="171" r="10" fill="var(--accent)"/>)}
+  <text x="250" y="68" text-anchor="middle" font-size="19">10 min</text><text x="440" y="68" text-anchor="middle" font-size="19">10 min</text>
+  <text x="174" y="151" text-anchor="middle" font-size="19">2</text><text x="365" y="151" text-anchor="middle" font-size="19">18 min</text>
+  <text x="155" y="121" font-size="18">Mean wait: 5 min</text><text x="155" y="212" font-size="18" class="diagram-accent">Mean wait: 8.2 min</text>
+</>}
+{kind === 'one-queue' && <>
+  <text x="25" y="36" font-size="22">Same work. A different connection.</text>
+  <text x="25" y="88" font-size="19">Separate lines</text><text x="25" y="170" font-size="19">Shared line</text>
+  <rect x="210" y="62" width="290" height="42" fill="var(--ink)"/><rect x="210" y="145" width="125" height="42" fill="var(--accent)"/>
+  <text x="225" y="89" style="fill:var(--paper)" font-size="20">7 minutes total waiting</text>
+  <text x="350" y="173" font-size="20">3 minutes</text>
+  <text x="25" y="232" font-size="18">For the two people initially waiting; illustrative example.</text>
+</>}
+{kind === 'littles-law' && <>
+  <text x="25" y="39" font-size="22">Choose the boundary. Keep the units.</text>
+  <text x="40" y="123" font-size="49">18</text><text x="170" y="123" font-size="30">÷</text><text x="230" y="123" font-size="49">12</text><text x="360" y="123" font-size="30">=</text><text x="421" y="123" font-size="49" class="diagram-accent">1.5</text>
+  <text x="40" y="158" font-size="18">devices</text><text x="230" y="158" font-size="18">devices/hour</text><text x="421" y="158" font-size="18">hours</text>
+  <path d="M40 188h510" stroke="var(--rule)"/><text x="40" y="225" font-size="19">Acceptance → repair → testing → collection</text>
+</>}
+{kind === 'waiting-design' && <>
+  <text x="25" y="37" font-size="22">The same ten minutes. Different information.</text>
+  <path d="M25 70h550M25 155h550" stroke="var(--rule)"/>
+  <text x="25" y="107" font-size="24">“Soon.”</text><text x="25" y="137" font-size="16" class="diagram-note">NO CHECKABLE COMMITMENT</text>
+  <text x="25" y="194" font-size="24">“Next update at 14:20.”</text><text x="25" y="227" font-size="16" class="diagram-note">A SPECIFIC PROMISE, IF THE SERVICE CAN KEEP IT</text>
+</>}
+</svg>
+<figcaption>{cap}</figcaption>
+</figure>

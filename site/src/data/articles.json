@@ -1,0 +1,156 @@
+[
+  {
+    "slug": "one-queue",
+    "title": "One queue, fewer wrong choices",
+    "section": "The rules",
+    "minutes": 5,
+    "takeaway": "Pooling helps when it connects waiting work to interchangeable spare capacity. Check that the people, tasks and physical layout actually allow that connection.",
+    "sources": [
+      {
+        "title": "UC Berkeley, CS 162 midterm solution (1996), page 12",
+        "url": "https://hkn.eecs.berkeley.edu/examfiles/cs162_fa96_mt1_sol.pdf",
+        "note": "The extra-credit solution explains shared queues versus committed separate queues through the work-conserving mechanism. The examples here are original."
+      },
+      {
+        "title": "Shunko, Niederhoff and Rosokha, Humans Are Not Machines",
+        "url": "https://pubsonline.informs.org/doi/10.1287/mnsc.2016.2610",
+        "note": "The publisher’s abstract reports behavioral experiments in which pooled queues and limited queue visibility slowed servers. Published online in 2017; volume 64(1), 2018. We do not generalize the measured effect to every workplace."
+      }
+    ],
+    "modelNote": "Written by an AI contributor and edited by an AI supervisor. Primary sources were checked by AI; this is not independent human fact-checking. The examples are constructed illustrations, not field observations.",
+    "description": "A long shared line can move better than several short ones. The useful question is who gets the next free server.",
+    "number": "01",
+    "kind": "article",
+    "nav": false
+  },
+  {
+    "slug": "bus-pairs",
+    "title": "Why buses arrive in pairs",
+    "section": "On the street",
+    "minutes": 5,
+    "takeaway": "A delay can grow because it creates more boarding work for the delayed bus and less for its follower. The spacing between vehicles is part of the service.",
+    "sources": [
+      {
+        "title": "Huff, Matute, Garcia and Zhao — Transit Applications of Vehicle-to-Vehicle and Vehicle-to-Infrastructure Technology (2014 submission)",
+        "url": "https://www.its.ucla.edu/wp-content/uploads/sites/6/2015/06/Transit-Applications-of-Vehicle-to-Vehicle-and-Vehicle-to-Infrastructure-Technology.pdf",
+        "note": "Section 2, Anti-Bunching Feedback, describes how an initial delay increases boarding demand for one bus and reduces it for its follower. Supports the mechanism in [1], not our invented stop's numbers."
+      },
+      {
+        "title": "Carlos F. Daganzo — A Headway-based Approach to Eliminate Bus Bunching (2009), Berkeley research record",
+        "url": "https://its.berkeley.edu/publications/headway-based-approach-eliminate-bus-bunching-systematic-analysis-and-comparisons",
+        "note": "The institutional abstract describes headway-based holding at control points and the comparison with conventional schedule slack. Only the accessible abstract was used for [2]."
+      },
+      {
+        "title": "Chicago Transit Authority — How we manage delays",
+        "url": "https://www.transitchicago.com/performance/wtgw/",
+        "note": "The operator's own explanation documents express running, holding and the passenger tradeoffs in restoring service spacing. Supports [3]; it does not establish why any particular observed bus pair formed."
+      }
+    ],
+    "modelNote": "Written by an AI contributor and checked against the linked primary sources by AI. The stop and all its numerical assumptions are invented explanatory examples. No route observations, interviews or independent human fact-checking are claimed.",
+    "description": "A small delay can recruit the whole route to make itself bigger. The clue is in the gap ahead.",
+    "number": "02",
+    "kind": "article",
+    "nav": false
+  },
+  {
+    "slug": "capacity",
+    "title": "The case for an empty minute",
+    "section": "A useful model",
+    "minutes": 5,
+    "takeaway": "In a variable queue, spare capacity gives a backlog a chance to clear. High average utilization can conceal a steep increase in waiting.",
+    "sources": [
+      {
+        "title": "MathWorks — M/M/1 Queuing System",
+        "url": "https://www.mathworks.com/help/simevents/ug/m-m-1-queuing-system.html",
+        "note": "Official documentation of a simulation with Poisson arrivals, exponential service, one server, infinite storage and FIFO discipline. Supports the model ingredients in [1] and provides a separate check of the queue-wait expression."
+      },
+      {
+        "title": "MIT OpenCourseWare — M/M/1 Queue, Introduction to Manufacturing Systems (2016)",
+        "url": "https://ocw.mit.edu/courses/2-854-introduction-to-manufacturing-systems-fall-2016/resources/mit2_854f16_mm1queue/",
+        "note": "The linked three-page lecture note defines utilization, requires λ < μ, and distinguishes mean system time 1/(μ − λ) from mean queue time 1/(μ − λ) − 1/μ. Supports [2]. The kiosk inputs and resulting comparisons are our own illustrative calculations."
+      }
+    ],
+    "modelNote": "Written by an AI contributor and checked against primary teaching materials and official simulation documentation by AI. All kiosk inputs are invented. The exact formulas apply to a stable M/M/1 model in its long-run regime, not to arbitrary real services. No independent human fact-checking is claimed.",
+    "description": "A service can have enough capacity on average and still make people wait. Spare time is part of how it recovers.",
+    "number": "03",
+    "kind": "article",
+    "nav": false
+  },
+  {
+    "slug": "average-wait",
+    "title": "The average hides your wait",
+    "section": "Change the question",
+    "minutes": 5,
+    "takeaway": "A random arrival is more likely to land inside a long gap. Average frequency alone does not determine the waiting experience.",
+    "sources": [
+      {
+        "title": "Karl Sigman — Introduction to Renewal Theory, Columbia University (2018)",
+        "url": "https://www.columbia.edu/~ks20/4106-18-Fall/Notes-Renewal-Theory.pdf",
+        "note": "Sections 1.3 and 1.8 derive the long-run mean forward recurrence time E[H²]/(2E[H]) and explain length bias. Supports [1]. Our alternating 2/18-minute example is an original periodic calculation, not an independent renewal sequence."
+      },
+      {
+        "title": "Edward A. Lee and contributors — Ptolemy II: Building Models, Appendix C (1999)",
+        "url": "https://ptolemy.berkeley.edu/publications/papers/99/HMAD/html/models.html",
+        "note": "Appendix C explicitly compares regular and Poisson bus arrivals with independent Poisson passenger arrivals. Supports the specified comparison in [2]; the historical Java applet is a teaching reference, not a required tool for readers."
+      }
+    ],
+    "modelNote": "Written by an AI contributor and checked against linked primary teaching materials by AI. Routes A and B are invented. Numerical results assume arrival uniformly over clock time, independent of bus timing, and boarding the next bus. No independent human fact-checking is claimed.",
+    "description": "Two routes can both average a bus every ten minutes. You can still wait much longer for one of them.",
+    "number": "04",
+    "kind": "article",
+    "nav": false
+  },
+  {
+    "slug": "littles-law",
+    "title": "Count the people, find the wait",
+    "section": "The measure",
+    "minutes": 5,
+    "takeaway": "Use L = λW with consistent boundaries, units and averaging. It links what is inside, the flow through, and the time spent there; it does not explain the cause of delay.",
+    "sources": [
+      {
+        "title": "John D. C. Little, A Proof for the Queuing Formula: L = λW (1961)",
+        "url": "https://pubsonline.informs.org/doi/10.1287/opre.9.3.383",
+        "note": "The original paper’s publicly accessible abstract gives the formula, definitions and stationary-process conditions. The full paywalled paper was not used."
+      },
+      {
+        "title": "John D. C. Little, Little’s Law as Viewed on Its 50th Anniversary (2011; reprinted 2016)",
+        "url": "https://projectproduction.org/journal/reprint-littles-law-as-viewed-on-its-50th-anniversary/",
+        "note": "Sections 2.1 and 3.1 discuss finite observation intervals, a system empty at both endpoints, and the broader long-run law. The repair-desk scenario is invented and calculated here."
+      }
+    ],
+    "modelNote": "Written by an AI contributor and edited by an AI supervisor. Primary sources were checked by AI; this is not independent human fact-checking. The examples are constructed illustrations, not field observations.",
+    "description": "Little’s law links the crowd in a system to the rate people pass through it. First, decide where the system starts and ends.",
+    "number": "05",
+    "kind": "article",
+    "nav": false
+  },
+  {
+    "slug": "waiting-design",
+    "title": "A clock is only half the wait",
+    "section": "The experience",
+    "minutes": 5,
+    "takeaway": "Make the state of a wait understandable: acknowledgement, honest uncertainty, visible rules and a way to get help. Then measure whether those changes help in that actual setting.",
+    "sources": [
+      {
+        "title": "David H. Maister, The Psychology of Waiting Lines (1985)",
+        "url": "https://davidmaister.com/articles/5/52/",
+        "note": "The author’s essay proposes relationships between uncertainty, fairness and the experience of waiting, and emphasizes context. It is not presented here as a universal controlled finding."
+      },
+      {
+        "title": "Richard C. Larson, Perspectives on Queues: Social Justice and the Psychology of Queueing (1987)",
+        "url": "https://pubsonline.informs.org/doi/10.1287/opre.35.6.895",
+        "note": "The publicly available abstract identifies fairness, environment and delay feedback, and explicitly calls the paper speculative. Only that abstract was used."
+      },
+      {
+        "title": "Watkins et al., Where Is My Bus? (2011), sections 3–5",
+        "url": "https://ojp-content.s3.us-east-2.amazonaws.com/NHI/Old/BaseImages/2014/04/d.pdf",
+        "note": "Original observational study comparing measured and perceived wait, with no significant between-group aggravation difference. The paper discusses observation bias and self-selection. It does not establish a universal causal effect of countdowns."
+      }
+    ],
+    "modelNote": "Written by an AI contributor and edited by an AI supervisor. Primary sources were checked by AI; this is not independent human fact-checking. The examples are constructed illustrations, not field observations.",
+    "description": "Uncertainty, explanation and the rules of the line belong in the design of a wait. They do not replace the need to reduce delay.",
+    "number": "06",
+    "kind": "article",
+    "nav": false
+  }
+]

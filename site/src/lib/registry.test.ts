@@ -1,6 +1,6 @@
 import { readdirSync } from 'node:fs';
 import { join } from 'node:path';
-import { describe, expect, it } from 'vitest';
+import { describe, expect, it, vi } from 'vitest';
 import { entries, getEntry, navEntries } from './registry';
 
 describe('registry', () => {
@@ -20,4 +20,31 @@ describe('registry', () => {
     expect(getEntry('about')?.title).toBe('About');
     expect(navEntries().every((e) => e.nav)).toBe(true);
   });
+});
+
+// Publication regressions: a second issue must not change old memberships,
+// timestamps or next-article boundaries.
+describe('multi-issue publication',()=>{
+ it('preserves the first issue and gives every article one complete issue',async()=>{
+  const {issues,articles,articlesForIssue,nextArticle}=await import('./registry');
+  expect(new Set(issues.map(i=>i.slug)).size).toBe(issues.length);
+  for(const issue of issues){
+   const list=articlesForIssue(issue.slug);
+   expect(list).toHaveLength(6);
+   expect(list.map(a=>a.number)).toEqual(['01','02','03','04','05','06']);
+   for(const article of list)expect(nextArticle(article).issue).toBe(issue.slug);
+  }
+  for(const article of articles)expect(issues.some(i=>i.slug===article.issue)).toBe(true);
+  expect(articlesForIssue('waiting').map(a=>a.slug)).toEqual(['one-queue','bus-pairs','capacity','average-wait','littles-law','waiting-design']);
+ });
+ it('keeps Waiting RSS identity stable and uses the correct issue dates',async()=>{
+  vi.stubEnv('BASE_URL','/small-frictions');
+  const {GET}=await import('../pages/feed.xml');
+  const xml=await GET().text();
+  expect((xml.match(/<item>/g)||[])).toHaveLength(12);
+  expect((xml.match(/<pubDate>Sun, 08 Nov 2026 10:32:20 GMT<\/pubDate>/g)||[])).toHaveLength(6);
+  expect(xml).toContain('<guid isPermaLink="true">https://jdinkla.github.io/small-frictions/articles/one-queue/</guid>');
+  expect(xml.indexOf('<category>Delivery</category>')).toBeLessThan(xml.indexOf('<category>Waiting</category>'));
+  vi.unstubAllEnvs();
+ });
 });

@@ -40,6 +40,24 @@ for file,page in pages.items():
 for name in ('feed.xml','sitemap.xml'):
     try:ET.parse(site/name)
     except Exception as e:errors.append(f'{name}: {e}')
+# Cross-file publication contracts: issue dates and original GUIDs must survive
+# new issues, and the XML must contain real deployed paths rather than root URLs.
+from email.utils import parsedate_to_datetime
+from datetime import datetime
+articles=json.loads((root/'site/src/data/articles.json').read_text())
+issues={i['slug']:i for i in json.loads((root/'site/src/data/issues.json').read_text())}
+items=ET.parse(site/'feed.xml').getroot().findall('./channel/item')
+if len(items)!=len(articles):errors.append('feed.xml: article count drift')
+by_url={item.findtext('link'):item for item in items}
+if len(by_url)!=len(items):errors.append('feed.xml: duplicate article URL')
+for article in articles:
+    url='https://jdinkla.github.io'+base+'/articles/'+article['slug']+'/'
+    item=by_url.get(url)
+    if item is None:errors.append('feed.xml: missing canonical article '+url);continue
+    if item.findtext('guid')!=url:errors.append('feed.xml: unstable GUID '+url)
+    actual=parsedate_to_datetime(item.findtext('pubDate'))
+    expected=datetime.fromisoformat(issues[article['issue']]['publishedAt'].replace('Z','+00:00'))
+    if actual!=expected:errors.append('feed.xml: wrong issue date '+url)
 if errors:
     print('\n'.join(errors));raise SystemExit(1)
 print(f'built guard: {len(pages)} HTML pages; links, fragments, local fonts, metadata and XML valid')

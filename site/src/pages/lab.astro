@@ -3,7 +3,7 @@ import Base from '../layouts/Base.astro';
 import QueueLab from '../components/islands/QueueLab';
 import { withBase } from '../lib/base';
 ---
-<Base title="Queue Lab" description="Change demand, bus spacing and queue assignment in three inspectable waiting models. Original examples with clear assumptions.">
+<Base issueSlug="waiting" title="Queue Lab" description="Change demand, bus spacing and queue assignment in three inspectable waiting models. Original examples with clear assumptions.">
 <div class="breadcrumbs"><a href={withBase('/')}>Home</a><span>/</span><span>Queue Lab</span></div>
 <div class="page-heading lab-intro"><h1>Make the queue<br />your own.</h1><p class="deck">Averages have consequences. Change one rule, keep the others fixed, and watch what happens. These are explanatory models with invented inputs, not live service data.</p></div>
 <nav class="lab-links" aria-label="Experiments"><a href="#capacity">Spare capacity</a><a href="#headways">Bus spacing</a><a href="#pooling">Shared queues</a></nav>

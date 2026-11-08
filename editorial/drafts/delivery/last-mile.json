@@ -1,0 +1,56 @@
+{
+  "slug": "last-mile",
+  "title": "The last mile is not a distance",
+  "deck": "The difficult part may be the door, the parking space or the handover. A locker changes who completes that work.",
+  "section": "At the doorstep",
+  "minutes": 5,
+  "number": "02",
+  "lead": "The van is on your street. The parcel is still not in your hands. Between those two facts sit a parking space, a stack of boxes, a locked entrance, perhaps a lift, and someone who must be available to receive the delivery. Calling this the last mile makes it sound like a short stretch of road. The useful unit is often a successful handover.",
+  "sections": [
+    {
+      "heading": "Count the stops as well as the kilometres",
+      "paragraphs": [
+        "A vehicle carrying thirty parcels might make thirty separate stops, or deliver all thirty to one building. The load count alone cannot distinguish those jobs. Nor can the distance from the depot. The work includes driving between stops and doing something at each stop: parking, finding the parcel, gaining access and completing the handover.",
+        "Consider an invented route with twenty stops, each receiving one parcel. Assume one minute of driving between successive stops and three minutes of delivery work at each stop. Start the clock at the first stop and stop after the last handover. Nineteen driving intervals take nineteen minutes; twenty handovers take sixty. The total is seventy-nine minutes, excluding the journey to the first stop and the return.",
+        "Halve the driving time and the total becomes 69.5 minutes. Halve the handover time instead and it becomes forty-nine. Neither change is a forecast. Their point is that shortening the road journey and shortening the delivery task act on different parts of the clock. Where stops are close together, the tasks can dominate."
+      ]
+    },
+    {
+      "heading": "A door can create another journey",
+      "paragraphs": [
+        "If a handover requires someone to answer, the arrival of the van and the availability of the recipient have to coincide. An unsuccessful attempt can leave another task: returning later, finding an authorised alternative, or moving the parcel to a collection point. That work does not disappear because the vehicle once reached the address.",
+        "A locker changes that timing problem. The courier can deposit a parcel before the recipient comes to collect it. DHL's Packstation guidance describes notification and a pickup code, but also lists constraints: an appropriate compartment may be unavailable, a station may be out of order, or a parcel may be unsuitable. This is the operator's account of its service, not research proving a general benefit. [1]",
+        "The handover now has two events, deposit and collection. Storage connects them. That can remove the need for courier and recipient to meet, while introducing a different limit: occupied compartments cannot accept another parcel. A parcel waiting for collection uses space even though nobody is actively handling it."
+      ]
+    },
+    {
+      "heading": "Measure the part that changed",
+      "paragraphs": [
+        "Researchers tested a common-carrier locker in a downtown Seattle residential building, comparing before and after with a similar nearby building. They found reduced courier time inside the building. The estimated reduction in the vehicle's time at the curb was not statistically significant. The study concerned two buildings during the pandemic, with limited observations; it does not establish the same result for a public neighbourhood locker. [2]",
+        "That distinction matters. A driver can finish one building sooner while still serving other buildings from the same parking space. Improving one task need not shrink the whole stop by the same amount. A claim about time inside a building should stay attached to that measurement, rather than quietly becoming a claim about the entire route."
+      ]
+    },
+    {
+      "heading": "Collection moves the boundary",
+      "paragraphs": [
+        "Now imagine ten households using one neighbourhood locker instead of ten door deliveries. The courier may have fewer delivery locations. The households still need their parcels. If everyone collects while already passing on foot, the extra travel differs greatly from ten special return trips by car. This is a comparison of possible journeys, not a statement about how actual customers behave.",
+        "For a numerical boundary check, invent a locker that removes four vehicle-kilometres from a delivery round. If ten recipients each make a dedicated two-kilometre return drive to collect, their combined collection travel is twenty vehicle-kilometres. If they all walk from a trip they were already making, the additional car distance could instead be zero. Neither case alone calculates emissions: the vehicles, loads, extra distance and operating conditions would still matter.",
+        "Convenience also has a boundary. A locker near one person's normal route may require another person to arrange transport, carry a heavy box or use an interface they cannot operate easily. Moving a delivery task changes who spends the time and effort. Evaluating the whole handover means counting that work alongside the courier's round. A shorter delivery route is one result; an easier completed delivery is a wider question."
+      ]
+    }
+  ],
+  "takeaway": "Last-mile delivery combines movement, access and handover. Consolidating the courier's stops can shift travel and effort to the recipient.",
+  "sources": [
+    {
+      "title": "DHL — Receiving with the Packstation",
+      "url": "https://www.dhl.de/en/privatkunden/hilfe-kundenservice/packstation/empfangen.html",
+      "note": "Operator support page inspected directly. Supports notification, collection and service constraints in [1]. Operational descriptions are used; claims of environmental superiority are not inferred from them."
+    },
+    {
+      "title": "Ranjbari, Diehl, Dalla Chiara and Goodchild — Do parcel lockers reduce delivery times? Evidence from the field (2023)",
+      "url": "https://urbanfreightlab.com/wp-content/uploads/2023/05/Do-Lockers-Reduce-Delivery-Dwell-Time-Evidence-from-Field_UrbanFreightLab.pdf",
+      "note": "Accessible full research PDF inspected, including methods, results and limitations. Supports the bounded comparison in [2]. The authors separate in-building time from curb dwell time and caution about sample size, pandemic conditions and extension to other building types."
+    }
+  ],
+  "modelNote": "AI-authored explanatory draft. The twenty-stop route and ten-household collection scenarios are invented, with explicit start/end boundaries. Their minutes and vehicle-kilometres are arithmetic examples, not observed performance, a lifecycle assessment or a recommendation. No field reporting or human fact-checking is claimed."
+}

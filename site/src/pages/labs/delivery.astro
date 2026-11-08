@@ -1,0 +1,12 @@
+---
+import Base from '../../layouts/Base.astro';
+import DeliveryLab from '../../components/islands/DeliveryLab';
+import {withBase} from '../../lib/base';
+---
+<Base title="Delivery Lab" issueSlug="delivery" description="Move a hub, change a box and inspect a synthetic check digit in three transparent delivery experiments.">
+<div class="breadcrumbs"><a href={withBase('/issues/delivery/')}>The delivery issue</a><span>/</span><span>Delivery Lab</span></div>
+<div class="page-heading lab-intro"><h1>Follow the parcel.<br />Change the system.</h1><p class="deck">Move a hub. Resize an envelope. Check a number. These are three explanatory calculations with invented inputs, not carrier data, packing advice or a tracking service.</p></div>
+<nav class="lab-links" aria-label="Experiments"><a href="#hub">Hub distance</a><a href="#box">Box space</a><a href="#check-digit">Check digit</a></nav>
+<noscript><p class="model-note">The default examples, calculations and assumptions are visible below. Enable JavaScript to change the inputs. All articles remain readable without it.</p></noscript>
+<DeliveryLab client:load />
+</Base>

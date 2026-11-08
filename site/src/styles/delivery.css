@@ -1,0 +1,54 @@
+.delivery-lab .experiment-grid > * { min-width: 0; }
+.delivery-lab .experiment-result h3 { font: 600 1rem/1.4 var(--display); }
+.delivery-lab .delivery-results { margin: 18px 0 0; }
+.delivery-lab .delivery-results > div { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; padding-block: 12px; border-bottom: 1px solid var(--rule); }
+.delivery-lab .delivery-results dt { font-size: .9rem; }
+.delivery-lab .delivery-results dd { margin: 0; font: 400 1.45rem/1.2 var(--mono); white-space: nowrap; }
+.delivery-lab .delivery-outcome { margin-top: 23px; font: 400 1.65rem/1.35 var(--reading); color: var(--accent); }
+.delivery-lab .delivery-distance-bars { display: grid; gap: 8px; margin-top: 19px; }
+.delivery-lab .delivery-distance-bars span { display: block; height: 8px; background: var(--ink); }
+.delivery-lab .delivery-distance-bars span:last-child { background: var(--accent); }
+.delivery-lab .delivery-loads { margin-top: 24px; border-top: 1px solid var(--rule); }
+.delivery-lab .delivery-loads p { display: flex; justify-content: space-between; gap: 14px; padding-block: 13px; border-bottom: 1px solid var(--rule); font-size: .85rem; }
+.delivery-lab .delivery-loads strong { font-weight: 600; }
+.delivery-lab .delivery-loads span { text-align: right; color: var(--muted); }
+.delivery-lab .delivery-reset { margin-top: 22px; }
+.delivery-lab button { min-width: 44px; cursor: pointer; }
+.delivery-lab button:disabled { opacity: .6; cursor: default; }
+.delivery-lab .delivery-payload { width: 100%; min-height: 48px; padding: 11px 12px; background: var(--paper); color: var(--ink); border: 1px solid var(--muted); border-radius: 0; font: 400 1.2rem/1.3 var(--mono); caret-color: var(--accent); }
+.delivery-lab .delivery-payload[aria-invalid="true"] { border: 2px solid var(--accent); }
+.delivery-lab .delivery-input-error { margin-top: 18px; color: var(--accent); font-size: 1rem; line-height: 1.6; }
+.delivery-lab .delivery-empty { margin-top: 18px; font-size: 1rem; line-height: 1.6; }
+.delivery-lab .delivery-completed { font-family: var(--mono); font-size: clamp(1.2rem, 3vw, 1.65rem); overflow-wrap: anywhere; }
+.delivery-lab .comparison caption { text-align: left; margin-bottom: 12px; line-height: 1.6; }
+.delivery-lab .comparison th, .delivery-lab .comparison td { padding-block: 11px; }
+.delivery-lab .delivery-direct-table { table-layout: fixed; }
+.delivery-lab .delivery-direct-table th:first-child { width: 28%; }
+.delivery-lab .delivery-direct-table td, .delivery-lab .delivery-direct-table th:not(:first-child) { text-align: right; }
+.delivery-lab .model-limits { font-size: .875rem; }
+.delivery-lab .model-limits a { color: var(--accent); }
+.delivery-lab :is(input, button, summary, a):focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
+@media (max-width: 700px) {
+  .delivery-lab .control-label { gap: 14px; flex-wrap: wrap; }
+  .delivery-lab .delivery-results dd { font-size: 1.3rem; }
+  .delivery-lab .delivery-outcome { font-size: 1.5rem; }
+  .delivery-lab .comparison { font-size: .8125rem; }
+  .delivery-lab .delivery-direct-table th, .delivery-lab .delivery-direct-table td { padding-inline: 2px; }
+}
+@media print {
+  .delivery-lab button, .delivery-lab .delivery-payload { display: none; }
+  .delivery-lab .experiment-grid { gap: 24px; }
+  .delivery-lab .experiment-result { border: 1px solid var(--rule); }
+  .delivery-lab details::details-content { display: block; content-visibility: visible; }
+  .delivery-lab .model-limits { max-width: none; }
+  .delivery-lab .comparison { break-inside: avoid; }
+}
+
+/* Compact visual feedback accompanies phone controls. The full result region
+   remains the sole live announcement for assistive technology. */
+.delivery-mobile-feedback{display:none}
+@media(max-width:700px){
+ .delivery-lab .delivery-mobile-feedback{display:block;margin-top:8px;padding-block:12px;border-block:1px solid var(--rule);font:.9375rem/1.5 var(--display);color:var(--ink)}
+ .delivery-mobile-feedback span{display:block}.delivery-mobile-feedback strong{color:var(--accent);font-weight:600}
+}
+@media print{.delivery-lab .delivery-mobile-feedback{display:none}}

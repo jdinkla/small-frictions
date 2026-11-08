@@ -38,3 +38,6 @@ Three square queue marks, the last rust-red, on the paper ground. Inline SVG, sa
 
 ## Craft refinements
 Mobile article contents use a native closed disclosure so the opening explanation appears sooner. Desktop retains the contents rail. At phone widths, diagrams become equivalent HTML tables, equations and feedback rows at readable sizes; SVG remains on desktop and in print. Diagram captions remain visible. Secondary controls have a 44px minimum hit area.
+
+## Issue 02 usability refinements
+Delivery phone controls carry compact changing feedback in their own viewport; the full accessible result panel supplies the live announcement. Article endings provide the issue-specific lab path. The append-only log now generates five most recent heading links while retaining chronological content. Next-article navigation is one heading rather than a separate eyebrow.

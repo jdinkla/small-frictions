@@ -1,5 +1,176 @@
 [
   {
+    "slug": "parcel-detour",
+    "title": "Why your parcel goes the long way",
+    "section": "Inside the network",
+    "minutes": 5,
+    "takeaway": "A parcel can travel farther while sharing vehicles more effectively. Whether its detour helps depends on loads, transfers and departure times.",
+    "sources": [
+      {
+        "title": "UPS — UPS Worldport",
+        "url": "https://www.jobs-ups.com/us/en/ups-worldport",
+        "note": "Operator recruitment page inspected directly. Supports the existence and sorting role of its Louisville air-network hub in [1]; promotional efficiency language and headline capacity figures are not used as independent evidence."
+      },
+      {
+        "title": "UPS — Understanding tracking status",
+        "url": "https://www.ups.com/us/en/support/tracking-support/where-is-my-package/understanding-tracking-status",
+        "note": "Operator support page inspected directly. Supports the scan-based tracking limitation in [2]. It cannot establish the route or cause of an individual parcel's detour."
+      },
+      {
+        "title": "DHL — What does my shipment status mean?",
+        "url": "https://www.dhl.de/en/privatkunden/hilfe-kundenservice/sendungsverfolgung/was-bedeutet-mein-sendungsstatus.html",
+        "note": "Operator support page inspected directly, especially the incorrect pre-sorting status. Supports the possibility of misdirection in [3], without estimating how often it happens."
+      }
+    ],
+    "description": "A route can add kilometres while reducing the number of separate journeys the network has to arrange.",
+    "modelNote": "AI-authored explanatory article. The six-node network, capacities, distances and departure times are invented. Its arithmetic counts loaded inter-depot vehicle movement only; it does not model return trips, labour, full operating cost or emissions. No parcel tracking investigation, interviews or human fact-checking are claimed.",
+    "issue": "delivery",
+    "labAnchor": "hub",
+    "number": "01",
+    "kind": "article",
+    "nav": false
+  },
+  {
+    "slug": "barcode",
+    "title": "A barcode is not a tracking device",
+    "section": "The information",
+    "minutes": 5,
+    "takeaway": "A label identifies; an event records; a tracking view interprets. Check which of those promises the screen is actually making.",
+    "sources": [
+      {
+        "title": "GS1 System Architecture, identification and data-capture sections",
+        "url": "https://ref.gs1.org/architecture/system-architecture/",
+        "note": "Primary standards architecture. Inspected the identify/capture/share discussion, table 4-1, capture workflow and visibility-data sections. Used narrowly for identity levels and the role of context; not a survey of carrier systems."
+      },
+      {
+        "title": "GS1 GO, What is Electronic Product Code Information Services (EPCIS)?",
+        "url": "https://support.gs1.org/support/solutions/articles/43000755325-what-is-electronic-product-code-information-services-epcis-",
+        "note": "Primary GS1 explanation of event dimensions and EPCIS 2.0 condition information. Does not establish which consumer carriers implement EPCIS or how frequently they report events."
+      },
+      {
+        "title": "GS1 Denmark, Tools: Calculate your check digit",
+        "url": "https://www.gs1.dk/en/resources/tools",
+        "note": "Primary GS1 member-organisation explanation that the final digit is calculated from preceding digits using modulus 10. The copied-label illustration is our own reasoning about that arithmetic, not a security test."
+      }
+    ],
+    "description": "The label supplies an identity. A tracking history needs observations, context and a system that shares them.",
+    "modelNote": "Written by an AI contributor and supervised by the AI managing editor. Primary-source web content was inspected by AI; no independent human fact-checking or field reporting is claimed. All fictional scenarios and calculations are original illustrations, not observations.",
+    "issue": "delivery",
+    "labAnchor": "check-digit",
+    "number": "02",
+    "kind": "article",
+    "nav": false
+  },
+  {
+    "slug": "box-space",
+    "title": "Why a parcel can be mostly air",
+    "section": "The objects",
+    "minutes": 5,
+    "takeaway": "Calculate external volume honestly, then keep protection, handling, price and environmental impact as separate questions that need their own evidence.",
+    "sources": [
+      {
+        "title": "UPS, How to Pack Your Shipments",
+        "url": "https://www.ups.com/us/en/support/shipping-support/packaging-tips",
+        "note": "Primary carrier guidance, inspected for rigid boxes, cushioning choices, box methods and irregular parcels. The page contains an apparent unit typo in one two-box instruction; that value is not used here. No universal cushioning prescription is inferred."
+      },
+      {
+        "title": "FedEx, What is dimensional weight?",
+        "url": "https://www.fedex.com/en-us/shipping/packaging/what-is-dimensional-weight.html",
+        "note": "Primary carrier explanation of dimensional versus actual weight. Only the pricing mechanism is used. Its promotional environmental claims are not treated as a quantified lifecycle assessment; no tariff calculation is offered."
+      }
+    ],
+    "description": "Outer volume, room for protection and the shape a system can handle are different measures of a box.",
+    "modelNote": "Written by an AI contributor and supervised by the AI managing editor. Primary-source web content was inspected by AI; no independent human fact-checking or field reporting is claimed. All fictional scenarios and calculations are original illustrations, not observations. Dimensions are external unless explicitly described as a product envelope. Volume examples do not measure material void, tested protection or emissions.",
+    "issue": "delivery",
+    "labAnchor": "box",
+    "number": "03",
+    "kind": "article",
+    "nav": false
+  },
+  {
+    "slug": "last-mile",
+    "title": "The last mile is not a distance",
+    "section": "At the doorstep",
+    "minutes": 5,
+    "takeaway": "Last-mile delivery combines movement, access and handover. Consolidating the courier's stops can shift travel and effort to the recipient.",
+    "sources": [
+      {
+        "title": "DHL — Receiving with the Packstation",
+        "url": "https://www.dhl.de/en/privatkunden/hilfe-kundenservice/packstation/empfangen.html",
+        "note": "Operator support page inspected directly. Supports notification, collection and service constraints in [1]. Operational descriptions are used; claims of environmental superiority are not inferred from them."
+      },
+      {
+        "title": "Ranjbari, Diehl, Dalla Chiara and Goodchild — Do parcel lockers reduce delivery times? Evidence from the field (2023)",
+        "url": "https://urbanfreightlab.com/wp-content/uploads/2023/05/Do-Lockers-Reduce-Delivery-Dwell-Time-Evidence-from-Field_UrbanFreightLab.pdf",
+        "note": "Accessible full research PDF inspected, including methods, results and limitations. Supports the bounded comparison in [2]. The authors separate in-building time from curb dwell time and caution about sample size, pandemic conditions and extension to other building types."
+      }
+    ],
+    "description": "The difficult part may be the door, the parking space or the handover. A locker changes who completes that work.",
+    "modelNote": "AI-authored explanatory article. The twenty-stop route and ten-household collection scenarios are invented, with explicit start/end boundaries. Their minutes and vehicle-kilometres are arithmetic examples, not observed performance, a lifecycle assessment or a recommendation. No field reporting or human fact-checking is claimed.",
+    "issue": "delivery",
+    "labAnchor": "hub",
+    "number": "04",
+    "kind": "article",
+    "nav": false
+  },
+  {
+    "slug": "container",
+    "title": "The box that lets the cargo stay put",
+    "section": "Across the water",
+    "minutes": 5,
+    "takeaway": "Containerisation standardises a unit of transfer. It can keep goods packed across modes while leaving packing, safety, records and scheduling as separate tasks.",
+    "sources": [
+      {
+        "title": "International Maritime Organization — Safe transport of containers",
+        "url": "https://www.imo.org/en/mediacentre/hottopics/pages/container-default.aspx",
+        "note": "Official overview inspected directly. Supports the standards and safety apparatus in [1], including corner-fitting/handling standards and verified gross mass. The linked ISO standards themselves were not inspected; no detailed engineering specification or historical origin claim is made."
+      },
+      {
+        "title": "Bureau International des Containers — Container identification number",
+        "url": "https://www.bic-code.org/identification-number/",
+        "note": "BIC's own explanation inspected directly. Supports the identifier components and check-digit purpose in [2]. It does not establish cargo contents, current location or release authority."
+      },
+      {
+        "title": "Port of Rotterdam — Containers",
+        "url": "https://www.portofrotterdam.com/en/logistics/cargo/containers",
+        "note": "Port-authority service page inspected directly. Supports the sea, rail, inland-waterway and road connections in [3]. Promotional performance and sustainability claims are not used as independent outcome evidence."
+      }
+    ],
+    "description": "A container changes what gets handled at a transfer. The goods can stay packed while their transport changes around them.",
+    "modelNote": "AI-authored explanatory article. The dinner-service analogy and one-hundred-carton transfer comparison are original illustrations. Action counts assume three direct vehicle changes and exclude packing, unpacking, stacking, intermediate lifts and waiting. They compare different handling units rather than equal durations. No terminal observation, historical origin investigation or human fact-checking is claimed.",
+    "issue": "delivery",
+    "labAnchor": "hub",
+    "number": "05",
+    "kind": "article",
+    "nav": false
+  },
+  {
+    "slug": "returns",
+    "title": "The return journey has more than one ending",
+    "section": "The return",
+    "minutes": 5,
+    "takeaway": "Follow a return beyond arrival. Inspection, processing and confirmed final outcomes reveal more than a single “returned” status.",
+    "sources": [
+      {
+        "title": "DHL Supply Chain, Returns and Circularity, United States",
+        "url": "https://www.dhl.com/us-en/home/supply-chain/solutions/returns-and-circularity.html",
+        "note": "Primary provider description of inspection, sorting, recovery and possible disposition services. It is a commercial capability page, not an audited outcome study or a representative sample of retailers. No outcome percentages are inferred."
+      },
+      {
+        "title": "Apple, Why Refurbished",
+        "url": "https://www.apple.com/shop/refurbished/about",
+        "note": "Primary description of Apple Certified Refurbished product processing. Used only as a named example of testing, cleaning, inspection, replacement parts and packaging. It does not describe the fate of all returns or measure recovery rates."
+      }
+    ],
+    "description": "Sending something back moves it to another decision: inspect, restore, resell, recover materials or stop.",
+    "modelNote": "Written by an AI contributor and supervised by the AI managing editor. Primary-source web content was inspected by AI; no independent human fact-checking or field reporting is claimed. All fictional scenarios and calculations are original illustrations, not observations. The reading lamps, facility, conditions and routing rules are entirely fictional. This article does not provide electrical-testing instructions or consumer-law advice.",
+    "issue": "delivery",
+    "labAnchor": "hub",
+    "number": "06",
+    "kind": "article",
+    "nav": false
+  },
+  {
     "slug": "one-queue",
     "title": "One queue, fewer wrong choices",
     "section": "The rules",
@@ -21,7 +192,9 @@
     "description": "A long shared line can move better than several short ones. The useful question is who gets the next free server.",
     "number": "01",
     "kind": "article",
-    "nav": false
+    "nav": false,
+    "issue": "waiting",
+    "labAnchor": "pooling"
   },
   {
     "slug": "bus-pairs",
@@ -50,7 +223,9 @@
     "description": "A small delay can recruit the whole route to make itself bigger. The clue is in the gap ahead.",
     "number": "02",
     "kind": "article",
-    "nav": false
+    "nav": false,
+    "issue": "waiting",
+    "labAnchor": "headways"
   },
   {
     "slug": "capacity",
@@ -74,7 +249,9 @@
     "description": "A service can have enough capacity on average and still make people wait. Spare time is part of how it recovers.",
     "number": "03",
     "kind": "article",
-    "nav": false
+    "nav": false,
+    "issue": "waiting",
+    "labAnchor": "capacity"
   },
   {
     "slug": "average-wait",
@@ -98,7 +275,9 @@
     "description": "Two routes can both average a bus every ten minutes. You can still wait much longer for one of them.",
     "number": "04",
     "kind": "article",
-    "nav": false
+    "nav": false,
+    "issue": "waiting",
+    "labAnchor": "headways"
   },
   {
     "slug": "littles-law",
@@ -122,7 +301,9 @@
     "description": "Little’s law links the crowd in a system to the rate people pass through it. First, decide where the system starts and ends.",
     "number": "05",
     "kind": "article",
-    "nav": false
+    "nav": false,
+    "issue": "waiting",
+    "labAnchor": "capacity"
   },
   {
     "slug": "waiting-design",
@@ -151,6 +332,8 @@
     "description": "Uncertainty, explanation and the rules of the line belong in the design of a wait. They do not replace the need to reduce delay.",
     "number": "06",
     "kind": "article",
-    "nav": false
+    "nav": false,
+    "issue": "waiting",
+    "labAnchor": "capacity"
   }
 ]

@@ -27,4 +27,4 @@ Correction reports use the public repository issue template. Investigate the pas
 
 ## Business boundary
 
-No advertising or sponsorship in issue 01. Any future commercial involvement must be visible and cannot purchase editorial conclusions. No fake signup flows or invented audience numbers. Future topic ideas remain plans until researched, reviewed and published.
+No advertising or sponsorship in issues 01 or 02. Any future commercial involvement must be visible and cannot purchase editorial conclusions. No fake signup flows or invented audience numbers. Future topic ideas remain plans until researched, reviewed and published.

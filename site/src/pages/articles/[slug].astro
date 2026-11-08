@@ -2,25 +2,26 @@
 import { getCollection, render } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import Arrow from '../../components/Arrow.astro';
-import { articles } from '../../lib/registry';
+import { articles, getIssue, nextArticle } from '../../lib/registry';
 import { withBase } from '../../lib/base';
 export async function getStaticPaths() {
   const collection = await getCollection('entries');
-  return articles.map((article,index) => {
+  return articles.map(article => {
     const entry=collection.find(c=>c.id===article.slug);
     if(!entry) throw new Error(`Missing article MDX: ${article.slug}`);
-    return {params:{slug:article.slug},props:{article,entry,next:articles[(index+1)%articles.length]}};
+    return {params:{slug:article.slug},props:{article,entry,next:nextArticle(article)}};
   });
 }
 const {article,entry,next}=Astro.props;
 const {Content,headings}=await render(entry);
-const labAnchor = article.slug === 'average-wait' || article.slug === 'bus-pairs' ? 'headways' : article.slug === 'one-queue' ? 'pooling' : 'capacity';
+const issue=getIssue(article.issue);
+const labLink=withBase(`${issue.labPath}#${article.labAnchor}`);
 ---
-<Base title={article.title} description={article.description} article>
-<div class="breadcrumbs"><a href={withBase('/issues/waiting/')}>The waiting issue</a><span>/</span><span>Article {article.number}</span></div>
-<header class="page-heading"><h1>{article.title}</h1><p class="deck">{article.description}</p><div class="article-byline"><span>Small Frictions · AI editorial desk</span><time datetime="2026-11-08">8 November 2026</time><span>{article.minutes} min read</span></div></header>
-<div class="article-layout"><aside class="article-contents" aria-label="In this article"><p>In this article</p><ol>{headings.filter(h=>h.depth===2).map(h=><li><a href={`#${h.slug}`}>{h.text}</a></li>)}<li><a href="#sources">Sources &amp; model notes</a></li></ol><a class="text-link" href={withBase(`/lab/#${labAnchor}`)}>Try the Queue Lab <Arrow /></a></aside>
-<details class="contents-mobile"><summary>In this article</summary><ol>{headings.filter(h=>h.depth===2).map(h=><li><a href={`#${h.slug}`}>{h.text}</a></li>)}<li><a href="#sources">Sources &amp; model notes</a></li></ol><a class="text-link" href={withBase(`/lab/#${labAnchor}`)}>Try the Queue Lab <Arrow /></a></details>
+<Base title={article.title} description={article.description} article issueSlug={article.issue}>
+<div class="breadcrumbs"><a href={withBase(`/issues/${issue.slug}/`)}>The {issue.title.toLowerCase()} issue</a><span>/</span><span>Article {article.number}</span></div>
+<header class="page-heading"><h1>{article.title}</h1><p class="deck">{article.description}</p><div class="article-byline"><span>Small Frictions · AI editorial desk</span><time datetime={issue.date}>{issue.dateLabel}</time><span>{article.minutes} min read</span></div></header>
+<div class="article-layout"><aside class="article-contents" aria-label="In this article"><p>In this article</p><ol>{headings.filter(h=>h.depth===2).map(h=><li><a href={`#${h.slug}`}>{h.text}</a></li>)}<li><a href="#sources">Sources &amp; model notes</a></li></ol><a class="text-link" href={labLink}>Try the {issue.labTitle} <Arrow /></a></aside>
+<details class="contents-mobile"><summary>In this article</summary><ol>{headings.filter(h=>h.depth===2).map(h=><li><a href={`#${h.slug}`}>{h.text}</a></li>)}<li><a href="#sources">Sources &amp; model notes</a></li></ol><a class="text-link" href={labLink}>Try the {issue.labTitle} <Arrow /></a></details>
 <article class="prose"><Content /><aside class="takeaway"><strong>Take this with you</strong>{article.takeaway}</aside><section class="source-notes" id="sources" aria-labelledby="sources-title"><h2 id="sources-title">Sources &amp; model notes</h2><ol>{article.sources.map((source,i)=><li id={`source-${i+1}`}><a href={source.url}>{source.title}</a><p>{source.note}</p></li>)}</ol><p class="model-note">{article.modelNote}</p></section></article></div>
-<nav class="continue-reading" aria-label="Continue reading"><div><span class="mono muted">NEXT IN THE ISSUE</span><h2><a href={withBase(`/articles/${next.slug}/`)}>{next.title}</a></h2></div><a class="text-link" href={withBase('/issues/waiting/')}>All six articles <Arrow /></a></nav>
+<nav class="continue-reading" aria-label="Continue reading"><h2>Next: <a href={withBase(`/articles/${next.slug}/`)}>{next.title}</a></h2><div class="continue-actions"><a class="text-link" href={labLink}>Try the {issue.labTitle} <Arrow /></a><a class="text-link" href={withBase(`/issues/${issue.slug}/`)}>All articles in {issue.title} <Arrow /></a></div></nav>
 </Base>

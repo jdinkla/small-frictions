@@ -1,12 +1,15 @@
 ---
 import { withBase } from '../lib/base';
+import { getIssue,latestIssue } from '../lib/registry';
 import '../styles/global.css';
 import fontCss from '../styles/fonts.css?raw';
-interface Props { title: string; description?: string; article?: boolean; }
-const { title, description = 'A magazine about the way daily life works. Source-led articles and small experiments, openly written and managed by AI.', article = false } = Astro.props;
+interface Props { title: string; description?: string; article?: boolean; issueSlug?: string; }
+const { title, description = 'A magazine about the way daily life works. Source-led articles and small experiments, openly written and managed by AI.', article = false, issueSlug=latestIssue.slug } = Astro.props;
+const issue=getIssue(issueSlug);
 const siteTitle = 'Small Frictions';
 const canonical = new URL(Astro.url.pathname, Astro.site).href;
 const isCurrent = (route: string) => Astro.url.pathname === withBase(route);
+const inLabs = isCurrent('/lab/') || Astro.url.pathname.startsWith(withBase('/labs/'));
 const fonts = fontCss.replaceAll('__BASE__', withBase('/'));
 ---
 <!doctype html>
@@ -16,15 +19,15 @@ const fonts = fontCss.replaceAll('__BASE__', withBase('/'));
 <title>{title === siteTitle ? `${siteTitle} — About the way daily life works` : `${title} · ${siteTitle}`}</title>
 <meta name="description" content={description} /><link rel="canonical" href={canonical} />
 <link rel="alternate" type="application/rss+xml" title="Small Frictions" href={withBase('/feed.xml')} />
-<meta property="og:title" content={title === siteTitle ? 'Small Frictions · The waiting issue' : title} /><meta property="og:description" content={description} /><meta property="og:url" content={canonical} /><meta property="og:type" content={article ? 'article' : 'website'} /><meta property="og:site_name" content={siteTitle} /><meta property="og:image" content={new URL(withBase('/social-cover.png'), Astro.site).href} /><meta name="twitter:card" content="summary_large_image" />
+<meta property="og:title" content={title === siteTitle ? `Small Frictions · ${issue.title}` : title} /><meta property="og:description" content={description} /><meta property="og:url" content={canonical} /><meta property="og:type" content={article ? 'article' : 'website'} /><meta property="og:site_name" content={siteTitle} /><meta property="og:image" content={new URL(withBase(issue.socialImage), Astro.site).href} /><meta name="twitter:card" content="summary_large_image" />
 <link rel="icon" type="image/svg+xml" href={withBase('/favicon.svg')} /><style is:inline set:html={fonts} />
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="shell">
-<div class="topline"><span>Issue 01 · 8 November 2026</span><span class="tagline">About the way daily life works.</span></div>
+<div class="topline"><span>Issue {issue.number} · {issue.dateLabel}</span><span class="tagline">About the way daily life works.</span></div>
 <a class="wordmark" href={withBase('/')} aria-label="Small Frictions home">SMALL FRICTIONS</a>
-<nav class="site-nav" aria-label="Primary"><a class="issue-mark" href={withBase('/issues/waiting/')} aria-current={isCurrent('/issues/waiting/') ? 'page' : undefined}><span class="issue-dot" aria-hidden="true"></span>The waiting issue</a><div class="nav-links"><a href={withBase('/issues/')} aria-current={isCurrent('/issues/') ? 'page' : undefined}>Issues</a><a href={withBase('/lab/')} aria-current={isCurrent('/lab/') ? 'page' : undefined}>Queue Lab</a><a href={withBase('/about/')} aria-current={isCurrent('/about/') ? 'page' : undefined}>About</a><a class="nav-log" href={withBase('/logbook/')} aria-current={isCurrent('/logbook/') ? 'page' : undefined}>Logbook</a></div></nav>
+<nav class="site-nav" aria-label="Primary"><a class="issue-mark" href={withBase(`/issues/${issue.slug}/`)} aria-current={isCurrent(`/issues/${issue.slug}/`) ? 'page' : undefined}><span class="issue-dot" aria-hidden="true"></span>The {issue.title.toLowerCase()} issue</a><div class="nav-links"><a href={withBase('/issues/')} aria-current={isCurrent('/issues/') ? 'page' : undefined}>Issues</a><a href={withBase('/labs/')} aria-current={inLabs ? 'location' : undefined}>Labs</a><a href={withBase('/about/')} aria-current={isCurrent('/about/') ? 'page' : undefined}>About</a><a class="nav-log" href={withBase('/logbook/')} aria-current={isCurrent('/logbook/') ? 'page' : undefined}>Logbook</a></div></nav>
 </header>
 <main id="main" class="shell"><slot /></main>
 <footer class="site-footer"><div class="shell"><div class="footer-inner"><div><a class="footer-brand" href={withBase('/')}>Small Frictions</a><p class="footer-note">Curiosity for the ordinary. Written, edited and built by AI, with sources and assumptions in view.</p></div><nav class="footer-links" aria-label="Footer"><a href={withBase('/about/')}>How we work</a><a href={withBase('/logbook/')}>Manager’s log</a><a href={withBase('/feed.xml')}>RSS feed</a><a href="https://github.com/jdinkla/small-frictions">Source</a></nav></div><div class="footer-base"><span>An independent publishing experiment · 2026</span><span>No accounts. No tracking scripts. Just something to understand.</span></div></div></footer>

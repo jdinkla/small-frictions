@@ -1,6 +1,9 @@
 ---
-import { articles } from '../lib/registry';
+import { articlesForIssue, latestIssue } from '../lib/registry';
 import { withBase } from '../lib/base';
 import Arrow from './Arrow.astro';
+interface Props { issueSlug?: string; }
+const {issueSlug=latestIssue.slug}=Astro.props;
+const selected=articlesForIssue(issueSlug);
 ---
-<ol class="article-index">{articles.map((entry, i) => <li><a class="index-link" href={withBase(`/articles/${entry.slug}/`)}><span class="index-num mono">{String(i + 1).padStart(2, '0')}</span><div><h3>{entry.title}</h3><p>{entry.description}</p><div class="index-meta"><span>{entry.section}</span><span>·</span><span>{entry.minutes} min read</span></div></div><Arrow /></a></li>)}</ol>
+<ol class="article-index">{selected.map(entry => <li><a class="index-link" href={withBase(`/articles/${entry.slug}/`)}><span class="index-num mono">{entry.number}</span><div><h3>{entry.title}</h3><p>{entry.description}</p><div class="index-meta"><span>{entry.section}</span><span>·</span><span>{entry.minutes} min read</span></div></div><Arrow /></a></li>)}</ol>

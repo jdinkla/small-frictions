@@ -1,0 +1,61 @@
+[
+  {
+    "width": 320,
+    "pages": 22,
+    "overflow": false,
+    "localFonts": true,
+    "computedTextContrast": true,
+    "controls": true,
+    "keyboard": true,
+    "requests": "local only",
+    "errors": []
+  },
+  {
+    "width": 390,
+    "pages": 22,
+    "overflow": false,
+    "localFonts": true,
+    "computedTextContrast": true,
+    "controls": true,
+    "keyboard": true,
+    "requests": "local only",
+    "errors": []
+  },
+  {
+    "width": 768,
+    "pages": 22,
+    "overflow": false,
+    "localFonts": true,
+    "computedTextContrast": true,
+    "controls": true,
+    "keyboard": true,
+    "requests": "local only",
+    "errors": []
+  },
+  {
+    "width": 1024,
+    "pages": 22,
+    "overflow": false,
+    "localFonts": true,
+    "computedTextContrast": true,
+    "controls": true,
+    "keyboard": true,
+    "requests": "local only",
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "pages": 22,
+    "overflow": false,
+    "localFonts": true,
+    "computedTextContrast": true,
+    "controls": true,
+    "keyboard": true,
+    "requests": "local only",
+    "errors": []
+  },
+  {
+    "noJavaScript": "article, sources and default lab readable",
+    "print": "article and source URLs present, navigation hidden"
+  }
+]

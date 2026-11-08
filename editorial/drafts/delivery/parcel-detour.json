@@ -1,0 +1,61 @@
+{
+  "slug": "parcel-detour",
+  "title": "Why your parcel goes the long way",
+  "deck": "A route can add kilometres while reducing the number of separate journeys the network has to arrange.",
+  "section": "Inside the network",
+  "minutes": 5,
+  "number": "01",
+  "lead": "The tracking page names a sorting centre farther from your house than the sender was. On a map, the parcel appears to have taken a wrong turn. Sometimes it has. But the line from sender to recipient leaves out something important: your parcel is travelling in a service built to move other parcels too. The network can take a longer route so that more of them share the same departure.",
+  "sections": [
+    {
+      "heading": "A map of places needs a timetable",
+      "paragraphs": [
+        "A direct connection is useful only when something actually leaves on it. Connecting every origin to every destination requires vehicles, departure slots and enough traffic to justify using them. A hub gathers shipments from several origins, separates them by destination, then sends the new groups onwards. It trades an extra transfer for a smaller set of connections that can carry combined loads.",
+        "This is a real operating arrangement, although it does not explain every tracking event. UPS describes its Louisville Worldport as the centre of its global air network and a package-sorting hub. That operator description establishes the role of a hub, rather than independently proving that any particular route is best. [1]",
+        "The relevant comparison is between available journeys, including their departures and transfers. Drawing a shorter line does not create a vehicle on it. Equally, the presence of a hub does not make a longer journey automatically sensible. Volume, vehicle capacity and the delivery promise all matter."
+      ]
+    },
+    {
+      "heading": "Six trips or five",
+      "paragraphs": [
+        "Here is an invented network, deliberately small enough to count. Three sending depots, A, B and C, each have ten parcels for destination X and ten for destination Y every evening. That makes sixty parcels. All parcels are ready together, and a vehicle can carry thirty. Ignore return journeys, pickup rounds and delivery rounds; this example compares only the loaded transfers between these depots.",
+        "With separate direct departures, each sending depot needs one trip to X and one to Y. There are six trips, carrying ten parcels each. Assume each direct trip is eighty kilometres: the vehicles travel 480 kilometres in total. Every parcel travels eighty kilometres, and the vehicles use one-third of their parcel capacity.",
+        "Now add hub H. Assume each sending depot is thirty kilometres from H, and each destination is seventy kilometres from H. A, B and C each send one vehicle to H with twenty parcels. At H, the thirty parcels for X fill one outbound vehicle; the thirty for Y fill another. That is five trips: three inbound and two outbound, covering 3 × 30 + 2 × 70 = 230 vehicle-kilometres.",
+        "Every parcel now travels one hundred kilometres, twenty more than before, and undergoes a transfer. Yet the loaded vehicles collectively travel 250 kilometres less. Parcel distance and vehicle distance answer different questions. The example demonstrates consolidation, not a measured cost or emissions saving. Sorting work, vehicle types, return movements and hub overhead are outside its boundary."
+      ]
+    },
+    {
+      "heading": "The longer route can still arrive earlier",
+      "paragraphs": [
+        "A timetable adds another trade. Suppose a direct trip takes two hours but leaves only the next evening, while a connection through H leaves tonight, travels for two and a half hours and needs half an hour to sort. A parcel ready now reaches the destination depot earlier through H. Those times are invented too. Reverse the departures or miss the connection, and the direct journey may win.",
+        "A tracking history is also a partial view of movement. UPS says its tracking information is captured when a parcel is scanned, and that long-distance shipments may receive no further scan until the destination hub. Two successive place names therefore do not supply a continuous trace of the road or flight between them. [2]"
+      ]
+    },
+    {
+      "heading": "An explanation is not an excuse",
+      "paragraphs": [
+        "Misrouting remains possible. DHL's status guidance explicitly describes incorrect sorting that can put a shipment on the wrong delivery vehicle. A damaged or incomplete label can contribute. A detour needs evidence before it can be called either an efficient connection or a mistake. [3]",
+        "Concentration has its own weakness: many journeys depend on the same transfer working. A late arrival can miss the onward departure even when the next destination is close. The useful question about a surprising route is therefore broader than whether it heads towards home. Ask what departure it connects to, what load it joins and whether that connection keeps the delivery promise. The map shows distance. The network has to organise departures."
+      ]
+    }
+  ],
+  "takeaway": "A parcel can travel farther while sharing vehicles more effectively. Whether its detour helps depends on loads, transfers and departure times.",
+  "sources": [
+    {
+      "title": "UPS — UPS Worldport",
+      "url": "https://www.jobs-ups.com/us/en/ups-worldport",
+      "note": "Operator recruitment page inspected directly. Supports the existence and sorting role of its Louisville air-network hub in [1]; promotional efficiency language and headline capacity figures are not used as independent evidence."
+    },
+    {
+      "title": "UPS — Understanding tracking status",
+      "url": "https://www.ups.com/us/en/support/tracking-support/where-is-my-package/understanding-tracking-status",
+      "note": "Operator support page inspected directly. Supports the scan-based tracking limitation in [2]. It cannot establish the route or cause of an individual parcel's detour."
+    },
+    {
+      "title": "DHL — What does my shipment status mean?",
+      "url": "https://www.dhl.de/en/privatkunden/hilfe-kundenservice/sendungsverfolgung/was-bedeutet-mein-sendungsstatus.html",
+      "note": "Operator support page inspected directly, especially the incorrect pre-sorting status. Supports the possibility of misdirection in [3], without estimating how often it happens."
+    }
+  ],
+  "modelNote": "AI-authored explanatory draft. The six-node network, capacities, distances and departure times are invented. Its arithmetic counts loaded inter-depot vehicle movement only; it does not model return trips, labour, full operating cost or emissions. No parcel tracking investigation, interviews or human fact-checking are claimed."
+}

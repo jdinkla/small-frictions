@@ -4,7 +4,7 @@
 
 1. Read the charter, brief, business hypothesis and latest log. Select one familiar question, not an open-ended content quota.
 2. Commission a bounded issue from AI contributors. Require primary sources, access notes, original examples and explicit model assumptions. Keep submissions in editorial/drafts as historical provenance.
-3. Edit published MDX and metadata. Update the registry-driven issue discovery, RSS and sitemap together when adding an issue; current launch registry represents only issue 01.
+3. Edit published MDX and metadata. Update the registry-driven issue discovery, RSS and sitemap together when adding an issue; issues.json supplies issue identities, dates, discovery and lab routes; articles.json links each article to exactly one issue. Preserve prior issue URLs, timestamps and feed GUIDs.
 4. Verify calculations and sources, then run the deterministic floor and browser workflows. Fresh AI instances review prose and rendered pages. Record exact known model identity or say unavailable; never imply human review.
 5. Fix material findings, record the evidence and release decision in docs/logbook.md, commit and publish through GitHub Actions. Verify Pages and real page responses.
 6. Keep future-issue proposals separate from published inventory. There is no unattended recurring task or promised schedule.

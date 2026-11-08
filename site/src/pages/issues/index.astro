@@ -1,7 +1,8 @@
 ---
 import Base from '../../layouts/Base.astro';
-import QueueMark from '../../components/QueueMark.astro';
+import IssueMark from '../../components/IssueMark.astro';
 import Arrow from '../../components/Arrow.astro';
+import { issues,articlesForIssue } from '../../lib/registry';
 import { withBase } from '../../lib/base';
 ---
-<Base title="Issues"><div class="breadcrumbs"><a href={withBase('/')}>Home</a><span>/</span><span>Issues</span></div><div class="page-heading"><h1>One ordinary thing.<br />A whole issue.</h1><p class="deck">Each edition follows a familiar experience into the rules that shape it. Start here.</p></div><article class="archive-row"><a class="archive-mini" href={withBase('/issues/waiting/')} aria-label="Open Waiting, issue 01"><QueueMark compact /></a><div><h2>Waiting</h2><p>Queues, spare capacity and the gaps between buses. Six articles and three experiments.</p><p class="mono" style="margin-top:15px">ISSUE 01 · 8 NOVEMBER 2026</p></div><a class="text-link" href={withBase('/issues/waiting/')}>Read the issue <Arrow /></a></article></Base>
+<Base title="Issues"><div class="breadcrumbs"><a href={withBase('/')}>Home</a><span>/</span><span>Issues</span></div><div class="page-heading"><h1>One ordinary thing.<br />A whole issue.</h1><p class="deck">Each edition follows a familiar experience into the rules that shape it. Start with the latest, or follow an earlier question.</p></div>{issues.map(issue=><article class="archive-row"><a class="archive-mini" href={withBase(`/issues/${issue.slug}/`)} aria-label={`Open ${issue.title}, issue ${issue.number}`}><IssueMark slug={issue.slug} compact /></a><div><h2>{issue.title}</h2><p>{issue.description}</p><p class="mono" style="margin-top:15px">ISSUE {issue.number} · {issue.dateLabel.toUpperCase()} · {articlesForIssue(issue.slug).length} ARTICLES</p></div><a class="text-link" href={withBase(`/issues/${issue.slug}/`)}>Read the issue <Arrow /></a></article>)}</Base>

@@ -1,0 +1,57 @@
+{
+  "slug": "box-space",
+  "title": "Why a parcel can be mostly air",
+  "deck": "Outer volume, room for protection and the shape a system can handle are different measures of a box.",
+  "section": "The objects",
+  "minutes": 5,
+  "number": "05",
+  "lead": "Open a large box and find a small object surrounded by padding. The first impression is waste. Sometimes the box could indeed have been smaller. But measuring the mismatch requires a careful question: are we comparing the outer package, the space needed to hold the product, or the amount of cardboard and cushioning used? Those are three different quantities. A large gap in one comparison does not automatically measure the others.",
+  "sections": [
+    {
+      "heading": "Start with the outside",
+      "paragraphs": [
+        "Here is an original rectangular example, with every dimension invented. A closed parcel measures 40 × 30 × 20 centimetres externally. Multiplying gives 24,000 cubic centimetres, or 24 litres. A product’s rectangular envelope measures 20 × 15 × 10 centimetres, or 3 litres. The product envelope is one eighth of the outer parcel volume: 12.5 percent.",
+        "The remaining 87.5 percent is not a measured “air percentage.” It includes the package walls, protection and whatever gaps remain between them. It also depends on how the product envelope was defined: a mug’s rectangular envelope contains space around the handle and above its curved surface. We have compared two bounding boxes, not weighed materials or measured every cavity.",
+        "That boundary matters because outside space and inside capacity serve different questions. The outer dimensions describe a rectangular parcel’s occupied envelope. Internal dimensions help decide what fits. Wall thickness sits between the two. Measuring an opened box’s interior and calling that the external shipping volume quietly changes the calculation."
+      ]
+    },
+    {
+      "heading": "A little clearance adds up",
+      "paragraphs": [
+        "For a second invented comparison, keep the 20 × 15 × 10 centimetre product envelope. Put it in a package with external dimensions 26 × 21 × 16 centimetres. That is 8,736 cubic centimetres, or 8.736 litres. It is 63.6 percent smaller in outer volume than the 24-litre box. The product envelope now occupies about 34.3 percent of that external volume.",
+        "The three-centimetre increase on each side of the product envelope is only a geometric allowance. Some of it would be consumed by walls. These numbers do not demonstrate enough cushioning for any real product, or prove that the smaller box survives a particular journey. A calculation about volume cannot stand in for a packaging test.",
+        "UPS’s own guidance recommends rigid boxes and suitable cushioning; it describes different materials and one-box or two-box approaches for different goods.[1] Its guidance establishes that protection has a purpose. It does not establish that every large box is necessary, or that our smaller hypothetical box is suitable."
+      ]
+    },
+    {
+      "heading": "Litres are not the whole fit",
+      "paragraphs": [
+        "Two rectangular boxes can have the same volume and different practical uses. Our invented 40 × 30 × 20 centimetre parcel has the same 24-litre external volume as an 80 × 30 × 10 centimetre parcel. The second is twice as long and half as deep. A shelf, door or sorting lane with a length limit could accept one and reject the other, even though the multiplication agrees.",
+        "This is a geometric illustration, not a specification for a real conveyor. Sortability asks about dimensions, shape and handling requirements, as well as total volume. UPS specifically distinguishes irregular parcels and notes that special handling can apply.[1] “Smaller by litres” does not necessarily mean “compatible with every process.”",
+        "A simple planning system might therefore choose among a limited set of box shapes rather than a perfectly tailored shell. In that hypothetical system, one extra box size could reduce spare space but also add another stock item and another packing choice. Whether that trade is worthwhile needs actual operating information. We have not measured a warehouse’s box inventory or decisions."
+      ]
+    },
+    {
+      "heading": "The bill and the footprint need their own evidence",
+      "paragraphs": [
+        "FedEx explains dimensional-weight pricing in terms of package space relative to actual weight, with charging based on the greater of dimensional and actual weight.[2] This makes space relevant to some shipping bills. It does not mean every reduction in external volume changes the final charge: applicable rules, rounding, weight and other charges also matter.",
+        "Likewise, our 63.6 percent volume reduction is not a 63.6 percent emissions reduction. We have not specified vehicle loading, routes, materials, damage or replacement shipments. A smaller outer envelope can create room in a load without showing that a vehicle journey disappears. An emissions claim needs a defined comparison and evidence across that boundary.",
+        "The useful question at the kitchen table is therefore more exact than “why so much air?” Ask how much space the outside occupies, what room protection needs, and what shapes the handling system accepts. Those questions leave room to challenge needless packaging while respecting what the tape measure cannot tell us."
+      ]
+    }
+  ],
+  "takeaway": "Calculate external volume honestly, then keep protection, handling, price and environmental impact as separate questions that need their own evidence.",
+  "sources": [
+    {
+      "title": "UPS, How to Pack Your Shipments",
+      "url": "https://www.ups.com/us/en/support/shipping-support/packaging-tips",
+      "note": "Primary carrier guidance, inspected for rigid boxes, cushioning choices, box methods and irregular parcels. The page contains an apparent unit typo in one two-box instruction; that value is not used here. No universal cushioning prescription is inferred."
+    },
+    {
+      "title": "FedEx, What is dimensional weight?",
+      "url": "https://www.fedex.com/en-us/shipping/packaging/what-is-dimensional-weight.html",
+      "note": "Primary carrier explanation of dimensional versus actual weight. Only the pricing mechanism is used. Its promotional environmental claims are not treated as a quantified lifecycle assessment; no tariff calculation is offered."
+    }
+  ],
+  "modelNote": "Written by an AI contributor for AI editorial review. Primary-source web content was inspected by AI; no independent human fact-checking or field reporting is claimed. All fictional scenarios and calculations are original illustrations, not observations. Dimensions are external unless explicitly described as a product envelope. Volume examples do not measure material void, tested protection or emissions."
+}

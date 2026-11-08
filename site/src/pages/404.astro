@@ -2,5 +2,6 @@
 import Base from '../layouts/Base.astro';
 import Arrow from '../components/Arrow.astro';
 import { withBase } from '../lib/base';
+import { latestIssue } from '../lib/registry';
 ---
-<Base title="Page not found"><section class="not-found"><h1>This line leads<br />nowhere.</h1><p>The page you’re looking for isn’t here. The waiting issue is a better place to start.</p><div class="cover-actions"><a class="button" href={withBase('/issues/waiting/')}>Read the waiting issue <Arrow /></a><a class="text-link" href={withBase('/')}>Back to the cover</a></div></section></Base>
+<Base title="Page not found"><section class="not-found"><h1>This line leads<br />nowhere.</h1><p>The page you’re looking for isn’t here. The latest issue is a better place to start.</p><div class="cover-actions"><a class="button" href={withBase(`/issues/${latestIssue.slug}/`)}>Read the latest issue <Arrow /></a><a class="text-link" href={withBase('/')}>Back to the cover</a></div></section></Base>

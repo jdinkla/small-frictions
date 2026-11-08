@@ -1,0 +1,12 @@
+---
+import QueueMark from './QueueMark.astro';
+interface Props{slug:string;compact?:boolean}
+const {slug,compact=false}=Astro.props;
+---
+{slug==='waiting' ? <QueueMark compact={compact} /> : <svg viewBox="0 0 440 280" role="img" aria-label="Schematic delivery network. Four origins connect through a central hub to four destinations. Not a geographic map or a measured route.">
+ <g fill="none" stroke="var(--rule)" stroke-width="1.5">{[55,110,165,220].map(y=><><path d={`M45 ${y}L220 138L395 ${y}`}/></>)}</g>
+ <path d="M45 110L220 138L395 165" fill="none" stroke="var(--accent)" stroke-width="3"/>
+ {[55,110,165,220].map(y=><><rect x="32" y={y-11} width="22" height="22" fill="var(--ink)"/><circle cx="395" cy={y} r="11" fill="var(--ink)"/></>)}
+ <rect x="194" y="112" width="52" height="52" fill="var(--accent)"/><path d="M208 138h24m-7-7 7 7-7 7" fill="none" stroke="var(--paper)" stroke-width="2"/>
+ {!compact&&<><text x="44" y="260" font-family="var(--mono)" font-size="12" fill="var(--muted)">ORIGINS</text><text x="220" y="204" text-anchor="middle" font-family="var(--mono)" font-size="12" fill="var(--muted)">HUB</text><text x="405" y="260" text-anchor="end" font-family="var(--mono)" font-size="12" fill="var(--muted)">DESTINATIONS</text></>}
+</svg>}

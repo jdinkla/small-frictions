@@ -1,14 +1,19 @@
 ---
 import Base from '../layouts/Base.astro';
-import QueueMark from '../components/QueueMark.astro';
+import IssueMark from '../components/IssueMark.astro';
 import Arrow from '../components/Arrow.astro';
 import ArticleIndex from '../components/ArticleIndex.astro';
+import { latestIssue,issues,articlesForIssue } from '../lib/registry';
 import { withBase } from '../lib/base';
+const issue=latestIssue;
+const previous=issues[1];
+const count=articlesForIssue(issue.slug).length;
 ---
-<Base title="Small Frictions">
-<section class="cover" aria-labelledby="cover-title"><div><h1 id="cover-title">Life happens<br />in the <em>waiting.</em></h1><p class="deck">The line that barely moves. The bus that comes in pairs. The busy place that gets slower when it gets busier.</p><div class="cover-actions"><a class="button" href={withBase('/issues/waiting/')}>Open the waiting issue <Arrow /></a><a class="text-link" href="#contents">Browse the articles</a></div></div><figure class="cover-plate"><div class="plate-top"><strong>EVERYONE IS NEXT.<br />EVENTUALLY.</strong><span class="mono">01 /<br />WAITING</span></div><QueueMark /><figcaption class="plate-bottom"><span class="plate-caption">A queue is a system.<br />You happen to be inside it.</span><span class="mono">ILLUSTRATION<br />NOT LIVE DATA</span></figcaption></figure></section>
-<div class="editorial-strip"><span>Six explanations. Three experiments. A different way to see the everyday.</span><span>AI-written · Source-led · Free to read</span></div>
-<section class="lab-invitation"><h2>What if you changed the queue?</h2><p>Turn up the demand. Bunch the buses. Share the counters. Three small models make the hidden rules visible.</p><a class="button" href={withBase('/lab/')}>Enter the Queue Lab <Arrow /></a></section>
-<section id="contents" aria-labelledby="contents-title"><div class="section-title"><h2 id="contents-title">Inside the waiting issue</h2><span class="mono">6 ARTICLES</span></div><ArticleIndex /></section>
-<section class="editor-letter"><h2>A note on this magazine</h2><div class="letter-text"><p>Daily life is full of small puzzles. A longer line can be the better one. An empty minute can keep a service moving. Two buses can be less useful than two evenly spaced buses.</p><p>Small Frictions follows those puzzles into the systems behind them. We use AI to write and build, then show the sources, the assumptions and the decisions. You can inspect the explanation—and, sometimes, change it yourself.</p><a class="text-link" href={withBase('/about/')}>How we work <Arrow /></a></div></section>
+<Base title="Small Frictions" description={`The ${issue.title.toLowerCase()} issue: ${issue.description}`}>
+<section class="cover" aria-labelledby="cover-title"><div><h1 id="cover-title">{issue.coverBefore}<br /><em>{issue.coverAccent}</em></h1><p class="deck">{issue.coverDeck}</p><div class="cover-actions"><a class="button" href={withBase(`/issues/${issue.slug}/`)}>Open the {issue.title.toLowerCase()} issue <Arrow /></a><a class="text-link" href="#contents">Browse the articles</a></div></div><figure class="cover-plate"><div class="plate-top"><strong>{issue.plateTitle[0]}<br />{issue.plateTitle[1]}</strong><span class="mono">{issue.number} /<br />{issue.title.toUpperCase()}</span></div><IssueMark slug={issue.slug} /><figcaption class="plate-bottom"><span class="plate-caption">{issue.plateCaption[0]}<br />{issue.plateCaption[1]}</span><span class="mono">SCHEMATIC<br />NOT LIVE DATA</span></figcaption></figure></section>
+<div class="editorial-strip"><span>{count} explanations. Three experiments. A different way to see the everyday.</span><span>AI-written · Source-led · Free to read</span></div>
+<section class="lab-invitation"><h2>Follow the hidden journey.</h2><p>{issue.labPitch}</p><a class="button" href={withBase(issue.labPath)}>Enter the {issue.labTitle} <Arrow /></a></section>
+<section id="contents" aria-labelledby="contents-title"><div class="section-title"><h2 id="contents-title">Inside the {issue.title.toLowerCase()} issue</h2><span class="mono">{count} ARTICLES</span></div><ArticleIndex issueSlug={issue.slug} /></section>
+{previous&&<section class="previous-issue"><div><h2>Previously: {previous.title}</h2><p>{previous.description}</p></div><a class="text-link" href={withBase(`/issues/${previous.slug}/`)}>Read issue {previous.number} <Arrow /></a></section>}
+<section class="editor-letter"><h2>A note from the editor</h2><div class="letter-text"><p>A delivery connects a physical object to a stream of information. The object needs space and handling. The information records selected events. They travel together, but they do not tell the same story.</p><p>This issue follows both. The examples are constructed and the sources are visible. We use AI to write and build; you can inspect the evidence and change the models yourself.</p><a class="text-link" href={withBase('/about/')}>How we work <Arrow /></a></div></section>
 </Base>

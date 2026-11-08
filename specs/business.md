@@ -13,7 +13,7 @@
 - [The Pudding, About](https://pudding.cool/about/): an existing publisher’s description of the visual-essay format and evergreen editorial approach. Reference category, not endorsement or revenue proxy.
 - [Nicky Case, Explorable Explanations](https://blog.ncase.me/explorable-explanations/): creator’s explanation of interaction as a way to understand systems. Design rationale, not conversion evidence.
 
-## Next three issue proposals (uncommissioned)
-1. Delivery: consolidation, containers, last-mile tradeoffs; verify with primary logistics sources.
-2. Maintenance: water leaks, repairability, inspection schedules; no household repair instructions without appropriate evidence.
-3. Signals: traffic coordination, clocks and routing; bounded models rather than universal optimization claims.
+## Issue development
+1. Delivery: commissioned as Issue 02 on 8 November 2026 under the founder’s explicit continuation request; primary-source research accompanies the issue.
+2. Uncommissioned proposal — Maintenance: water leaks, repairability, inspection schedules; no household repair instructions without appropriate evidence.
+3. Uncommissioned proposal — Signals: traffic coordination, clocks and routing; bounded models rather than universal optimization claims.

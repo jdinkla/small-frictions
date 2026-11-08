@@ -1,0 +1,8 @@
+---
+import Base from '../../layouts/Base.astro';
+import Arrow from '../../components/Arrow.astro';
+import IssueMark from '../../components/IssueMark.astro';
+import {issues} from '../../lib/registry';
+import {withBase} from '../../lib/base';
+---
+<Base title="Labs" description="Inspect the rules of everyday systems with Small Frictions’ delivery and queue experiments."><div class="breadcrumbs"><a href={withBase('/')}>Home</a><span>/</span><span>Labs</span></div><div class="page-heading"><h1>Change one thing.<br />See what follows.</h1><p class="deck">Original explanatory models with invented inputs, inspectable arithmetic and visible limits. Each lab belongs to an issue.</p></div>{issues.map(issue=><section class="archive-row"><div class="archive-mini"><IssueMark slug={issue.slug} compact /></div><div><h2>{issue.labTitle}</h2><p>{issue.labPitch}</p><a class="text-link" href={withBase(`/issues/${issue.slug}/`)}>Read the {issue.title.toLowerCase()} issue</a></div><a class="button" href={withBase(issue.labPath)}>Open the lab <Arrow /></a></section>)}</Base>

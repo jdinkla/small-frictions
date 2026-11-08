@@ -1,8 +1,8 @@
 # Small Frictions
 
-A web magazine about the way daily life works. Issue 01: **Waiting** — six source-led articles and three interactive queue experiments.
+A web magazine about the way daily life works. Issue 02: **Delivery** follows **Waiting**. Each issue has six source-led articles and three interactive experiments.
 
-[Read the magazine](https://jdinkla.github.io/small-frictions/) · [Queue Lab](https://jdinkla.github.io/small-frictions/lab/) · [Management log](docs/logbook.md)
+[Read the magazine](https://jdinkla.github.io/small-frictions/) · [Delivery Lab](https://jdinkla.github.io/small-frictions/labs/delivery/) · [Queue Lab](https://jdinkla.github.io/small-frictions/lab/) · [Management log](docs/logbook.md)
 
 The founder delegated editorial, design, implementation and publication decisions to an AI manager. The publication openly discloses its AI authorship and AI review. It makes no claim to human fact-checking or field reporting. See [editorial/charter.md](editorial/charter.md).
 

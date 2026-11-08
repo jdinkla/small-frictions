@@ -18,7 +18,7 @@
     {
       "id": "home",
       "path": "/",
-      "mustShow": "The Small Frictions masthead, Waiting cover, an illustrative queue and a clear path to the articles and lab."
+      "mustShow": "The Small Frictions masthead, Delivery cover, a schematic network, six new article routes and a visible path to Waiting."
     },
     {
       "id": "issue",
@@ -28,7 +28,7 @@
     {
       "id": "archive",
       "path": "/issues/",
-      "mustShow": "One real published issue, Waiting, dated 8 November 2026; no fake future issues."
+      "mustShow": "Exactly two real issues, Delivery and Waiting, with their issue numbers and publication dates; no fake future issues."
     },
     {
       "id": "capacity",
@@ -79,6 +79,51 @@
       "id": "not-found",
       "path": "/404.html",
       "mustShow": "A useful missing-page message with links to the issue and homepage."
+    },
+    {
+      "id": "delivery",
+      "path": "/issues/delivery/",
+      "mustShow": "Delivery, Issue 02, six new article titles and a route to the Delivery Lab."
+    },
+    {
+      "id": "parcel-detour",
+      "path": "/articles/parcel-detour/",
+      "mustShow": "Hub routing versus direct journeys, an original example and explicit tradeoffs."
+    },
+    {
+      "id": "barcode",
+      "path": "/articles/barcode/",
+      "mustShow": "Barcode identity versus tracking observations, with precise GS1 source notes."
+    },
+    {
+      "id": "box-space",
+      "path": "/articles/box-space/",
+      "mustShow": "A clearly labelled rectangular volume example and limits of interpreting unused envelope space."
+    },
+    {
+      "id": "last-mile",
+      "path": "/articles/last-mile/",
+      "mustShow": "Stops, collection and failed-attempt tradeoffs without universal cost or emissions claims."
+    },
+    {
+      "id": "container",
+      "path": "/articles/container/",
+      "mustShow": "Standardized handling across modes with qualified primary-source support."
+    },
+    {
+      "id": "returns",
+      "path": "/articles/returns/",
+      "mustShow": "Inspection and disposition choices, labelled examples and evidence limits."
+    },
+    {
+      "id": "labs",
+      "path": "/labs/",
+      "mustShow": "Working links to the Delivery Lab and the preserved Queue Lab."
+    },
+    {
+      "id": "delivery-lab",
+      "path": "/labs/delivery/",
+      "mustShow": "Responsive controls for a toy hub network, rectangular box volume and a synthetic GS1 check digit; live results, assumptions and inspectable arithmetic."
     }
   ]
 }

@@ -1,0 +1,62 @@
+{
+  "slug": "barcode",
+  "title": "A barcode is not a tracking device",
+  "deck": "The label supplies an identity. A tracking history needs observations, context and a system that shares them.",
+  "section": "The information",
+  "minutes": 5,
+  "number": "04",
+  "lead": "A parcel label can sit perfectly still while its tracking page changes. The reverse is possible too: the parcel moves while the page says nothing new. Imagine a box leaving a depot at 09:10, travelling for three hours, then being scanned at another depot at 12:10. Two recorded events can describe that journey without anyone measuring the box’s position between them. The barcode printed on it has not been broadcasting along the road.",
+  "sections": [
+    {
+      "heading": "Name the thing first",
+      "paragraphs": [
+        "GS1 separates identification, data capture and information sharing. Its GTIN identifies a trade-item class; a GTIN plus serial number can identify an individual instance. Its SSCC identifies a logistics unit. A barcode is a machine-readable carrier for data, rather than the whole tracking system.[1]",
+        "In our fictional warehouse, twenty identical blue mugs share a product identifier. Two different customers buy one each. If the warehouse records only “blue mug,” those records cannot distinguish the two customer parcels. Give each parcel its own logistics identity and it becomes possible to attach different journeys to otherwise identical purchases. The goods and their shipping containers answer different identity questions.",
+        "The example uses the distinction in GS1’s architecture, not a claim that every carrier uses SSCCs. A carrier’s own tracking identifier may follow another scheme. Nor does an SSCC describe everything inside a box by itself: an application must associate the identifier with the relevant contents and records. Several identifiers can be useful at once, provided their roles stay clear."
+      ]
+    },
+    {
+      "heading": "A read needs a meaning",
+      "paragraphs": [
+        "GS1’s architecture explains that the context of capture supplies meaning: reading a product barcode during a sale and reading it during a return are different business events.[1] A scanner recovering an identifier is therefore only one part of an explanation.",
+        "For the imaginary parcel, write a small event card: parcel P, depot A, 09:10, dispatched. Another card says: parcel P, depot B, 12:10, received. The identity connects the cards; the places, times and process descriptions tell a story. A bare list containing “P, P” would tell us almost nothing.",
+        "EPCIS is GS1’s standard for visibility-event data. Its events describe what was involved, when and where something happened, and the business context. Version 2.0 also supports condition information such as temperature or shocks.[2] This is an example of an event-sharing vocabulary, not evidence that a particular consumer tracking page uses it."
+      ]
+    },
+    {
+      "heading": "The gap stays a gap",
+      "paragraphs": [
+        "Now pause our fictional history at 11:00. The latest available event says dispatched at 09:10. Perhaps the box is on a vehicle; perhaps the next event has happened but has not reached this view. The record alone cannot choose between those possibilities. “Last recorded at” is a different claim from “currently at.”",
+        "Adding a predicted arrival time introduces another kind of information. A forecast can be useful, but it is still a calculation about the future. It should not be drawn as though it were an observation of the box. Likewise, a line between depot dots on a map can show an intended connection without establishing the exact route actually taken.",
+        "The point is about what evidence licenses, not about whether parcels can ever be located more frequently. Other equipment and data can supply more observations. A printed barcode alone does not require continuous GPS, and an event standard does not guarantee uninterrupted knowledge. More precise pictures need more evidence than two timestamped endpoints."
+      ]
+    },
+    {
+      "heading": "Correct digits are a small promise",
+      "paragraphs": [
+        "GS1 Denmark describes the final check digit as calculated from the preceding digits using modulus 10.[3] That checks a relationship within the number. It does not examine the physical parcel, establish who printed the label or authenticate its contents.",
+        "Consider a purely fictional label copied onto a second box. The copied digits would satisfy exactly the same arithmetic relationship as before. The check digit cannot distinguish the boxes because nothing in that arithmetic asks whether the label was copied. An apparently valid number and a trustworthy chain of events are different achievements.",
+        "When reading a tracking history, ask three small questions: what object does this identifier name, what event was actually recorded, and how old is that observation? Those questions will not find a missing parcel. They do keep a tidy timeline from promising more knowledge than its records contain."
+      ]
+    }
+  ],
+  "takeaway": "A label identifies; an event records; a tracking view interprets. Check which of those promises the screen is actually making.",
+  "sources": [
+    {
+      "title": "GS1 System Architecture, identification and data-capture sections",
+      "url": "https://ref.gs1.org/architecture/system-architecture/",
+      "note": "Primary standards architecture. Inspected the identify/capture/share discussion, table 4-1, capture workflow and visibility-data sections. Used narrowly for identity levels and the role of context; not a survey of carrier systems."
+    },
+    {
+      "title": "GS1 GO, What is Electronic Product Code Information Services (EPCIS)?",
+      "url": "https://support.gs1.org/support/solutions/articles/43000755325-what-is-electronic-product-code-information-services-epcis-",
+      "note": "Primary GS1 explanation of event dimensions and EPCIS 2.0 condition information. Does not establish which consumer carriers implement EPCIS or how frequently they report events."
+    },
+    {
+      "title": "GS1 Denmark, Tools: Calculate your check digit",
+      "url": "https://www.gs1.dk/en/resources/tools",
+      "note": "Primary GS1 member-organisation explanation that the final digit is calculated from preceding digits using modulus 10. The copied-label illustration is our own reasoning about that arithmetic, not a security test."
+    }
+  ],
+  "modelNote": "Written by an AI contributor for AI editorial review. Primary-source web content was inspected by AI; no independent human fact-checking or field reporting is claimed. All fictional scenarios and calculations are original illustrations, not observations."
+}

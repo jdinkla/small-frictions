@@ -70,6 +70,46 @@ try {
   await page.waitForFunction(()=>document.querySelector('#arrival-rate').value==='6');
   await page.locator('#arrival-rate').focus();await page.keyboard.press('End');
   await page.waitForFunction(()=>document.querySelector('[data-result="capacity"]').textContent==='19min');
+  // Delivery Lab: both numeric extremes, editable/invalid states and resets.
+  await page.goto(url+'labs/delivery/',{waitUntil:'networkidle'});
+  await page.waitForFunction(()=>!document.querySelector('#hub-offset').disabled);
+  await page.locator('#hub-offset').focus();await page.keyboard.press('End');
+  await page.waitForFunction(()=>document.querySelector('[data-result="hub-km"]').textContent==='244.8 km');
+  assert.ok((await page.locator('[data-result="hub-difference"]').textContent()).includes('more'));
+  if(width<=700){
+    await page.locator('#hub').evaluate(el=>el.scrollIntoView({block:'start'}));
+    const feedback=page.locator('#hub .delivery-mobile-feedback');
+    assert.ok((await feedback.textContent()).includes('244.8'));
+    const box=await feedback.boundingBox();
+    assert.ok(box.y>=0&&box.y+box.height<=900,'Compact hub feedback stays in the control viewport');
+  }
+  await setRange('#box-height',6);
+  await page.waitForFunction(()=>document.querySelector('[data-result="box-litres"]').textContent==='3.6 L');
+  await page.locator('#check-payload').fill('');
+  assert.ok((await page.locator('#payload-message').textContent()).includes('Enter 12 digits'));
+  await page.locator('#check-payload').fill('12x');
+  assert.equal(await page.locator('#check-payload').getAttribute('aria-invalid'),'true');
+  assert.equal(await page.locator('[data-result="check-digit"]').count(),0);
+  await page.locator('#check-payload').fill('000000000000');
+  await page.waitForFunction(()=>document.querySelector('[data-result="check-digit"]').textContent==='0');
+  await page.getByRole('button',{name:'Reset all experiments'}).click();
+  await page.waitForFunction(()=>document.querySelector('#hub-offset').value==='0'&&document.querySelector('#box-height').value==='20'&&document.querySelector('#check-payload').value==='123456789012');
+  await page.getByText('Inspect every weight and the source method',{exact:true}).click();
+  assert.equal(await page.locator('.delivery-check-table tbody tr').count(),12);
+  if(width<=700){
+    await page.goto(url+'articles/barcode/');
+    const contents=page.locator('.contents-mobile');
+    assert.equal(await contents.getAttribute('open'),null);
+    await contents.locator('summary').click();
+    assert.equal(await contents.locator('a[href="#sources"]').isVisible(),true);
+  }
+  // Issue links and next-article links remain within their publication.
+  for(const [slug,issueSlug,labPath] of [['capacity','waiting','/lab/'],['barcode','delivery','/labs/delivery/']]){
+    await page.goto(url+'articles/'+slug+'/');
+    assert.equal(await page.locator('.breadcrumbs a').getAttribute('href'),'/small-frictions/issues/'+issueSlug+'/');
+    assert.ok((await page.locator('.article-contents .text-link').getAttribute('href')).startsWith('/small-frictions'+labPath));
+    assert.ok((await page.locator('.continue-actions .text-link').first().getAttribute('href')).startsWith('/small-frictions'+labPath));
+  }
   assert.deepEqual(errors,[],`Browser errors at ${width}`);
   assert.deepEqual(external,[],`Unexpected external requests at ${width}`);
   report.push({width,pages:config.pages.length,overflow:false,localFonts:true,computedTextContrast:true,controls:true,keyboard:true,requests:'local only',errors:[]});
@@ -84,6 +124,11 @@ try {
  assert.equal(await tab.locator('#arrival-rate').isDisabled(),true);
  assert.equal(await tab.locator('[data-result="headway"]').textContent(),'8.2min');
  assert.ok((await tab.locator('noscript').textContent()).includes('Enable JavaScript'));
+ await tab.goto(url+'articles/barcode/');
+ assert.ok((await tab.locator('.prose').textContent()).includes('09:10'));
+ await tab.goto(url+'labs/delivery/');
+ assert.equal(await tab.locator('#check-payload').isDisabled(),true);
+ assert.equal(await tab.locator('[data-result="check-digit"]').textContent(),'8');
  await nojs.close();
  const printing=await browser.newPage();
  await printing.goto(url+'articles/capacity/');
@@ -91,6 +136,10 @@ try {
  assert.equal(await printing.locator('.site-nav').isVisible(),false);
  assert.equal(await printing.locator('#sources').isVisible(),true);
  await printing.pdf({path:'shots/workflows/capacity-print.pdf',format:'A4',margin:{top:'15mm',bottom:'15mm',left:'15mm',right:'15mm'}});
+ await printing.goto(url+'articles/barcode/');
+ assert.equal(await printing.locator('#sources').isVisible(),true);
+ assert.equal(await printing.locator('.article-figure .diagram').isVisible(),true);
+ await printing.pdf({path:'shots/workflows/barcode-print.pdf',format:'A4',margin:{top:'15mm',bottom:'15mm',left:'15mm',right:'15mm'}});
  await printing.close();
  report.push({noJavaScript:'article, sources and default lab readable',print:'article and source URLs present, navigation hidden'});
  await writeFile('shots/workflows/report.json',JSON.stringify(report,null,2));

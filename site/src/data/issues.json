@@ -1,0 +1,54 @@
+[
+  {
+    "slug": "delivery",
+    "title": "Delivery",
+    "number": "02",
+    "date": "2026-11-08",
+    "dateLabel": "8 November 2026",
+    "publishedAt": "2026-11-08T13:03:00Z",
+    "description": "Six explanations of the hidden parcel journey: detours, barcodes, boxes, the last mile, containers and returns.",
+    "deck": "Between order placed and parcel delivered, a whole system gets to work.",
+    "intro": "A parcel’s route can look unreasonable when you follow just one parcel. A barcode can identify a box without knowing where it is. A return can reach a warehouse without being ready for another buyer. This issue follows the journey through networks, information, space and the decisions that connect them.",
+    "labPath": "/labs/delivery/",
+    "labTitle": "Delivery Lab",
+    "labPitch": "Move a hub, change a box and inspect a check digit. Three small experiments separate the arithmetic from the promises.",
+    "coverBefore": "A long way",
+    "coverAccent": "to your door.",
+    "coverDeck": "The detour on the map. The box full of space. The label that knows a number, but doesn’t know where it is.",
+    "plateTitle": [
+      "A STRAIGHT LINE.",
+      "A COMPLICATED JOURNEY."
+    ],
+    "plateCaption": [
+      "One parcel.",
+      "Many connected decisions."
+    ],
+    "socialImage": "/social-delivery.png"
+  },
+  {
+    "slug": "waiting",
+    "title": "Waiting",
+    "number": "01",
+    "date": "2026-11-08",
+    "dateLabel": "8 November 2026",
+    "publishedAt": "2026-11-08T10:32:20Z",
+    "description": "Six source-led explanations of queues, bus bunching, spare capacity and the experience of delay, plus the interactive Queue Lab.",
+    "deck": "The world keeps you waiting. Here is a way to understand what it is doing.",
+    "intro": "A queue looks like people standing still. Underneath it, work is arriving, capacity is being shared, and small irregularities are growing or shrinking. This first issue follows those movements: from the bus stop to the counter, from a useful equation to the uncertainty of an unexplained delay.",
+    "labPath": "/lab/",
+    "labTitle": "Queue Lab",
+    "labPitch": "Test spare capacity, bus spacing and shared queues with transparent, deliberately simple models.",
+    "coverBefore": "Life happens in the",
+    "coverAccent": "waiting.",
+    "coverDeck": "The line that barely moves. The bus that comes in pairs. The busy place that gets slower when it gets busier.",
+    "plateTitle": [
+      "EVERYONE IS NEXT.",
+      "EVENTUALLY."
+    ],
+    "plateCaption": [
+      "A queue is a system.",
+      "You happen to be inside it."
+    ],
+    "socialImage": "/social-waiting.png"
+  }
+]

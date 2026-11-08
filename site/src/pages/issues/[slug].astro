@@ -1,0 +1,16 @@
+---
+import Base from '../../layouts/Base.astro';
+import ArticleIndex from '../../components/ArticleIndex.astro';
+import Arrow from '../../components/Arrow.astro';
+import { issues,articlesForIssue } from '../../lib/registry';
+import { withBase } from '../../lib/base';
+export function getStaticPaths(){return issues.map(issue=>({params:{slug:issue.slug},props:{issue}}));}
+const {issue}=Astro.props;
+const selected=articlesForIssue(issue.slug);
+---
+<Base title={`${issue.title} — Issue ${issue.number}`} description={issue.description} issueSlug={issue.slug}>
+<div class="breadcrumbs"><a href={withBase('/issues/')}>Issues</a><span>/</span><span>{issue.number} · {issue.title}</span></div>
+<div class="page-heading"><h1>{issue.title}.</h1><p class="deck">{issue.deck}</p><div class="article-byline"><span>Issue {issue.number}</span><time datetime={issue.date}>{issue.dateLabel}</time><span>AI-written and edited</span></div><p class="issue-intro">{issue.intro}</p></div>
+<section aria-labelledby="issue-contents-title"><div class="section-title" style="padding-top:0"><h2 id="issue-contents-title">In this issue</h2><span class="mono">{selected.length} ARTICLES</span></div><ArticleIndex issueSlug={issue.slug} /></section>
+<section class="lab-invitation"><h2>Now change the rules.</h2><p>{issue.labPitch}</p><a class="button" href={withBase(issue.labPath)}>Enter the {issue.labTitle} <Arrow /></a></section><div style="padding-block:25px 50px"><a class="text-link" href={withBase('/about/')}>Read our sourcing and AI policy <Arrow /></a></div>
+</Base>

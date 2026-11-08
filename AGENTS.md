@@ -12,7 +12,7 @@ The founding user delegated topic, brand, editorial, implementation and GitHub P
 | Build | `just build` | Synchronize the management log and build the static site |
 | Link check | `just check-links` | Enforce withBase for authored component links |
 | Markup guard | `just markupguard` | Check for accidentally visible raw HTML |
-| Unit tests | `just test` | Pure waiting models and registry/MDX checks |
+| Unit tests | `just test` | Pure waiting/delivery models and registry/MDX checks |
 | Shots (judge input) | `just shots` | All inventory pages at wide/mobile, light only |
 | Impeccable scan | `just impeccable-detect` | Advisory design scan; record absence or degradation |
 | Browser workflows | `node tools/browser-check.mjs` | Responsive layout, real controls, model results, no-JS reading, print and network checks |
@@ -23,9 +23,9 @@ The founding user delegated topic, brand, editorial, implementation and GitHub P
 ## Invariants
 
 1. GitHub Pages base is `/small-frictions`, from site/astro.config.mjs. Every authored component link uses withBase. MDX root-relative links are rewritten by the explicit unified/rehype processor. Keep the processor and check built output, not only source.
-2. Canonical published prose lives in site/src/content/entries/*.mdx. site/src/data/articles.json is canonical metadata/source-note data; registry.ts derives routes and indices from it. Contributor JSON in editorial/drafts is historical provenance, not the published copy. Every registry entry has MDX. Article shims and the ancillary page shim filter by kind.
+2. Canonical published prose lives in site/src/content/entries/*.mdx. site/src/data/articles.json is canonical article/source-note data; issues.json owns issue metadata and lab routes. registry.ts derives issue-scoped routes and indices from them. Contributor JSON in editorial/drafts is historical provenance, not the published copy. Every registry entry has MDX. Article shims and the ancillary page shim filter by kind.
 3. docs/logbook.md is the canonical append-only abstract management log. tools/sync-log.mjs generates site/src/content/manager-log.md before each build. Never edit that generated mirror. Add corrections as dated entries rather than silently rewriting historical decisions.
-4. Only the Queue Lab needs React state. Pure calculations in queue.ts are deterministic and tested. First render uses fixed defaults and disabled controls; hydration enables them. No random values or browser-only state during SSR.
+4. Only the Queue Lab and Delivery Lab need React state. Pure calculations in queue.ts and delivery.ts are deterministic and tested. First render uses fixed defaults and disabled controls; hydration enables them. No random values or browser-only state during SSR.
 5. Public Notice is light-only, by editorial decision, for consistent diagrams and quiet reading. No theme pre-paint or theme storage is required. Tokens live in global.css; specs/design.md is their design authority. DESIGN.md only points there.
 6. Source notes distinguish original work, abstracts, teaching notes, speculation and observational findings. No quote or example may imply independent field reporting. Preserve explanatory assumptions in prose and experiments.
 7. No analytics, accounts, newsletter form, paywall or future cron at launch. A real RSS feed and correction issue template are provided. New issues require editorial research and review; proposals are not published issues.
